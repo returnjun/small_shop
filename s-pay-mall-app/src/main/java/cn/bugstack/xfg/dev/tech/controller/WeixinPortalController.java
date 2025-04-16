@@ -5,8 +5,15 @@ import cn.bugstack.xfg.dev.tech.common.SignatureUtil;
 import cn.bugstack.xfg.dev.tech.common.XmlUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.dom4j.Document;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 微信服务对接，对接地址：<a href="http://xfg-studio.natapp1.cc/api/v1/weixin/portal/receive">/api/v1/weixin/portal/receive</a>
@@ -74,6 +81,30 @@ public class WeixinPortalController {
         res.setMsgType("text");
         res.setContent(content);
         return XmlUtil.beanToXml(res);
+    }
+
+    /**
+     * 调试接口 - 用于接收微信回调的所有参数并记录
+     * 测试方式；
+     * 1. 修改 receive/debug 为 receive，另外一个 receive 修改为 receive2
+     * 2. debug 调试运行，看 requestParams 的入参信息
+     */
+    @PostMapping(value = "receive/debug", produces = "application/xml; charset=UTF-8")
+    public String debugParams(@RequestBody String requestBody,
+                             @RequestParam Map<String, String> requestParams) {
+        try {
+            // 记录所有请求参数
+            log.info("微信调试接口 - 请求参数Map: {}", requestParams);
+            log.info("微信调试接口 - 请求体: {}", requestBody);
+
+            // 消息转换
+            MessageTextEntity message = XmlUtil.xmlToBean(requestBody, MessageTextEntity.class);
+            return buildMessageTextEntity(requestParams.get("openid"), "你好，" + message.getContent());
+
+        } catch (Exception e) {
+            log.error("微信调试接口处理失败", e);
+            return "";
+        }
     }
 
 }
