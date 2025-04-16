@@ -38,3 +38,4 @@ build/
 .DS_Store
 /.idea/
 /data/
+/push_all_branches_v2.sh
