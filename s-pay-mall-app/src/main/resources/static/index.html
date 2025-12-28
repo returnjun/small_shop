@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>s-pay-mall-weixin</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+        margin: 40px;
+        line-height: 1.6;
+      }
+      .card {
+        max-width: 720px;
+        padding: 20px 24px;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      ol {
+        padding-left: 20px;
+      }
+      li {
+        margin: 8px 0;
+      }
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      code {
+        background: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>s-pay-mall-weixin</h1>
+      <p>这是一个用于课程演示的微信公众号（测试号）对接服务，用来验证消息接收、签名校验与回调链路。</p>
+      <p>本地服务默认地址：<code>http://127.0.0.1:8080/</code></p>
+
+      <h2>使用前请确认以下配置</h2>
+      <ol>
+        <li>
+          参考课程文档说明：
+          <a href="https://articles.zsxq.com/id_9989gopludhm.html" target="_blank" rel="noreferrer">https://articles.zsxq.com/id_9989gopludhm.html</a>。
+          按文档注册并进入微信公众号测试平台：
+          <a
+            href="https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index"
+            target="_blank"
+            rel="noreferrer"
+            >https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index</a
+          >。
+        </li>
+        <li>
+          修改 <code>s-pay-mall-weixin</code> 工程的 <code>application-dev.yml</code>：
+          微信公众号对接的 <code>originalid</code> 需要替换为你自己的。
+        </li>
+        <li>
+          使用 <code>natapp</code> 做内网穿透：在官网
+          <a href="https://natapp.cn/" target="_blank" rel="noreferrer">https://natapp.cn/</a>
+          购买付费隧道（最低档即可）。Windows 用户下载 <code>exe</code> 版本放到本项目的 <code>docs/natapp</code> 文件夹。使用文档：
+          <a href="https://natapp.cn/article/natapp_newbie" target="_blank" rel="noreferrer"
+            >https://natapp.cn/article/natapp_newbie</a
+          >。
+        </li>
+        <li>确保 <code>natapp</code> 映射端口与本地 Spring Boot 端口一致（当前测试程序为 <code>8080</code>）。</li>
+        <li>
+          最后参考课程说明，在微信公众号测试平台配置你的回调地址。例如课程填写：
+          <code>http://xfg-studio.natapp1.cc/api/v1/weixin/portal/receive/</code>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
