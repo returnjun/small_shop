@@ -52,7 +52,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         // 获取二维码 ticket
-        fetch('https://apis.xiaofuge.tech/api/v1/login/weixin_qrcode_ticket')
+        fetch('https://apis.zhuodao.online/api/v1/login/weixin_qrcode_ticket')
             .then(response => response.json())
             .then(data => {
                 if (data.code === "0000") {
@@ -73,7 +73,7 @@
             });
 
         function checkLoginStatus(ticket, intervalId) {
-            fetch(`https://apis.xiaofuge.tech/api/v1/login/check_login?ticket=${ticket}`)
+            fetch(`https://apis.zhuodao.online/api/v1/login/check_login?ticket=${ticket}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.code === "0000") {
