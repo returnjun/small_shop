@@ -23,9 +23,13 @@ services:
 
   # 部署后端项目
   s-pay-mall:
-    #image: fuzhengwei/s-pay-mall-mvc-app:1.0
-    build: .
-    container_name: s-pay-mall
+    build:
+      # 关键修正：只需要退一级到项目根目录
+      context: ../../
+      # Dockerfile在s-pay-mall-web目录下
+      dockerfile: ./s-pay-mall-web/Dockerfile
+      container_name: s-pay-mall
+      image: returnjun/s-pay-mall:1.0
     restart: on-failure
     ports:
       - "8080:8080"
