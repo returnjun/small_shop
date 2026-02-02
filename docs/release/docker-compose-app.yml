@@ -24,7 +24,6 @@ services:
   # 部署后端项目
   s-pay-mall:
     build:
-      # 关键修正：只需要退一级到项目根目录
       context: ../../
       # Dockerfile在s-pay-mall-web目录下
       dockerfile: ./s-pay-mall-web/Dockerfile
