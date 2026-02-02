@@ -29,7 +29,6 @@ services:
       # Dockerfile在s-pay-mall-web目录下
       dockerfile: ./s-pay-mall-web/Dockerfile
     container_name: s-pay-mall
-    #image: returnjun/s-pay-mall:1.0
     restart: on-failure
     ports:
       - "8080:8080"
