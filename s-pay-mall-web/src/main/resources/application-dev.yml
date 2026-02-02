@@ -10,10 +10,10 @@ server:
 # 微信公众号对接
 weixin:
   config:
-    originalid: gh_e067c267e056
-    token: b8b6
-    app-id: wx5a228ff69e28a91f
-    app-secret: 0bea03aa1310bac050aae79dd8703928
+    originalid: gh_9a5f9b51f4e0
+    token: Gong6666!
+    app-id: wxd791e178e4628317
+    app-secret: c459c6bd2f7850c2e3e6416d5dde9275
     template_id: RbEZ2jo47dQmF4A7_Ku7RsDy1x_5by6bk1Ox6rPCl4Y
 
 spring:

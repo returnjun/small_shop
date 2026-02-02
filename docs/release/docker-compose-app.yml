@@ -23,15 +23,8 @@ services:
 
   # 部署后端项目
   s-pay-mall:
-    #image: fuzhengwei/s-pay-mall-mvc-app:1.0
-    build:
-        # 关键：由于你在 docs/release 目录下执行，../.. 才能退回到项目根目录
-      context: ../../
-        # 关键：指定 Dockerfile 在 web 模块下的路径
-      dockerfile: ./s-pay-mall-web/Dockerfile
+    image: fuzhengwei/s-pay-mall-mvc-app:1.0
     container_name: s-pay-mall
-    # 关键：使用你自己的镜像名称
-    image: returnjun/s-pay-mall:1.0
     restart: on-failure
     ports:
       - "8080:8080"
