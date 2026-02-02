@@ -1,5 +1,5 @@
 # 基础镜像
-FROM openjdk:8-jre-slim
+FROM swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/openjdk:8-jre-slim
 
 # 作者
 MAINTAINER xiaofuge
