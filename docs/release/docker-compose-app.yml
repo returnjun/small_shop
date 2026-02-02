@@ -23,10 +23,7 @@ services:
 
   # 部署后端项目
   s-pay-mall:
-    build:
-      context: ../../
-      # Dockerfile在s-pay-mall-web目录下
-      dockerfile: ./s-pay-mall-web/Dockerfile
+    image: fuzhengwei/s-pay-mall-mvc-app:1.0
     container_name: s-pay-mall
     restart: on-failure
     ports:
