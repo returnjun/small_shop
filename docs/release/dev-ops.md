@@ -16,7 +16,8 @@ git clone -b docker-images-v1.0 https://gitcode.net/KnowledgePlanet/s-pay-mall/s
 mvn clean install
 
 chmod +x build.sh
-
+./build.sh
+        
 docker-compose -f docker-compose-environment.yml up -d
 
         docker-compose -f docker-compose-app.yml up -d
