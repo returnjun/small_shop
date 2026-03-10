@@ -28,6 +28,11 @@
         </dependency>
 
         <!-- 系统模块 -->
+        <dependency>
+            <groupId>top.daoha</groupId>
+            <artifactId>myddd-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
          <dependency>
             <groupId>top.daoha</groupId>
             <artifactId>myddd-types</artifactId>

@@ -1,5 +1,5 @@
 server:
-  port: 8091
+  port: 7860
 
 # 线程池配置
 thread:
@@ -29,6 +29,14 @@ spring:
     connection-timeout: 30000 #数据库连接超时时间,默认30秒，即30000
     connection-test-query: SELECT 1
   type: com.zaxxer.hikari.HikariDataSource
+
+weixin:
+  config:
+    originalid: gh_c7c0cb93fb44
+    token: Gong6666!
+    app-id: wxb288282cb0d0967d
+    app-secret: 42c7bec94e17edf4eacdb9c49df64d83
+    template_id: Ankt-Bv7nmgYwHj0Ki6H3HEM1V0mQ314osvfmljlKkE
 
 # MyBatis 配置【如需使用记得打开】
 #mybatis:

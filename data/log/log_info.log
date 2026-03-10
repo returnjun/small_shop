@@ -10,3 +10,829 @@
 26-03-10.17:52:45.966 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
 26-03-10.17:52:45.985 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
 26-03-10.17:52:45.993 [main            ] INFO  Application            - Started Application in 1.86 seconds (JVM running for 2.569)
+26-03-10.20:54:56.210 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 6136 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
+26-03-10.20:54:56.213 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.20:54:56.843 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-03-10.20:54:57.295 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7860 (http)
+26-03-10.20:54:57.307 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7860"]
+26-03-10.20:54:57.308 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.20:54:57.308 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.20:54:57.441 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.20:54:57.441 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1170 ms
+26-03-10.20:54:57.501 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'weixinPortalController' defined in file [D:\自学\java学习\小型支付商城\myddd\myddd-trigger\target\classes\top\daoha\trigger\http\WeixinPortalController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: @Resource annotation requires a single-arg method: public java.lang.String top.daoha.trigger.http.WeixinPortalController.validate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+26-03-10.20:54:57.502 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-03-10.20:54:57.520 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-03-10.20:54:57.542 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'weixinPortalController' defined in file [D:\自学\java学习\小型支付商城\myddd\myddd-trigger\target\classes\top\daoha\trigger\http\WeixinPortalController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: @Resource annotation requires a single-arg method: public java.lang.String top.daoha.trigger.http.WeixinPortalController.validate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at top.daoha.Application.main(Application.java:12)
+Caused by: java.lang.IllegalStateException: @Resource annotation requires a single-arg method: public java.lang.String top.daoha.trigger.http.WeixinPortalController.validate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.lambda$buildResourceMetadata$1(CommonAnnotationBeanPostProcessor.java:432)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:324)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:400)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 15 common frames omitted
+26-03-10.20:57:46.846 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 37124 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
+26-03-10.20:57:46.854 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.20:57:47.490 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-03-10.20:57:47.867 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7860 (http)
+26-03-10.20:57:47.875 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7860"]
+26-03-10.20:57:47.876 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.20:57:47.876 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.20:57:47.987 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.20:57:47.988 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1087 ms
+26-03-10.20:57:48.467 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7860"]
+26-03-10.20:57:48.490 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7860 (http) with context path ''
+26-03-10.20:57:48.502 [main            ] INFO  Application            - Started Application in 2.188 seconds (JVM running for 2.833)
+26-03-10.21:00:31.407 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 31828 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
+26-03-10.21:00:31.411 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.21:00:31.983 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-03-10.21:00:32.309 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7860 (http)
+26-03-10.21:00:32.316 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7860"]
+26-03-10.21:00:32.316 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.21:00:32.316 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.21:00:32.424 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.21:00:32.424 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 959 ms
+26-03-10.21:00:32.837 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7860"]
+26-03-10.21:00:32.856 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7860 (http) with context path ''
+26-03-10.21:00:32.864 [main            ] INFO  Application            - Started Application in 1.983 seconds (JVM running for 2.572)
+26-03-10.21:00:39.033 [http-nio-7860-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-03-10.21:00:39.034 [http-nio-7860-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-03-10.21:00:39.034 [http-nio-7860-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-03-10.21:00:39.057 [http-nio-7860-exec-1] INFO  WeixinPortalController - 微信公众号验签信息开始 [99ffa244f9f9bf76b980ae8e8dd5e066b4be647c, 1773147640, 481409934, 4324904327995514877]
+26-03-10.21:00:39.063 [http-nio-7860-exec-1] INFO  WeixinPortalController - 微信公众号验签信息完成 check：true
+26-03-10.21:01:31.732 [http-nio-7860-exec-3] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147692</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>25385373828772699</MsgId>
+</xml>
+26-03-10.21:01:31.846 [http-nio-7860-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @63355449
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:01:31.979 [http-nio-7860-exec-2] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147692</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>25385373828772699</MsgId>
+</xml>
+26-03-10.21:01:31.980 [http-nio-7860-exec-2] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:01:32.060 [http-nio-7860-exec-4] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147692</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>25385373828772699</MsgId>
+</xml>
+26-03-10.21:01:32.063 [http-nio-7860-exec-4] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:01:44.043 [http-nio-7860-exec-5] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147705</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[？]]></Content>
+<MsgId>25385370554425898</MsgId>
+</xml>
+26-03-10.21:01:44.044 [http-nio-7860-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:01:44.152 [http-nio-7860-exec-6] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147705</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[？]]></Content>
+<MsgId>25385370554425898</MsgId>
+</xml>
+26-03-10.21:01:44.153 [http-nio-7860-exec-6] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:01:44.249 [http-nio-7860-exec-7] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147705</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[？]]></Content>
+<MsgId>25385370554425898</MsgId>
+</xml>
+26-03-10.21:01:44.251 [http-nio-7860-exec-7] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:05:25.122 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 5484 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
+26-03-10.21:05:25.124 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.21:05:25.564 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-03-10.21:05:25.851 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7860 (http)
+26-03-10.21:05:25.854 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7860"]
+26-03-10.21:05:25.857 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.21:05:25.857 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.21:05:25.952 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.21:05:25.952 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 793 ms
+26-03-10.21:05:26.295 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7860"]
+26-03-10.21:05:26.311 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7860 (http) with context path ''
+26-03-10.21:05:26.321 [main            ] INFO  Application            - Started Application in 1.557 seconds (JVM running for 2.002)
+26-03-10.21:05:32.666 [http-nio-7860-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-03-10.21:05:32.666 [http-nio-7860-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-03-10.21:05:32.666 [http-nio-7860-exec-2] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-03-10.21:05:32.693 [http-nio-7860-exec-2] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147933</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>25385377706458726</MsgId>
+</xml>
+26-03-10.21:05:32.766 [http-nio-7860-exec-2] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @63355449
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:05:32.896 [http-nio-7860-exec-5] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147933</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>25385377706458726</MsgId>
+</xml>
+26-03-10.21:05:32.898 [http-nio-7860-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:05:32.976 [http-nio-7860-exec-4] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773147933</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>25385377706458726</MsgId>
+</xml>
+26-03-10.21:05:32.981 [http-nio-7860-exec-4] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:989)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:592)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:514)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:483)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:429)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:396)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:139)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:10:08.178 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 7788 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
+26-03-10.21:10:08.180 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.21:10:08.816 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-03-10.21:10:09.200 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7860 (http)
+26-03-10.21:10:09.208 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7860"]
+26-03-10.21:10:09.208 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.21:10:09.208 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.21:10:09.327 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.21:10:09.327 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1102 ms
+26-03-10.21:10:09.732 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7860"]
+26-03-10.21:10:09.749 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7860 (http) with context path ''
+26-03-10.21:10:09.757 [main            ] INFO  Application            - Started Application in 2.169 seconds (JVM running for 2.82)
+26-03-10.21:10:12.608 [http-nio-7860-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-03-10.21:10:12.608 [http-nio-7860-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-03-10.21:10:12.609 [http-nio-7860-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-03-10.21:10:12.630 [http-nio-7860-exec-1] INFO  WeixinPortalController - 微信公众号验签信息开始 [559a8b4ca461e9c50fa0dac665159ae7165e35ab, 1773148214, 1076813133, 6493379650402360703]
+26-03-10.21:10:12.635 [http-nio-7860-exec-1] INFO  WeixinPortalController - 微信公众号验签信息完成 check：true
+26-03-10.21:10:24.768 [http-nio-7860-exec-3] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773148225</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>25385379810409084</MsgId>
+</xml>
+26-03-10.21:10:24.927 [http-nio-7860-exec-3] ERROR WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E失败 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773148225</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>25385379810409084</MsgId>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field top.daoha.types.sdk.weixin.MessageTextEntity.MsgId
+---- Debugging information ----
+message             : No such field top.daoha.types.sdk.weixin.MessageTextEntity.MsgId
+field               : MsgId
+class               : top.daoha.types.sdk.weixin.MessageTextEntity
+required-type       : top.daoha.types.sdk.weixin.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.20
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:520)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:371)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:277)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:74)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:68)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:52)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:136)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1464)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1441)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1321)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1312)
+	at top.daoha.types.sdk.weixin.XmlUtil.xmlToBean(XmlUtil.java:146)
+	at top.daoha.trigger.http.WeixinPortalController.post(WeixinPortalController.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-03-10.21:14:14.007 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 35532 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
+26-03-10.21:14:14.010 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.21:14:14.437 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-03-10.21:14:14.720 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7860 (http)
+26-03-10.21:14:14.727 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7860"]
+26-03-10.21:14:14.728 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.21:14:14.728 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.21:14:14.832 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.21:14:14.832 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 788 ms
+26-03-10.21:14:15.205 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7860"]
+26-03-10.21:14:15.223 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7860 (http) with context path ''
+26-03-10.21:14:15.233 [main            ] INFO  Application            - Started Application in 1.587 seconds (JVM running for 2.034)
+26-03-10.21:14:21.626 [http-nio-7860-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-03-10.21:14:21.627 [http-nio-7860-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-03-10.21:14:21.627 [http-nio-7860-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-03-10.21:14:21.651 [http-nio-7860-exec-1] INFO  WeixinPortalController - 接收微信公众号信息请求oExqX28-yerNeeEJP9T7-Gi9xt1E开始 <xml><ToUserName><![CDATA[gh_c7c0cb93fb44]]></ToUserName>
+<FromUserName><![CDATA[oExqX28-yerNeeEJP9T7-Gi9xt1E]]></FromUserName>
+<CreateTime>1773148462</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>25385382227583509</MsgId>
+</xml>
