@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="myddd-domain" />
+        <module name="myddd-infrastructure" />
+        <module name="myddd-types" />
+        <module name="myddd-app" />
+        <module name="myddd-trigger" />
+        <module name="myddd-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="myddd-api" options="-parameters" />
+      <module name="myddd-app" options="-parameters" />
+      <module name="myddd-domain" options="-parameters" />
+      <module name="myddd-infrastructure" options="-parameters" />
+      <module name="myddd-trigger" options="-parameters" />
+      <module name="myddd-types" options="-parameters" />
+    </option>
+  </component>
+</project>

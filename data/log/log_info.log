@@ -1,0 +1,12 @@
+26-03-10.17:52:44.656 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 36444 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
+26-03-10.17:52:44.658 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.17:52:45.124 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-03-10.17:52:45.455 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-03-10.17:52:45.465 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-03-10.17:52:45.465 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.17:52:45.465 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.17:52:45.570 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.17:52:45.570 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 877 ms
+26-03-10.17:52:45.966 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-03-10.17:52:45.985 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+26-03-10.17:52:45.993 [main            ] INFO  Application            - Started Application in 1.86 seconds (JVM running for 2.569)
