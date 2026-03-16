@@ -27,6 +27,8 @@ public class WeixinLoginService implements ILoginService{
     @Resource
     private Cache<String,String> openidToken;
 
+
+
     @Override
     public String createQrCodeTicket() throws Exception {
         return loginPort.createQrCodeTicket();

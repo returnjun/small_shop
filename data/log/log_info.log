@@ -1,31 +1,42 @@
-26-03-14.09:25:15.245 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 28036 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
-26-03-14.09:25:15.248 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-26-03-14.09:25:15.889 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
-26-03-14.09:25:16.309 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7860 (http)
-26-03-14.09:25:16.319 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7860"]
-26-03-14.09:25:16.319 [main            ] INFO  StandardService        - Starting service [Tomcat]
-26-03-14.09:25:16.319 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-26-03-14.09:25:16.442 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-26-03-14.09:25:16.442 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1149 ms
-26-03-14.09:25:16.942 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7860"]
-26-03-14.09:25:16.964 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7860 (http) with context path ''
-26-03-14.09:25:16.974 [main            ] INFO  Application            - Started Application in 2.256 seconds (JVM running for 2.906)
-26-03-14.09:25:22.361 [http-nio-7860-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-26-03-14.09:25:22.361 [http-nio-7860-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-26-03-14.09:25:22.362 [http-nio-7860-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
-26-03-14.09:25:22.389 [http-nio-7860-exec-1] INFO  WeixinPortalController - 微信公众号验签信息开始 [95700ad30de29ecd8b95df1838d0749fb1d94fff, 1773451523, 1200886368, 5030426854980630851]
-26-03-14.09:25:22.395 [http-nio-7860-exec-1] INFO  WeixinPortalController - 微信公众号验签信息完成 check：true
-26-03-14.09:25:38.976 [http-nio-7860-exec-2] INFO  WeixinPortalController - 接收微信公众号信息请求oRAO328Iw9BqljbPHrcPfrZBNk_k开始 <xml><ToUserName><![CDATA[gh_1e133753044a]]></ToUserName>
-<FromUserName><![CDATA[oRAO328Iw9BqljbPHrcPfrZBNk_k]]></FromUserName>
-<CreateTime>1773451540</CreateTime>
+26-03-16.08:45:26.696 [main            ] INFO  Application            - Starting Application using Java 17 on jjnice with PID 25632 (D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes started by 24209 in D:\自学\java学习\小型支付商城\myddd)
+26-03-16.08:45:26.699 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-16.08:45:27.352 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-03-16.08:45:27.794 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7860 (http)
+26-03-16.08:45:27.805 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7860"]
+26-03-16.08:45:27.805 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-16.08:45:27.805 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-16.08:45:27.935 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-16.08:45:27.935 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1186 ms
+26-03-16.08:45:28.770 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7860"]
+26-03-16.08:45:28.794 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7860 (http) with context path ''
+26-03-16.08:45:28.806 [main            ] INFO  Application            - Started Application in 2.65 seconds (JVM running for 3.397)
+26-03-16.08:45:41.036 [http-nio-7860-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-03-16.08:45:41.038 [http-nio-7860-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-03-16.08:45:41.038 [http-nio-7860-exec-2] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-03-16.08:45:42.206 [http-nio-7860-exec-2] INFO  LoginController        - 生成微信扫码登录 ticket:gQG_8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyc3R2OTRwNDNlVHIxLVR2dXhGMTYAAgS3UrdpAwQAjScA
+26-03-16.08:45:57.585 [http-nio-7860-exec-3] INFO  LoginController        - 扫码检测登录结果 ticket:gQG_8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyc3R2OTRwNDNlVHIxLVR2dXhGMTYAAgS3UrdpAwQAjScA openidToken:null
+26-03-16.08:46:23.293 [http-nio-7860-exec-4] INFO  WeixinPortalController - 接收微信公众号信息请求oRAO322DNF_UOqkY-Do5csACiqNo开始 <xml><ToUserName><![CDATA[gh_1e133753044a]]></ToUserName>
+<FromUserName><![CDATA[oRAO322DNF_UOqkY-Do5csACiqNo]]></FromUserName>
+<CreateTime>1773621984</CreateTime>
 <MsgType><![CDATA[event]]></MsgType>
 <Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
+<EventKey><![CDATA[qrscene_100601]]></EventKey>
+<Ticket><![CDATA[gQG_8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyc3R2OTRwNDNlVHIxLVR2dXhGMTYAAgS3UrdpAwQAjScA]]></Ticket>
 </xml>
-26-03-14.09:25:52.357 [http-nio-7860-exec-4] INFO  WeixinPortalController - 接收微信公众号信息请求oRAO328Iw9BqljbPHrcPfrZBNk_k开始 <xml><ToUserName><![CDATA[gh_1e133753044a]]></ToUserName>
-<FromUserName><![CDATA[oRAO328Iw9BqljbPHrcPfrZBNk_k]]></FromUserName>
-<CreateTime>1773451552</CreateTime>
-<MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[1]]></Content>
-<MsgId>25389723601319273</MsgId>
+26-03-16.08:46:30.573 [http-nio-7860-exec-6] INFO  WeixinPortalController - 接收微信公众号信息请求oRAO322DNF_UOqkY-Do5csACiqNo开始 <xml><ToUserName><![CDATA[gh_1e133753044a]]></ToUserName>
+<FromUserName><![CDATA[oRAO322DNF_UOqkY-Do5csACiqNo]]></FromUserName>
+<CreateTime>1773621992</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[100601]]></EventKey>
+<Ticket><![CDATA[gQG_8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyc3R2OTRwNDNlVHIxLVR2dXhGMTYAAgS3UrdpAwQAjScA]]></Ticket>
 </xml>
+26-03-16.08:46:32.057 [http-nio-7860-exec-8] INFO  WeixinPortalController - 接收微信公众号信息请求oRAO322DNF_UOqkY-Do5csACiqNo开始 <xml><ToUserName><![CDATA[gh_1e133753044a]]></ToUserName>
+<FromUserName><![CDATA[oRAO322DNF_UOqkY-Do5csACiqNo]]></FromUserName>
+<CreateTime>1773621993</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[TEMPLATESENDJOBFINISH]]></Event>
+<MsgID>4429683670525853700</MsgID>
+<Status><![CDATA[success]]></Status>
+</xml>
+26-03-16.08:46:37.082 [http-nio-7860-exec-10] INFO  LoginController        - 扫码检测登录结果 ticket:gQG_8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyc3R2OTRwNDNlVHIxLVR2dXhGMTYAAgS3UrdpAwQAjScA openidToken:oRAO322DNF_UOqkY-Do5csACiqNo

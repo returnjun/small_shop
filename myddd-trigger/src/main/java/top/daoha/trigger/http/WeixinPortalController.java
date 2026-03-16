@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+import top.daoha.domain.auth.service.ILoginService;
 import top.daoha.types.sdk.weixin.MessageTextEntity;
 import top.daoha.types.sdk.weixin.SignatureUtil;
 import top.daoha.types.sdk.weixin.XmlUtil;
@@ -27,9 +28,9 @@ public class WeixinPortalController {
     private String originalid;
     @Value("${weixin.config.token}")
     private String token;
+    @Resource
+    private ILoginService loginService;
 
-//    @Resource
-//    private ILoginService loginService;
 
     //GET请求处理（微信服务器验证）
     @GetMapping(value = "receive", produces = "text/plain;charset=utf-8")
@@ -69,7 +70,7 @@ public class WeixinPortalController {
             MessageTextEntity message = XmlUtil.xmlToBean(requestBody, MessageTextEntity.class);
 
             if ("event".equals(message.getMsgType()) && "SCAN".equals(message.getEvent())) {
-//                loginService.saveLoginState(message.getTicket(), openid);
+                loginService.saveLoginState(message.getTicket(), openid);
                 return buildMessageTextEntity(openid, "登录成功");
             }
 
