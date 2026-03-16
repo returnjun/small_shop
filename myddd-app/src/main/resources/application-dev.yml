@@ -32,11 +32,11 @@ spring:
 
 weixin:
   config:
-    originalid: gh_c7c0cb93fb44
+    originalid: gh_1e133753044a
     token: Gong6666!
-    app-id: wxb288282cb0d0967d
-    app-secret: 42c7bec94e17edf4eacdb9c49df64d83
-    template_id: Ankt-Bv7nmgYwHj0Ki6H3HEM1V0mQ314osvfmljlKkE
+    app-id: wxc054de775cbc3893
+    app-secret: 65a76473b5b06a2c275ef8106b6821e5
+    template_id: oqc6RUYivlI0c1spszr4M4dp106AmESR27FS5Xwaofg
 
 # MyBatis 配置【如需使用记得打开】
 #mybatis:
