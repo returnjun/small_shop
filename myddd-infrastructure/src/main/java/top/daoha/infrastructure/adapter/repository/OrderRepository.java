@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 import top.daoha.domain.order.adapter.repository.IOrderRepository;
 import top.daoha.domain.order.model.aggregate.CreateOrderAggregate;
 import top.daoha.domain.order.model.entity.OrderEntity;
+import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ProductEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
 import top.daoha.domain.order.model.valobj.OrderStatusVO;
@@ -66,5 +67,15 @@ public class OrderRepository implements IOrderRepository {
                 .totalAmount(order.getTotalAmount())
                 .payUrl(order.getPayUrl())
                 .build();
+    }
+
+    @Override
+    public void updatePayInfo(PayOrderEntity payOrderEntity) {
+        PayOrder order = new PayOrder();
+        order.setUserId(payOrderEntity.getUserId());
+        order.setOrderId(payOrderEntity.getOrderId());
+        order.setPayUrl(payOrderEntity.getPayUrl());
+        order.setStatus(payOrderEntity.getOrderStatus().getCode());
+        iOrderDao.updateOrderPayInfo(order);
     }
 }
