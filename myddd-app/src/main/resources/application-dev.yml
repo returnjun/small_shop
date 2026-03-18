@@ -16,7 +16,7 @@ thread:
 spring:
   datasource:
     username: root
-    password: 123456
+    password: 1q2w3e4r
     url: jdbc:mysql://127.0.0.1:3306/s_pay_mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
   hikari:
@@ -39,9 +39,9 @@ weixin:
     template_id: oqc6RUYivlI0c1spszr4M4dp106AmESR27FS5Xwaofg
 
 # MyBatis 配置【如需使用记得打开】
-#mybatis:
-#  mapper-locations: classpath:/mybatis/mapper/*.xml
-#  config-location:  classpath:/mybatis/config/mybatis-config.xml
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location:  classpath:/mybatis/config/mybatis-config.xml
 
 # 日志
 logging:
