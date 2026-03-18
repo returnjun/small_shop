@@ -6,6 +6,8 @@ import top.daoha.domain.order.model.entity.OrderEntity;
 import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
 
+import java.util.List;
+
 public interface IOrderRepository {
 
     void doSaveOrder(CreateOrderAggregate build);
@@ -13,4 +15,13 @@ public interface IOrderRepository {
     OrderEntity queryUnPayOrder(ShopCartEntity shopCartEntity);
 
     void updatePayInfo(PayOrderEntity payOrderEntity);
+
+    void changeOrderPaySuccess(String orderId);
+
+    List<String> queryNoPayNotifyOrder();
+
+    List<String> queryTimeOutCloseOrderList();
+
+    boolean changeOrderClose(String orderId);
+
 }

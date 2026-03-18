@@ -16,7 +16,9 @@ import top.daoha.domain.order.model.entity.ShopCartEntity;
 import top.daoha.domain.order.model.valobj.OrderStatusVO;
 import top.daoha.types.common.Constants;
 
+import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @ClassName : OrderService
@@ -27,13 +29,14 @@ import java.math.BigDecimal;
  */
 @Slf4j
 @Service
-public  class OrderService extends AbstractOrderService{
+public class OrderService extends AbstractOrderService {
 
     @Value("${alipay.notify_url}")
     private String notify_url;
     @Value("${alipay.return_url}")
     private String return_url;
 
+    @Resource
     private AlipayClient alipayClient;   //核心的执行器,把请求发往支付宝服务器
 
 
@@ -64,7 +67,6 @@ public  class OrderService extends AbstractOrderService{
         payOrderEntity.setPayUrl(form);
         payOrderEntity.setOrderStatus(OrderStatusVO.PAY_WAIT);
 
-//        orderDao.updateOrderPayInfo(payOrder);
         iOrderRepository.updatePayInfo(payOrderEntity);
         return payOrderEntity;
     }
@@ -73,5 +75,25 @@ public  class OrderService extends AbstractOrderService{
     @Override
     protected void doSaveOrder(CreateOrderAggregate build) {
         iOrderRepository.doSaveOrder(build);
+    }
+
+    @Override
+    public void changeOrderPaySuccess(String orderId) {
+        iOrderRepository.changeOrderPaySuccess(orderId);
+    }
+
+    @Override
+    public List<String> queryNoPayNotifyOrder() {
+        return iOrderRepository.queryNoPayNotifyOrder();
+    }
+
+    @Override
+    public List<String> queryTimeOutCloseOrderList() {
+        return iOrderRepository.queryTimeOutCloseOrderList();
+    }
+
+    @Override
+    public boolean changeOrderClose(String orderId) {
+        return iOrderRepository.changeOrderClose(orderId);
     }
 }
