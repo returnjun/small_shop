@@ -44,7 +44,7 @@ public class LoginPort implements ILoginPort {
         String accessToken = weixinAccessToken.getIfPresent(appid);
         if (null == accessToken) {
             Call<WeixinTokenResponseDTO> call = weixinApiService.getToken("client_credential", appid, appSecret);
-            WeixinTokenResponseDTO weixinTokenRes = call.execute().body();
+            WeixinTokenResponseDTO weixinTokenRes = call.execute().body();//上面只是填好了数据，下面才是真的发出了请求
             assert weixinTokenRes != null;
             accessToken = weixinTokenRes.getAccess_token();
             weixinAccessToken.put(appid, accessToken);
@@ -84,7 +84,7 @@ public class LoginPort implements ILoginPort {
         WeixinTemplateMessageDTO.put(data, WeixinTemplateMessageDTO.TemplateKey.USER, openid);
 
         WeixinTemplateMessageDTO templateMessageDTO = new WeixinTemplateMessageDTO(openid, template_id);
-        templateMessageDTO.setUrl("https://gaga.plus");
+        templateMessageDTO.setUrl("https://group.daoha.top");
         templateMessageDTO.setData(data);
 
         Call<Void> call = weixinApiService.sendMessage(accessToken, templateMessageDTO);

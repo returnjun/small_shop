@@ -10,6 +10,7 @@ import top.daoha.api.dto.CreatePayRequestDTO;
 import top.daoha.api.response.Response;
 import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
+import top.daoha.domain.order.model.valobj.MarketTypeVO;
 import top.daoha.domain.order.service.IOrderService;
 import top.daoha.types.common.Constants;
 
@@ -47,6 +48,9 @@ public class AliPayController implements IPayService {
             PayOrderEntity payOrderRes = orderService.createOrder(ShopCartEntity.builder()
                     .userId(userId)
                     .productId(productId)
+                            .teamId(createPayRequestDTO.getTeamId())
+                            .activityId(createPayRequestDTO.getActivityId())
+                            .marketTypeVO(MarketTypeVO.valueOf(createPayRequestDTO.getMarketType()))
                     .build());
 
             log.info("商品下单，根据商品ID创建支付单完成 userId:{} productId:{} orderId:{}", userId, productId, payOrderRes.getOrderId());
@@ -104,7 +108,8 @@ public class AliPayController implements IPayService {
         log.info("支付回调，买家付款金额: {}", params.get("buyer_pay_amount"));
         log.info("支付回调，支付回调，更新订单 {}", tradeNo);
 
-//        orderService.changeOrderPaySuccess(tradeNo);
+        orderService.changeOrderPaySuccess(tradeNo);
+
         return "success";
     }
 

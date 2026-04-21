@@ -11,6 +11,7 @@ import java.io.IOException;
  */
 
 public interface ILoginPort {
+
     String createQrCodeTicket() throws Exception;
 
     void sendLoginTemplate(String openid) throws IOException;

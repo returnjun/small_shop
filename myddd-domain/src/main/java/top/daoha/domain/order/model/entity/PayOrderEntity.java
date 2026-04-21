@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import top.daoha.domain.order.model.valobj.OrderStatusVO;
 import top.daoha.types.common.Constants;
 
+import java.math.BigDecimal;
+
 /**
  * @ClassName : PayOrderEntity
  * @Description :
@@ -23,4 +25,11 @@ public class PayOrderEntity {
     private String orderId;
     private String payUrl;
     private OrderStatusVO orderStatus;
+
+    /** 营销类型：0无营销、1拼团营销 */
+    private Integer marketType;
+    /** 营销金额；优惠金额 */
+    private BigDecimal marketDeductionAmount;
+    /** 支付金额 */
+    private BigDecimal payAmount;
 }

@@ -1,5 +1,17 @@
 server:
-  port: 8091
+  port: 7860
+
+
+app:
+  config:
+    api-version: v1
+    cross-origin: '*'
+    group-buy-market:
+      api-url: http://127.0.0.1:8091
+      notify-url: http://127.0.0.1:8080/api/v1/test/group_buy_notify
+      source: s01
+      channel: c01
+
 
 # 线程池配置
 thread:
@@ -12,27 +24,46 @@ thread:
         block-queue-size: 5000
         policy: CallerRunsPolicy
 
-# 数据库配置
-#spring:
-#  datasource:
-#    username: root
-#    password: 123456
-#    url: jdbc:mysql://127.0.0.1:3306/xfg_frame_archetype?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#  hikari:
-#    pool-name: Retail_HikariCP
-#    minimum-idle: 15 #最小空闲连接数量
-#    idle-timeout: 180000 #空闲连接存活最大时间，默认600000（10分钟）
-#    maximum-pool-size: 25 #连接池最大连接数，默认是10
-#    auto-commit: true  #此属性控制从池返回的连接的默认自动提交行为,默认值：true
-#    max-lifetime: 1800000 #此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
-#    connection-timeout: 30000 #数据库连接超时时间,默认30秒，即30000
-#    connection-test-query: SELECT 1
-#  type: com.zaxxer.hikari.HikariDataSource
+# 数据库配置；启动时配置数据库资源信息
+spring:
+  datasource:
+    username: root
+    password: 1q2w3e4r
+    url: jdbc:mysql://127.0.0.1:3306/s-pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  hikari:
+    pool-name: Retail_HikariCP
+    minimum-idle: 15 #最小空闲连接数量
+    idle-timeout: 180000 #空闲连接存活最大时间，默认600000（10分钟）
+    maximum-pool-size: 25 #连接池最大连接数，默认是10
+    auto-commit: true  #此属性控制从池返回的连接的默认自动提交行为,默认值：true
+    max-lifetime: 1800000 #此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+    connection-timeout: 30000 #数据库连接超时时间,默认30秒，即30000
+    connection-test-query: SELECT 1
+  type: com.zaxxer.hikari.HikariDataSource
 
-#mybatis:
-#  mapper-locations: classpath:/mybatis/mapper/*.xml
-#  config-location:  classpath:/mybatis/config/mybatis-config.xml
+weixin:
+  config:
+    originalid: gh_1e133753044a
+    token: Gong6666!
+    app-id: wxc054de775cbc3893
+    app-secret: 65a76473b5b06a2c275ef8106b6821e5
+    template_id: oqc6RUYivlI0c1spszr4M4dp106AmESR27FS5Xwaofg
+
+# 支付宝支付 - 沙箱 https://opendocs.alipay.com/common/02kkv7
+alipay:
+  enabled: true
+  app_id: 9021000159639472
+  merchant_private_key: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCHHPHNG4rfya8lzWxfzHqVdy3veqZuP4ht/6SR88ArbUJkpQiwAioyZTtoO/D39EbRaC7LhqtXFuUMVeZARVGguGYiYbdMhfmRMYwmlz3LQrDH3s8S1h+PNymCMNMKQIKj1YZsvZaIJ2lST57oC47Nv2oRr3T3Vb01h+EsfePuIsh8TQZChPH5ei6KGx3X6hSjp35oBoH+8L4FkjPlRkfLoAeGR4Re85P2ah7CNCsDntd7OeI2Btk/C2nK/2ZnQs1+i4dxWc19ZFL3PgXF/zBx98LToXUu7Yj6k5MePcFyr597CL9PxSB9+jPUWGNsxVUbaRe6ha4n4zq0AjatFuiZAgMBAAECggEAetaO47oZrVIQ4d58nDAsdr0Ozz4EGBG8+LzGI0envBOunBAK8PJW6NBujVqJvvSgefwtJy69kgUnoupp1p7vEp7zhGiwnGrlteKFGATC0oxEasKgIvD3al5tZ4b6J8T0wPz9JNnNBOZH8+SdhTwUzewsA/4v6jpSNlveFXQzCKnVqqqr9wY/y/O262Oznok6CcAsWU3e+rhNETDH2tkwXoZB+3w0zHywTUMwt/M3f4ObBl7rsdH+MxoQ1nyOi1ANPkyzmSVcZJYSZRpdP6wm0yEY/KC1gr+ilnBQ/2JTMGDvNZVgZX8kuA+i3hOucMq8/ssEBAV9ctvz/qc5fRff3QKBgQDJ3kI5j0GOCZONuSzfZURN/afDrz7CzEyAaIq0qNQuP7bhETIdcAKi4RZbNYVmFZvielTZc818OZW1aSVG+WamJzu9+0KATik5DhhmTRhznpzv0W77P7es2O+IExNu++vxBFJfeUfQZLIL8MARmys18SLkeqaUHmkKs0gHkCwwWwKBgQCrWB1gBVj0lmKE5H6OQCJKif5G16d3QRS7t/pOdZBE4e3HmqFROW2QPEk3Se6fUJYaKg0kWzzW09VwqqV7SQB2E+UkrnhhFPoiLS76sRKIxZ+YDp6nV6q8pE++TxVcd67tPySUlAl+qMr+dXflUiCqA4Pj+5JcAjoyFp39VzKdGwKBgQC9jbF74RP6bu2Z/86t+qY34b59lnoFatdPIFtWps2OnA96qa34TGx9S4S1or0fjZzx/lLcWcwTIPN+BDyXt6r2zBJiI6RfXIWC6MRqk2wpbUAKRQvEayFq8c2CZf8ykOYNTDSZKAYSHeu+IJQKND1QCpzsFGuE3EVgYdZ6G5wSzwKBgAiRTl63xbvtLR3yAvX/9Pb/MWy/actHwM6mI2j67ezT0zzw2XIjSfw1V3/hPYJP2EGUqrWPrlobm4eXsNCaVOCSnBmac8B++QbudXPpmMCoCRPkX0CE3K+0E5yzfaDzBxcr2htnz5W6wPO6UfVwhtuZc2XZ9XaOUfShNuMtEgXTAoGBAMK6a4tJY/ZdJol5f8LPMpDFlp6N2nkyD6xkg9iDnFql6iRHI/Hj6gGaVJuqC6aGbRri+/Xg8KBjTUXpl8fJiJLC92MC1x0ZBezLmIIgr+YpQQeMf3TGshkkCY8ZOOvo506SpcxEqkjrjUODpf6Ql1sdknJQZbv9s1kQ3yy5w11W
+  alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4QTX4O2TvHBAsdR5LNr0KgG+tIKj92wxFDHXAxULSEP3QRCu44ohrlFzog3RADotRG/sTu7N9BDJuA1+JZmbQD8RspcluERHVvml9rVynfSDYdTa5IsCscoZKu6bvym4X9iGK+yAocj7Opx6XBj9u8Zi0TF/nE9GoiQg3hG3rutiY0gXw84gpUyTM2yCd7fdEx6VfATtfjwwNIeOztsTNRX+0N6DqUN1d5GIaqdvCub+UW1JwsqLVehpMf+dCtRgMfAPnAr2WQ3W3oO3zFtA6Dshn1YYtHuIPf7F87zuCASr1lpVI8C4zmIMyA/87obR7++arT+oz2WBb/efdSk3/QIDAQAB
+  notify_url: http://daoha.top:15555/api/v1/alipay/alipay_notify_url
+  return_url: https://front.daoha.top
+  gatewayUrl: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+
+# MyBatis 配置【如需使用记得打开】
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location:  classpath:/mybatis/config/mybatis-config.xml
 
 # 日志
 logging:

@@ -1,5 +1,6 @@
 package top.daoha.domain.order.adapter.port;
 
+import top.daoha.domain.order.model.entity.MarketPayDiscountEntity;
 import top.daoha.domain.order.model.entity.ProductEntity;
 
 /**
@@ -12,4 +13,6 @@ import top.daoha.domain.order.model.entity.ProductEntity;
 
 public interface IProductPort {
     ProductEntity queryProductByProductId(String productId);
+
+    MarketPayDiscountEntity lockMarketPayOrder(String userId, String teamId, Long activity, String productId, String orderId);
 }

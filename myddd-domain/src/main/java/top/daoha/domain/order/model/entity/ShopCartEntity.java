@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import top.daoha.domain.order.model.valobj.MarketTypeVO;
 
 /**
  * @ClassName : ShopCartEntity
@@ -21,4 +22,12 @@ public class ShopCartEntity {
     private String userId;
 
     private String productId;
+    /** 拼单组队ID */
+    private String teamId;
+    /** 活动ID */
+    private Long activityId;
+    /** 营销类型，无营销、拼团营销 */
+    private MarketTypeVO marketTypeVO;
+
+
 }

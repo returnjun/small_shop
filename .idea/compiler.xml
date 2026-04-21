@@ -18,6 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="myddd" options="-parameters" />
       <module name="myddd-api" options="-parameters" />
       <module name="myddd-app" options="-parameters" />
       <module name="myddd-domain" options="-parameters" />

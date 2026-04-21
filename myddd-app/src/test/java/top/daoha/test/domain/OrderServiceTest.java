@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
+import top.daoha.domain.order.model.valobj.MarketTypeVO;
 import top.daoha.domain.order.service.IOrderService;
 
 import javax.annotation.Resource;
@@ -31,7 +32,11 @@ public class OrderServiceTest {
     public void test_createOrder() throws Exception {
         ShopCartEntity shopCartEntity = new ShopCartEntity();
         shopCartEntity.setUserId("xiaofuge");
-        shopCartEntity.setProductId("10001");
+        shopCartEntity.setProductId("9890001");
+        shopCartEntity.setTeamId(null);
+        shopCartEntity.setActivityId(100123L);
+        shopCartEntity.setMarketTypeVO(MarketTypeVO.GROUP_BUY_MARKET);
+
         PayOrderEntity payOrderEntity = orderService.createOrder(shopCartEntity);
         log.info("请求参数:{}", JSON.toJSONString(shopCartEntity));
         log.info("测试结果:{}", JSON.toJSONString(payOrderEntity));

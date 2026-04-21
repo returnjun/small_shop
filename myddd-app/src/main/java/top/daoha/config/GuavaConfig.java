@@ -13,8 +13,8 @@ import java.util.concurrent.TimeUnit;
 public class GuavaConfig {
 
     //告诉Spring，这个方法返回的对象要注册到Spring容器中,并制定了相应的名字，可以通过这个名字进行注入
-    @Bean(name = "weixinAccessToken") //临时存储数据的容器 类似于一个特殊的Map（字典），但多了自动过期的功能
-    public Cache<String, String> weixinAccessToken() {
+    @Bean(name = "weixinAccessToken")
+    public Cache<String, String> weixinAccessToken() {//临时存储数据的容器 类似于一个特殊的Map（字典），但多了自动过期的功能
         return CacheBuilder.newBuilder()//创建一个缓存构建器，开始配置缓存
                 .expireAfterWrite(2, TimeUnit.HOURS) //设置过期策略：写入后2小时过期
                 .build();//根据前面的配置，创建最终的Cache对象

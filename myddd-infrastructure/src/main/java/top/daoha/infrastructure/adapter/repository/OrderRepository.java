@@ -10,6 +10,7 @@ import top.daoha.domain.order.model.entity.OrderEntity;
 import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ProductEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
+import top.daoha.domain.order.model.valobj.MarketTypeVO;
 import top.daoha.domain.order.model.valobj.OrderStatusVO;
 import top.daoha.infrastructure.dao.IOrderDao;
 import top.daoha.infrastructure.dao.po.PayOrder;
@@ -17,6 +18,7 @@ import top.daoha.types.common.Constants;
 import top.daoha.types.event.BaseEvent;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -52,6 +54,9 @@ public class OrderRepository implements IOrderRepository {
         order.setOrderTime(orderEntity.getOrderTime());
         order.setTotalAmount(productEntity.getPrice());
         order.setStatus(orderEntity.getOrderStatusVO().getCode());
+        order.setMarketType(MarketTypeVO.NO_MARKET.getCode());
+        order.setPayAmount(productEntity.getPrice());
+        order.setMarketDeductionAmount(BigDecimal.ZERO);
 
         iOrderDao.insert(order);
     }
@@ -76,6 +81,9 @@ public class OrderRepository implements IOrderRepository {
                 .orderTime(order.getOrderTime())
                 .totalAmount(order.getTotalAmount())
                 .payUrl(order.getPayUrl())
+                .marketType(order.getMarketType())
+                .marketDeductionAmount(order.getMarketDeductionAmount())
+                .payAmount(order.getPayAmount())
                 .build();
     }
 
@@ -86,6 +94,9 @@ public class OrderRepository implements IOrderRepository {
         order.setOrderId(payOrderEntity.getOrderId());
         order.setPayUrl(payOrderEntity.getPayUrl());
         order.setStatus(payOrderEntity.getOrderStatus().getCode());
+        order.setMarketDeductionAmount(payOrderEntity.getMarketDeductionAmount());
+        order.setPayAmount(payOrderEntity.getPayAmount());
+        order.setMarketType(payOrderEntity.getMarketType());
         iOrderDao.updateOrderPayInfo(order);
     }
 
@@ -96,7 +107,10 @@ public class OrderRepository implements IOrderRepository {
         payOrder.setStatus(OrderStatusVO.PAY_SUCCESS.getCode());
         iOrderDao.changeOrderPaySuccess(payOrder);
 
-        BaseEvent.EventMessage<PaySuccessMessageEvent.PaySuccessMessage> paySuccessMessageEventMessage = paySuccessMessageEvent.buildEventMessage(PaySuccessMessageEvent.PaySuccessMessage.builder().tradeNo(orderId).build());
+        BaseEvent.EventMessage<PaySuccessMessageEvent.PaySuccessMessage> paySuccessMessageEventMessage = paySuccessMessageEvent
+                .buildEventMessage(PaySuccessMessageEvent.PaySuccessMessage.builder()
+                                                                            .tradeNo(orderId)
+                                                                            .build());
         PaySuccessMessageEvent.PaySuccessMessage data = paySuccessMessageEventMessage.getData();
         eventBus.post(data);
     }

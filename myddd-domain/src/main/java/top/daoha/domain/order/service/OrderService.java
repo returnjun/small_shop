@@ -10,9 +10,11 @@ import org.springframework.stereotype.Service;
 import top.daoha.domain.order.adapter.port.IProductPort;
 import top.daoha.domain.order.adapter.repository.IOrderRepository;
 import top.daoha.domain.order.model.aggregate.CreateOrderAggregate;
+import top.daoha.domain.order.model.entity.MarketPayDiscountEntity;
 import top.daoha.domain.order.model.entity.OrderEntity;
 import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
+import top.daoha.domain.order.model.valobj.MarketTypeVO;
 import top.daoha.domain.order.model.valobj.OrderStatusVO;
 import top.daoha.types.common.Constants;
 
@@ -44,8 +46,15 @@ public class OrderService extends AbstractOrderService {
         super(iOrderRepository, iProductPort);
     }
 
+
     @Override
-    protected PayOrderEntity doPrepayOrder(String productId, String productName, String orderId, BigDecimal totalAmount) throws AlipayApiException {
+    protected MarketPayDiscountEntity lockMarketPayOrder(String userId, String teamId, Long activityId, String productId, String orderId) {
+        return iProductPort.lockMarketPayOrder(userId, teamId, activityId, productId, orderId);
+    }
+
+    @Override
+    protected PayOrderEntity doPrepayOrder(String productId, String productName, String orderId, BigDecimal totalAmount, MarketPayDiscountEntity marketPayDiscountEntity) throws AlipayApiException {
+        BigDecimal payAmount = null == marketPayDiscountEntity ? totalAmount : marketPayDiscountEntity.getPayPrice();
         //核心作用向支付宝发起预支付请求，并获取支付表单
         AlipayTradePagePayRequest request = new AlipayTradePagePayRequest();  // 支付宝 SDK 提供的电脑网站支付专用请求类
         request.setNotifyUrl(notify_url);
@@ -53,7 +62,7 @@ public class OrderService extends AbstractOrderService {
 
         JSONObject bizContent = new JSONObject();
         bizContent.put("out_trade_no", orderId);  // 我们自己生成的订单编号
-        bizContent.put("total_amount", totalAmount.toString()); // 订单的总金额
+        bizContent.put("total_amount", payAmount.toString()); // 订单的总金额
         bizContent.put("subject", productName);   // 支付的名称
         bizContent.put("product_code", "FAST_INSTANT_TRADE_PAY");  // 固定配置
         request.setBizContent(bizContent.toString());
@@ -66,9 +75,18 @@ public class OrderService extends AbstractOrderService {
         payOrderEntity.setOrderId(orderId);
         payOrderEntity.setPayUrl(form);
         payOrderEntity.setOrderStatus(OrderStatusVO.PAY_WAIT);
+        payOrderEntity.setPayAmount(payAmount);
+        payOrderEntity.setMarketDeductionAmount(null == marketPayDiscountEntity ? BigDecimal.ZERO : marketPayDiscountEntity.getMarketDeductionAmount());
+        payOrderEntity.setMarketType(null == marketPayDiscountEntity ? MarketTypeVO.NO_MARKET.getCode() : MarketTypeVO.GROUP_BUY_MARKET.getCode());
 
         iOrderRepository.updatePayInfo(payOrderEntity);
+
         return payOrderEntity;
+    }
+
+    @Override
+    protected PayOrderEntity doPrepayOrder(String productId, String productName, String orderId, BigDecimal totalAmount) throws AlipayApiException {
+        return doPrepayOrder(productId, productName, orderId, totalAmount, null);
     }
 
 
