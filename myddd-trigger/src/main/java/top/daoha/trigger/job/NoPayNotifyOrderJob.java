@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 import top.daoha.domain.order.service.IOrderService;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,7 +29,7 @@ public class NoPayNotifyOrderJob {
     @Resource
     private AlipayClient alipayClient;
 
-    @Scheduled(cron = "0/3 * * * * ?")//每三秒都检查未正确处理的订单是否成功
+    @Scheduled(cron = "0/30 * * * * ?")//每三秒都检查未正确处理的订单是否成功
     public void exec(){
         try {
             log.info("任务：检测未接受到或未正确处理支付回调通知");
@@ -45,7 +46,19 @@ public class NoPayNotifyOrderJob {
                 String code = alipayTradeQueryResponse.getCode();
                 // 判断状态码
                 if ("10000".equals(code)) {
-                    orderService.changeOrderPaySuccess(id);
+                    // 必须追加这一步：获取真实的交易状态
+                    String tradeStatus = alipayTradeQueryResponse.getTradeStatus();
+
+                    // 只有当支付宝明确说“交易成功”或“交易结束”时，才算真正付了钱
+                    if ("TRADE_SUCCESS".equals(tradeStatus) || "TRADE_FINISHED".equals(tradeStatus)) {
+                        log.info("订单 {} 确认支付成功，准备修改本地状态", id);
+                        orderService.changeOrderPaySuccess(id, alipayTradeQueryResponse.getSendPayDate());
+                    } else {
+                        // 用户可能还在犹豫，或者交易已经关闭，这里不用处理，只打个日志即可
+                        log.info("订单 {} 查询成功，但尚未支付，当前状态为: {}", id, tradeStatus);
+                    }
+                } else {
+                    log.error("订单 {} 调用支付宝查询接口失败，原因: {}", id, alipayTradeQueryResponse.getSubMsg());
                 }
             }
         }catch (Exception e){

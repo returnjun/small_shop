@@ -1,6 +1,7 @@
 package top.daoha.infrastructure.adapter.port;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -10,13 +11,12 @@ import top.daoha.domain.order.model.entity.MarketPayDiscountEntity;
 import top.daoha.domain.order.model.entity.ProductEntity;
 import top.daoha.infrastructure.gateway.IGroupBuyMarketService;
 import top.daoha.infrastructure.gateway.ProductRPC;
-import top.daoha.infrastructure.gateway.dto.LockMarketPayOrderRequestDTO;
-import top.daoha.infrastructure.gateway.dto.LockMarketPayOrderResponseDTO;
-import top.daoha.infrastructure.gateway.dto.ProductDTO;
+import top.daoha.infrastructure.gateway.dto.*;
 import top.daoha.infrastructure.gateway.response.Response;
 import top.daoha.types.exception.AppException;
 
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * @ClassName : ProductPort
@@ -25,6 +25,7 @@ import java.io.IOException;
  * @Author : 24209
  * @Date: 2026/3/17  23:19
  */
+@Slf4j
 @Component
 public class ProductPort implements IProductPort {
     @Value("${app.config.group-buy-market.source}")
@@ -69,8 +70,9 @@ public class ProductPort implements IProductPort {
                 .build();
 
         try {
-            Call<Response<LockMarketPayOrderResponseDTO>> responseCall = groupBuyMarketService.lockMarketPayOrderResponse(req);
+            Call<Response<LockMarketPayOrderResponseDTO>> responseCall = groupBuyMarketService.lockMarketPayOrder(req);
             Response<LockMarketPayOrderResponseDTO> response = responseCall.execute().body();
+            log.info("营销锁单成功，请检查访问相关接口的结果 response:{}",response);
             if(null==response){
                 return null;
             }
@@ -86,5 +88,33 @@ public class ProductPort implements IProductPort {
         } catch (Exception e) {
             return null;
         }
+    }
+
+    @Override
+    public void settlementMarketPayOrder(String userId, String orderId, Date orderTime) {
+        SettlementMarketPayOrderRequestDTO requestDTO = SettlementMarketPayOrderRequestDTO.builder()
+                .userId(userId)
+                .outTradeNo(orderId)
+                .outTradeTime(orderTime)
+                .source(source)
+                .channel(channel)
+                .build();
+
+        try {
+            Call<Response<SettlementMarketPayOrderResponseDTO>> responseCall = groupBuyMarketService.settlementMarketPayOrder(requestDTO);
+
+            Response<SettlementMarketPayOrderResponseDTO> response = responseCall.execute().body();
+            log.info("营销锁单成功，请检查访问相关接口的结果 response:{}",response);
+            if(null==response){
+                return ;
+            }
+            if(!"0000".equals(response.getCode())){
+                throw new AppException(response.getCode(),response.getInfo());
+            }
+
+        }catch (Exception e){
+            log.info("营销锁单失败，错误异常信息:{}",e);
+        }
+
     }
 }

@@ -1,5 +1,6 @@
 package top.daoha.infrastructure.adapter.repository;
 
+import com.alibaba.fastjson.JSON;
 import com.google.common.eventbus.EventBus;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Repository;
@@ -101,7 +102,7 @@ public class OrderRepository implements IOrderRepository {
     }
 
     @Override
-    public void changeOrderPaySuccess(String orderId) {
+    public void changeOrderPaySuccess(String orderId,Date payTime) {
         PayOrder payOrder = new PayOrder();
         payOrder.setOrderId(orderId);
         payOrder.setStatus(OrderStatusVO.PAY_SUCCESS.getCode());
@@ -112,7 +113,7 @@ public class OrderRepository implements IOrderRepository {
                                                                             .tradeNo(orderId)
                                                                             .build());
         PaySuccessMessageEvent.PaySuccessMessage data = paySuccessMessageEventMessage.getData();
-        eventBus.post(data);
+        eventBus.post(JSON.toJSONString(data));
     }
 
     @Override
@@ -128,5 +129,47 @@ public class OrderRepository implements IOrderRepository {
     @Override
     public boolean changeOrderClose(String orderId) {
         return iOrderDao.changeOrderClose(orderId);
+    }
+
+    @Override
+    public OrderEntity queryOrderByOrderId(String orderId) {
+        PayOrder payOrder = iOrderDao.queryOrderByOrderId(orderId);
+        if(null == payOrder) return null;
+
+        return OrderEntity.builder()
+                .userId(payOrder.getUserId())
+                .productId(payOrder.getProductId())
+                .productName(payOrder.getProductName())
+                .orderId(payOrder.getOrderId())
+                .orderStatusVO(OrderStatusVO.valueOf(payOrder.getStatus()))
+                .orderTime(payOrder.getOrderTime())
+                .totalAmount(payOrder.getTotalAmount())
+                .payUrl(payOrder.getPayUrl())
+                .marketType(payOrder.getMarketType())
+                .marketDeductionAmount(payOrder.getMarketDeductionAmount())
+                .payAmount(payOrder.getPayAmount())
+                .build();
+    }
+
+    @Override
+    public void changeMarketOrderPaySuccess(String orderId) {
+        PayOrder payOrder = new PayOrder();
+        payOrder.setOrderId(orderId);
+        payOrder.setStatus(OrderStatusVO.PAY_SUCCESS.getCode());
+        iOrderDao.changeOrderPaySuccess(payOrder);
+    }
+
+    @Override
+    public void changeOrderMarketSettlement(List<String> outTradeNoList) {
+        iOrderDao.changeOrderMarketSettlement(outTradeNoList);
+
+        outTradeNoList.forEach(outTradeNo ->{
+            BaseEvent.EventMessage<PaySuccessMessageEvent.PaySuccessMessage> paySuccessMessageEventMessage = paySuccessMessageEvent
+                    .buildEventMessage(PaySuccessMessageEvent.PaySuccessMessage.builder()
+                            .tradeNo(outTradeNo)
+                            .build());
+            PaySuccessMessageEvent.PaySuccessMessage data = paySuccessMessageEventMessage.getData();
+            eventBus.post(JSON.toJSONString(data));
+        });
     }
 }

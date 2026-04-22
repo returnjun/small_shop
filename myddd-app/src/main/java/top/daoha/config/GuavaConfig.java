@@ -34,5 +34,4 @@ public class GuavaConfig {
         return eventBus;
     }
 
-
 }

@@ -2,6 +2,7 @@ package top.daoha.infrastructure.dao;
 
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import top.daoha.infrastructure.dao.po.PayOrder;
 
 import java.util.List;
@@ -23,4 +24,9 @@ public interface IOrderDao {
 
     boolean changeOrderClose(String orderId);
 
+    PayOrder queryOrderByOrderId(String orderId);
+
+    void changeOrderMarketSettlement(@Param("outTradeNoList") List<String> outTradeNoList);
+
+    void changeOrderDealDone(String tradeNo);
 }

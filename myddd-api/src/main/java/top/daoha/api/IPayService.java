@@ -1,6 +1,7 @@
 package top.daoha.api;
 
 import top.daoha.api.dto.CreatePayRequestDTO;
+import top.daoha.api.dto.NotifyRequestDTO;
 import top.daoha.api.response.Response;
 
 /**
@@ -15,4 +16,5 @@ public interface IPayService {
 
     public Response<String> createPayOrder(CreatePayRequestDTO createPayRequestDTO);
 
+    String groupBuyNotify(NotifyRequestDTO notifyRequestDTO);
 }

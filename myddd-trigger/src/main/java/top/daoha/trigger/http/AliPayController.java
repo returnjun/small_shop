@@ -1,5 +1,6 @@
 package top.daoha.trigger.http;
 
+import com.alibaba.fastjson2.JSON;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.internal.util.AlipaySignature;
 import lombok.extern.slf4j.Slf4j;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import top.daoha.api.IPayService;
 import top.daoha.api.dto.CreatePayRequestDTO;
+import top.daoha.api.dto.NotifyRequestDTO;
 import top.daoha.api.response.Response;
 import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
@@ -16,6 +18,9 @@ import top.daoha.types.common.Constants;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -46,12 +51,12 @@ public class AliPayController implements IPayService {
             String productId = createPayRequestDTO.getProductId();
             // 下单
             PayOrderEntity payOrderRes = orderService.createOrder(ShopCartEntity.builder()
-                    .userId(userId)
-                    .productId(productId)
+                            .userId(userId)
+                            .productId(productId)
                             .teamId(createPayRequestDTO.getTeamId())
                             .activityId(createPayRequestDTO.getActivityId())
                             .marketTypeVO(MarketTypeVO.valueOf(createPayRequestDTO.getMarketType()))
-                    .build());
+                            .build());
 
             log.info("商品下单，根据商品ID创建支付单完成 userId:{} productId:{} orderId:{}", userId, productId, payOrderRes.getOrderId());
             return Response.<String>builder()
@@ -68,11 +73,23 @@ public class AliPayController implements IPayService {
         }
     }
 
+    @RequestMapping(value = "group_buy_notify", method = RequestMethod.POST)
+    @Override
+    public String groupBuyNotify(@RequestBody NotifyRequestDTO notifyRequestDTO) {
+        log.info("拼团支付回调，组队完成，开始结算，消息接收 {}", JSON.toJSONString(notifyRequestDTO));
+        try{
+            orderService.changeOrderMarketSettlement(notifyRequestDTO.getOutTradeNoList());
+            return "success";
+        }catch (Exception e){
+            return "error";
+        }
+    }
+
     /**
      * http://xfg-studio.natapp1.cc/api/v1/alipay/alipay_notify_url
      */
     @RequestMapping(value = "alipay_notify_url", method = RequestMethod.POST)
-    public String payNotify(HttpServletRequest request) throws AlipayApiException {
+    public String payNotify(HttpServletRequest request) throws AlipayApiException, ParseException {
         log.info("支付回调，消息接收 {}", request.getParameter("trade_status"));
 
         if (!request.getParameter("trade_status").equals("TRADE_SUCCESS")) {
@@ -108,7 +125,7 @@ public class AliPayController implements IPayService {
         log.info("支付回调，买家付款金额: {}", params.get("buyer_pay_amount"));
         log.info("支付回调，支付回调，更新订单 {}", tradeNo);
 
-        orderService.changeOrderPaySuccess(tradeNo);
+        orderService.changeOrderPaySuccess(tradeNo,new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(params.get("gmt_payment")));
 
         return "success";
     }

@@ -7,7 +7,7 @@ app:
     cross-origin: '*'
     group-buy-market:
       api-url: http://127.0.0.1:8091
-      notify-url: http://127.0.0.1:7860/api/v1/test/group_buy_notify
+      notify-url: http://127.0.0.1:7860/api/v1/alipay/group_buy_notify
       source: s01
       channel: c01
 
@@ -43,11 +43,11 @@ spring:
 
 weixin:
   config:
-    originalid: gh_1e133753044a
+    originalid: gh_9a5f9b51f4e0
     token: Gong6666!
-    app-id: wxc054de775cbc3893
-    app-secret: 65a76473b5b06a2c275ef8106b6821e5
-    template_id: oqc6RUYivlI0c1spszr4M4dp106AmESR27FS5Xwaofg
+    app-id: wxd791e178e4628317
+    app-secret: c459c6bd2f7850c2e3e6416d5dde9275
+    template_id: mbGHV9Xyqks0eP1U3ssifNEbeLIdqe31SfwFknlDdc4
 
 # 支付宝支付 - 沙箱 https://opendocs.alipay.com/common/02kkv7
 alipay:

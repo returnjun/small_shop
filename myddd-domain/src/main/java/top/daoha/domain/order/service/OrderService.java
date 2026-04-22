@@ -20,6 +20,7 @@ import top.daoha.types.common.Constants;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -96,8 +97,25 @@ public class OrderService extends AbstractOrderService {
     }
 
     @Override
-    public void changeOrderPaySuccess(String orderId) {
-        iOrderRepository.changeOrderPaySuccess(orderId);
+    public void changeOrderPaySuccess(String orderId, Date payTime) {
+        //支付成功后会走到这一步
+        //查看一下是否已经拼团结束能不能直接发货
+        OrderEntity orderEntity = iOrderRepository.queryOrderByOrderId(orderId);
+
+        if(null == orderEntity) return;
+        //下面要考虑是否走了拼团，因为不走拼团可以直接完成订单，走拼团的话需要看看拼团内情况
+        if(MarketTypeVO.GROUP_BUY_MARKET.getCode().equals(orderEntity.getMarketType())){
+            //这是走营销的情况
+            iOrderRepository.changeMarketOrderPaySuccess(orderId);
+
+            //正式向拼团系统发布支付完成动作
+            iProductPort.settlementMarketPayOrder(orderEntity.getUserId(), orderId, payTime);
+            // 注意；在公司中，发起结算的http/rpc调用可能会失败，这个时候还会有增加job任务补偿。条件为，检查一笔走了拼团的订单，超过n分钟后，仍然没有做拼团结算状态变更。
+            // 我们这里失败了，会抛异常，借助支付宝回调/job来重试。你可以单独实现一个独立的job来处理。
+        }else {
+            //这是不走营销的情况
+            iOrderRepository.changeOrderPaySuccess(orderId,payTime);
+        }
     }
 
     @Override
@@ -113,5 +131,10 @@ public class OrderService extends AbstractOrderService {
     @Override
     public boolean changeOrderClose(String orderId) {
         return iOrderRepository.changeOrderClose(orderId);
+    }
+
+    @Override
+    public void changeOrderMarketSettlement(List<String> outTradeNoList) {
+        iOrderRepository.changeOrderMarketSettlement(outTradeNoList);
     }
 }
