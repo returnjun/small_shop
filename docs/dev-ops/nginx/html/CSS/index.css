@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #ff4d4f;
+    --secondary-color: #fca130;
+    --bg-color: #f5f5f5;
+    --text-main: #333;
+    --text-light: #999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* 顶部用户头像 */
+.user-avatar-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+    display: none;
+}
+.user-avatar-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    object-fit: cover;
+    background-color: #eee;
+}
+
+/* 轮播图模块 */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+.slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #fff;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+/* 商品信息 */
+.product-info { padding: 15px; background: #fff; }
+.product-title { font-size: 18px; font-weight: bold; line-height: 1.4; margin-bottom: 10px; }
+.discount-banner {
+    background: #fff3e0; color: #d84315; padding: 8px 12px;
+    border-radius: 4px; font-size: 13px; display: inline-block;
+    border: 1px solid #ffe0b2; margin-bottom: 15px; width: 100%;
+}
+.discount-banner span {
+    background: var(--primary-color); color: white;
+    padding: 2px 6px; border-radius: 4px; margin-right: 8px; font-weight: bold;
+}
+
+/* 拼团列表 */
+.group-buy-list { padding: 0 15px; background: #fff; }
+.group-item { display: flex; align-items: center; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #eee; }
+.group-item:last-child { border-bottom: none; }
+.user-info { display: flex; align-items: center; gap: 10px; }
+.user-info .avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid #eee; }
+.user-details h4 { font-size: 15px; margin-bottom: 4px; }
+.user-details p { font-size: 12px; color: var(--text-light); }
+.user-details .time { color: var(--primary-color); font-weight: bold; }
+.join-btn {
+    background: var(--primary-color); color: white; border: none;
+    padding: 8px 16px; border-radius: 20px; font-size: 13px;
+    font-weight: bold; cursor: pointer;
+}
+
+/* 底部操作栏 */
+.bottom-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; max-width: 480px;
+    margin: 0 auto; background: #fff; display: flex; padding: 10px 15px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05); gap: 10px; z-index: 50;
+}
+.btn-buy-alone, .btn-buy-group {
+    flex: 1; padding: 12px 0; border: none; border-radius: 8px;
+    font-size: 15px; font-weight: bold; cursor: pointer;
+}
+.btn-buy-alone { background: #ffe4e1; color: var(--primary-color); }
+.btn-buy-group { background: var(--primary-color); color: white; }
+
+/* 弹窗样式 */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); display: none;
+    justify-content: center; align-items: center; z-index: 1000;
+}
+.modal-content {
+    background: #fff; border-radius: 12px; width: 85%; max-width: 320px;
+    padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    animation: popIn 0.3s ease-out;
+}
+@keyframes popIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.payment-modal { text-align: center; }
+.payment-title { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+.payment-amount { font-size: 16px; margin-bottom: 20px; }
+.qrcode-box { width: 180px; height: 180px; margin: 0 auto 20px; border: 1px dashed #ccc; padding: 10px; border-radius: 8px; }
+.qrcode-box img { width: 100%; height: 100%; }
+.payment-actions { display: flex; gap: 15px; }
+.btn-cancel { flex: 1; background: #f5f5f5; color: #666; border: none; padding: 10px; border-radius: 6px; cursor: pointer; }
+.btn-confirm { flex: 1; background: #52c41a; color: white; border: none; padding: 10px; border-radius: 6px; cursor: pointer; }

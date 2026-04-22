@@ -99,6 +99,7 @@ public abstract class AbstractOrderService implements IOrderService {
                 .productEntity(productEntity)
                 .orderEntity(orderEntity)
                 .build();
+        //保存这个订单
         this.doSaveOrder(build);
 
         //营销锁单
