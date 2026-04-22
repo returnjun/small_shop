@@ -1,0 +1,930 @@
+26-04-21.10:00:45.258 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 20720 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.10:00:45.259 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.10:00:48.497 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.709 seconds (JVM running for 4.779)
+26-04-21.10:00:49.057 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.10:00:49.382 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.10:00:49.469 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.10:00:49.472 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.10:02:49.817 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 29784 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.10:02:49.817 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.10:02:52.785 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.469 seconds (JVM running for 4.26)
+26-04-21.10:02:53.296 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.10:02:53.542 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.10:02:53.638 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.10:02:53.642 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.10:12:00.827 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 29528 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.10:12:00.829 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.10:12:03.837 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.499 seconds (JVM running for 4.458)
+26-04-21.10:12:04.353 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.10:12:04.691 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.10:12:04.800 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.10:12:04.825 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.10:14:20.068 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 3404 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.10:14:20.069 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.10:14:23.054 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.515 seconds (JVM running for 4.478)
+26-04-21.10:14:23.554 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.10:14:24.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.10:14:24.050 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.10:14:24.192 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.10:14:24.219 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.14:07:52.173 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 26948 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.14:07:52.173 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.14:07:54.028 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 23416 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.14:07:54.029 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.14:07:56.018 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.348 seconds (JVM running for 5.175)
+26-04-21.14:07:56.687 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.14:07:57.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.14:07:57.126 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.14:07:57.429 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.14:07:57.458 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.14:07:57.921 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.449 seconds (JVM running for 5.413)
+26-04-21.14:07:58.609 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.14:07:59.010 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.14:07:59.115 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.14:07:59.119 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.14:16:40.794 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 19240 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.14:16:40.796 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.14:16:42.789 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 6264 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.14:16:42.791 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.14:16:44.533 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.232 seconds (JVM running for 5.042)
+26-04-21.14:16:45.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.14:16:45.055 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.14:16:45.564 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.14:16:45.798 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.14:16:45.811 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.14:16:46.577 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.354 seconds (JVM running for 5.399)
+26-04-21.14:16:47.246 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.14:16:47.563 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.14:16:47.664 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.14:16:47.667 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.14:18:12.632 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 11796 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.14:18:12.634 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.14:18:14.552 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 31304 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.14:18:14.553 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.14:18:16.335 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.234 seconds (JVM running for 5.067)
+26-04-21.14:18:17.009 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.14:18:17.390 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.14:18:18.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.14:18:18.413 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=HrjwHifQXtAg4WsB%2BTY5Iw614DyhFZYm6LLEsnppRK2ymoEpIA6xViy%2Bj8UAm2KDCECcdPQfcCUce%2FIkMWAYwQ0Cej2uvHQUsOUIPj7a1az4gkr%2BiD6Y%2FXIkMpAci4owhYZT03tJ%2BNmCzVsceAcNlwEEnYoDtp%2BpyVdyox6FOCSWrqy1grt%2Bl3dWoBRahxEnsU5TAfnG9JNgppMEtudtBuWguq%2FIE%2FAYiUGhIB8uGRs%2FLO9J434Q6%2BVPKKawMk8k9VyOojg79FlZIdAi2TuCBC%2B4pf33CgDrZTm%2FbbiO7J4swgLskP4sofPNLLZUE1MvEUe1tkv%2F%2BDeBBaPKnzBE%2BA%3D%3D&return_url=https%3A%2F%2Ffront.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+14%3A18%3A18&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;83966717257583&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.14:18:18.423 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.416 seconds (JVM running for 5.391)
+26-04-21.14:18:18.433 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:83966717257583 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=HrjwHifQXtAg4WsB%2BTY5Iw614DyhFZYm6LLEsnppRK2ymoEpIA6xViy%2Bj8UAm2KDCECcdPQfcCUce%2FIkMWAYwQ0Cej2uvHQUsOUIPj7a1az4gkr%2BiD6Y%2FXIkMpAci4owhYZT03tJ%2BNmCzVsceAcNlwEEnYoDtp%2BpyVdyox6FOCSWrqy1grt%2Bl3dWoBRahxEnsU5TAfnG9JNgppMEtudtBuWguq%2FIE%2FAYiUGhIB8uGRs%2FLO9J434Q6%2BVPKKawMk8k9VyOojg79FlZIdAi2TuCBC%2B4pf33CgDrZTm%2FbbiO7J4swgLskP4sofPNLLZUE1MvEUe1tkv%2F%2BDeBBaPKnzBE%2BA%3D%3D&return_url=https%3A%2F%2Ffront.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+14%3A18%3A18&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;83966717257583&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.14:18:18.453 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.14:18:18.458 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"83966717257583","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=HrjwHifQXtAg4WsB%2BTY5Iw614DyhFZYm6LLEsnppRK2ymoEpIA6xViy%2Bj8UAm2KDCECcdPQfcCUce%2FIkMWAYwQ0Cej2uvHQUsOUIPj7a1az4gkr%2BiD6Y%2FXIkMpAci4owhYZT03tJ%2BNmCzVsceAcNlwEEnYoDtp%2BpyVdyox6FOCSWrqy1grt%2Bl3dWoBRahxEnsU5TAfnG9JNgppMEtudtBuWguq%2FIE%2FAYiUGhIB8uGRs%2FLO9J434Q6%2BVPKKawMk8k9VyOojg79FlZIdAi2TuCBC%2B4pf33CgDrZTm%2FbbiO7J4swgLskP4sofPNLLZUE1MvEUe1tkv%2F%2BDeBBaPKnzBE%2BA%3D%3D&return_url=https%3A%2F%2Ffront.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+14%3A18%3A18&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;83966717257583&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.14:18:18.471 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.14:18:18.481 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.14:18:19.051 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.14:18:19.375 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.14:18:19.415 [main            ] INFO  AbstractOrderService   - 创建订单-存在，已存在未支付订单。userId:xiaofuge productId:9890001 orderId:83966717257583
+26-04-21.14:18:19.546 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.14:18:19.551 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"83966717257583","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=HrjwHifQXtAg4WsB%2BTY5Iw614DyhFZYm6LLEsnppRK2ymoEpIA6xViy%2Bj8UAm2KDCECcdPQfcCUce%2FIkMWAYwQ0Cej2uvHQUsOUIPj7a1az4gkr%2BiD6Y%2FXIkMpAci4owhYZT03tJ%2BNmCzVsceAcNlwEEnYoDtp%2BpyVdyox6FOCSWrqy1grt%2Bl3dWoBRahxEnsU5TAfnG9JNgppMEtudtBuWguq%2FIE%2FAYiUGhIB8uGRs%2FLO9J434Q6%2BVPKKawMk8k9VyOojg79FlZIdAi2TuCBC%2B4pf33CgDrZTm%2FbbiO7J4swgLskP4sofPNLLZUE1MvEUe1tkv%2F%2BDeBBaPKnzBE%2BA%3D%3D&return_url=https%3A%2F%2Ffront.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+14%3A18%3A18&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;83966717257583&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.14:18:19.568 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.14:18:19.583 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.15:25:46.986 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 3504 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.15:25:46.986 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.15:25:50.268 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.748 seconds (JVM running for 4.684)
+26-04-21.15:25:50.859 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.15:25:51.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.15:25:51.180 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.15:25:51.719 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=mnc8ObFqP%2BADKoValVn8QnlW4314DWi65WIAAmDOv%2BR44XkTOqJUWQxxQ6Fut5puNdUWPdEuW8N0kbSsNo5ZPBSret8ho3HUeP20ISP%2F9rnJLzuoMQw6h6kAZUljfCBA5zzP32%2Bbm5Z6kjd0nU95m8N44QcVYVYPmRUkQ53FSAjsJKZZ6w0BBLgzSrGXw5z9WprzzzcjihjFngxl6ZpBuPe7rptLtR7%2BgjBPHJ4U8lH8iOeUAyYd3%2FAjdnUEvLYJwQdNzrFhhtKgW02Q0oDrrC51JZ8zOPCiRu6bSV7SIx0Q1NHAYhEaKoZ8Vi8ozZaDWEdghx9mtog19B05DpkXfg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A25%3A51&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;10935803212904&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:25:51.736 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:10935803212904 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=mnc8ObFqP%2BADKoValVn8QnlW4314DWi65WIAAmDOv%2BR44XkTOqJUWQxxQ6Fut5puNdUWPdEuW8N0kbSsNo5ZPBSret8ho3HUeP20ISP%2F9rnJLzuoMQw6h6kAZUljfCBA5zzP32%2Bbm5Z6kjd0nU95m8N44QcVYVYPmRUkQ53FSAjsJKZZ6w0BBLgzSrGXw5z9WprzzzcjihjFngxl6ZpBuPe7rptLtR7%2BgjBPHJ4U8lH8iOeUAyYd3%2FAjdnUEvLYJwQdNzrFhhtKgW02Q0oDrrC51JZ8zOPCiRu6bSV7SIx0Q1NHAYhEaKoZ8Vi8ozZaDWEdghx9mtog19B05DpkXfg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A25%3A51&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;10935803212904&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:25:51.752 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.15:25:51.755 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"10935803212904","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=mnc8ObFqP%2BADKoValVn8QnlW4314DWi65WIAAmDOv%2BR44XkTOqJUWQxxQ6Fut5puNdUWPdEuW8N0kbSsNo5ZPBSret8ho3HUeP20ISP%2F9rnJLzuoMQw6h6kAZUljfCBA5zzP32%2Bbm5Z6kjd0nU95m8N44QcVYVYPmRUkQ53FSAjsJKZZ6w0BBLgzSrGXw5z9WprzzzcjihjFngxl6ZpBuPe7rptLtR7%2BgjBPHJ4U8lH8iOeUAyYd3%2FAjdnUEvLYJwQdNzrFhhtKgW02Q0oDrrC51JZ8zOPCiRu6bSV7SIx0Q1NHAYhEaKoZ8Vi8ozZaDWEdghx9mtog19B05DpkXfg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A25%3A51&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;10935803212904&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.15:25:51.764 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.15:25:51.770 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.15:28:46.433 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 18444 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.15:28:46.434 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.15:28:49.565 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.616 seconds (JVM running for 4.434)
+26-04-21.15:28:50.106 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.15:28:50.447 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.15:28:51.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.15:28:51.007 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=TcLBOtw3GBq0h6V7PdA8TZv4K4UrisPgxUEHNoe6bJiCXafdw%2B8sRz1%2B%2FRNwEqXblQxz%2Bt5Sm51EyoiXvGviH%2BUoaxInnjEE3OWfBMbWQQaoT6emGA6ajQ5Ha1xkdGXB1C2tOqfLOr%2BmqnPE0R5nmCdDr6mqPRbvx57Zj9kQ%2FYT5UIVn03h8Vlc70t37e0rAIOyh7aHONMq0HbcHUAxaYylmzVo%2BDonSfe05TckBC5w%2FRyNwV%2BoY9py%2BYH5foTqIHeEwK4izrybdlA%2BimYRFl3PHW9tAcpXXSmiynKD3ZUhnYwwP9nQ8JLiAofpuRh5UBZ2w8xdmByyTHmG8O%2BY4Vg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A28%3A50&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;08007929745135&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:28:51.022 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:08007929745135 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=TcLBOtw3GBq0h6V7PdA8TZv4K4UrisPgxUEHNoe6bJiCXafdw%2B8sRz1%2B%2FRNwEqXblQxz%2Bt5Sm51EyoiXvGviH%2BUoaxInnjEE3OWfBMbWQQaoT6emGA6ajQ5Ha1xkdGXB1C2tOqfLOr%2BmqnPE0R5nmCdDr6mqPRbvx57Zj9kQ%2FYT5UIVn03h8Vlc70t37e0rAIOyh7aHONMq0HbcHUAxaYylmzVo%2BDonSfe05TckBC5w%2FRyNwV%2BoY9py%2BYH5foTqIHeEwK4izrybdlA%2BimYRFl3PHW9tAcpXXSmiynKD3ZUhnYwwP9nQ8JLiAofpuRh5UBZ2w8xdmByyTHmG8O%2BY4Vg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A28%3A50&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;08007929745135&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:28:51.038 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.15:28:51.043 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"08007929745135","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=TcLBOtw3GBq0h6V7PdA8TZv4K4UrisPgxUEHNoe6bJiCXafdw%2B8sRz1%2B%2FRNwEqXblQxz%2Bt5Sm51EyoiXvGviH%2BUoaxInnjEE3OWfBMbWQQaoT6emGA6ajQ5Ha1xkdGXB1C2tOqfLOr%2BmqnPE0R5nmCdDr6mqPRbvx57Zj9kQ%2FYT5UIVn03h8Vlc70t37e0rAIOyh7aHONMq0HbcHUAxaYylmzVo%2BDonSfe05TckBC5w%2FRyNwV%2BoY9py%2BYH5foTqIHeEwK4izrybdlA%2BimYRFl3PHW9tAcpXXSmiynKD3ZUhnYwwP9nQ8JLiAofpuRh5UBZ2w8xdmByyTHmG8O%2BY4Vg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A28%3A50&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;08007929745135&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.15:28:51.056 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.15:28:51.063 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.15:31:57.496 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 8048 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.15:31:57.498 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.15:32:00.503 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.537 seconds (JVM running for 4.398)
+26-04-21.15:32:01.021 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.15:32:15.661 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 34656 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.15:32:15.661 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.15:32:18.786 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.672 seconds (JVM running for 4.521)
+26-04-21.15:32:19.435 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.15:32:19.792 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.15:32:20.384 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=YrbQaam0BXHuwLdzErGRllcfFc5foEYn0pGTTg8Vl1pXCBRWPHKuxEsTHZTUsw7YEVf%2BnYPvi%2FRnmEoU8yXEato2Q9%2F8Hr1DijrjV3iGggNw6bNtR4tKDI4DSJ7GbCm9SdLX4B2H5x0ppvZeZmzW8BM%2FOTxAINHCbmKE4QSJP4uDQcVZCM6CG3RDnuBfbGHrgoSJugSsj9q1bmOEDPqDfmF26mR9LvYsY2d6ILvKPLT5nsj6gSklM46D01Ng2gQeKPA4Tqapp5htG4GHhI7IOomex10jgaRPJ1ArqVGVCDN3VchZg4rh2SqUdryk%2BCRGtZJdrtO9A%2FQvbCGp8RWkcA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A32%3A20&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;83001849231450&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:32:20.398 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:83001849231450 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=YrbQaam0BXHuwLdzErGRllcfFc5foEYn0pGTTg8Vl1pXCBRWPHKuxEsTHZTUsw7YEVf%2BnYPvi%2FRnmEoU8yXEato2Q9%2F8Hr1DijrjV3iGggNw6bNtR4tKDI4DSJ7GbCm9SdLX4B2H5x0ppvZeZmzW8BM%2FOTxAINHCbmKE4QSJP4uDQcVZCM6CG3RDnuBfbGHrgoSJugSsj9q1bmOEDPqDfmF26mR9LvYsY2d6ILvKPLT5nsj6gSklM46D01Ng2gQeKPA4Tqapp5htG4GHhI7IOomex10jgaRPJ1ArqVGVCDN3VchZg4rh2SqUdryk%2BCRGtZJdrtO9A%2FQvbCGp8RWkcA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A32%3A20&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;83001849231450&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:32:20.423 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.15:32:20.428 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"83001849231450","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=YrbQaam0BXHuwLdzErGRllcfFc5foEYn0pGTTg8Vl1pXCBRWPHKuxEsTHZTUsw7YEVf%2BnYPvi%2FRnmEoU8yXEato2Q9%2F8Hr1DijrjV3iGggNw6bNtR4tKDI4DSJ7GbCm9SdLX4B2H5x0ppvZeZmzW8BM%2FOTxAINHCbmKE4QSJP4uDQcVZCM6CG3RDnuBfbGHrgoSJugSsj9q1bmOEDPqDfmF26mR9LvYsY2d6ILvKPLT5nsj6gSklM46D01Ng2gQeKPA4Tqapp5htG4GHhI7IOomex10jgaRPJ1ArqVGVCDN3VchZg4rh2SqUdryk%2BCRGtZJdrtO9A%2FQvbCGp8RWkcA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A32%3A20&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;83001849231450&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.15:32:20.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.15:32:20.454 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.15:34:01.663 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 34836 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.15:34:01.664 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.15:34:04.797 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.647 seconds (JVM running for 4.443)
+26-04-21.15:34:05.365 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.15:34:05.661 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.15:34:06.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.15:34:06.089 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=IqjC93Wh1IhwEiw41cQBp2ahA8mSxEjccjDXhXxL4YQKxyr5Q5BBRvVEvxBEs0gaWmgdbtoa2fkn%2BK%2B3l1ERJH2j%2BxBs%2FAI4ZI2G9yGQeeZ%2BNv7RV7sHnLnUPNnY9kgocdN6iZXDXrvN7r03EImNJics27CQe9BxyfFaKxpMZqk0LqhbBYtbdHqpXIeoUdUUlKd%2BinZBVJ2H69TRvCIqgYcqMV7QgkNhKqP6HcvDtg%2BGGGqeuz5rdS4DFUaklBRumKol6vGOtmEIT0neqJUBuvpUydCS1jnWmZaXvjHwlXkJthVMMzk9huqchZWNKPdGbUXjYTyVbCO7jR62Bg%2F7Iw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A34%3A06&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;14416946152376&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:34:06.105 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:14416946152376 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=IqjC93Wh1IhwEiw41cQBp2ahA8mSxEjccjDXhXxL4YQKxyr5Q5BBRvVEvxBEs0gaWmgdbtoa2fkn%2BK%2B3l1ERJH2j%2BxBs%2FAI4ZI2G9yGQeeZ%2BNv7RV7sHnLnUPNnY9kgocdN6iZXDXrvN7r03EImNJics27CQe9BxyfFaKxpMZqk0LqhbBYtbdHqpXIeoUdUUlKd%2BinZBVJ2H69TRvCIqgYcqMV7QgkNhKqP6HcvDtg%2BGGGqeuz5rdS4DFUaklBRumKol6vGOtmEIT0neqJUBuvpUydCS1jnWmZaXvjHwlXkJthVMMzk9huqchZWNKPdGbUXjYTyVbCO7jR62Bg%2F7Iw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A34%3A06&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;14416946152376&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:34:06.121 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.15:34:06.125 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"14416946152376","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=IqjC93Wh1IhwEiw41cQBp2ahA8mSxEjccjDXhXxL4YQKxyr5Q5BBRvVEvxBEs0gaWmgdbtoa2fkn%2BK%2B3l1ERJH2j%2BxBs%2FAI4ZI2G9yGQeeZ%2BNv7RV7sHnLnUPNnY9kgocdN6iZXDXrvN7r03EImNJics27CQe9BxyfFaKxpMZqk0LqhbBYtbdHqpXIeoUdUUlKd%2BinZBVJ2H69TRvCIqgYcqMV7QgkNhKqP6HcvDtg%2BGGGqeuz5rdS4DFUaklBRumKol6vGOtmEIT0neqJUBuvpUydCS1jnWmZaXvjHwlXkJthVMMzk9huqchZWNKPdGbUXjYTyVbCO7jR62Bg%2F7Iw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A34%3A06&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;14416946152376&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.15:34:06.137 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.15:34:06.143 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.15:37:10.266 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 34824 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.15:37:10.266 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.15:37:13.141 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.35 seconds (JVM running for 4.257)
+26-04-21.15:37:13.657 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.15:37:13.932 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.15:37:14.583 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=dV%2BwALsN9n7ypUIlkTfxLRF9RmPeMINiBLGWLDe%2FqauhBPLfsn9ckWlmrbDrvHrFTUcRoJWMdriNH2xpRPp0NKe60wlrC%2F6HpIMQRWkfsroJMA%2F8%2BHgBBHr4RLPWygg9%2FBblqrYagYWFwKjuKlxhbV4FnltYQoF0qEnze%2F4TCFJIEGuzbNP5HpjjhPX8%2F1Wifx5rFq6KcDxpPRuSTxwj4y89%2BL4fwXf7xg7XkRhRebCzzKMfsry%2BSwLoP7CABh%2FVNg2HHAAWj3B4AewZoRlg%2BNlhACPmPWyW%2FbbBHEjQGIs1Mikd0Lx4h3yZObb0%2FKvZXKuw8BHqDt683bi%2FnL3APw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A37%3A14&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;49364706141123&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:37:14.591 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:49364706141123 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=dV%2BwALsN9n7ypUIlkTfxLRF9RmPeMINiBLGWLDe%2FqauhBPLfsn9ckWlmrbDrvHrFTUcRoJWMdriNH2xpRPp0NKe60wlrC%2F6HpIMQRWkfsroJMA%2F8%2BHgBBHr4RLPWygg9%2FBblqrYagYWFwKjuKlxhbV4FnltYQoF0qEnze%2F4TCFJIEGuzbNP5HpjjhPX8%2F1Wifx5rFq6KcDxpPRuSTxwj4y89%2BL4fwXf7xg7XkRhRebCzzKMfsry%2BSwLoP7CABh%2FVNg2HHAAWj3B4AewZoRlg%2BNlhACPmPWyW%2FbbBHEjQGIs1Mikd0Lx4h3yZObb0%2FKvZXKuw8BHqDt683bi%2FnL3APw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A37%3A14&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;49364706141123&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:37:14.608 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.15:37:14.612 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"49364706141123","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=dV%2BwALsN9n7ypUIlkTfxLRF9RmPeMINiBLGWLDe%2FqauhBPLfsn9ckWlmrbDrvHrFTUcRoJWMdriNH2xpRPp0NKe60wlrC%2F6HpIMQRWkfsroJMA%2F8%2BHgBBHr4RLPWygg9%2FBblqrYagYWFwKjuKlxhbV4FnltYQoF0qEnze%2F4TCFJIEGuzbNP5HpjjhPX8%2F1Wifx5rFq6KcDxpPRuSTxwj4y89%2BL4fwXf7xg7XkRhRebCzzKMfsry%2BSwLoP7CABh%2FVNg2HHAAWj3B4AewZoRlg%2BNlhACPmPWyW%2FbbBHEjQGIs1Mikd0Lx4h3yZObb0%2FKvZXKuw8BHqDt683bi%2FnL3APw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A37%3A14&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;49364706141123&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.15:37:14.623 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.15:37:14.629 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.15:38:01.427 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 32356 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.15:38:01.429 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.15:38:04.676 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.689 seconds (JVM running for 4.438)
+26-04-21.15:38:05.426 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.15:38:05.778 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.15:38:06.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.15:38:06.333 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=PAPn8GPv7NOsz8xfbunb7aJlg0Qo4qmmLJoF5zry2rmcuQa7fnpQi0b0BRAj9oOiZ%2Fty%2FF1aj2k3ikcdeYzkuMEmwFPm0tJ7EG45gfkaNajt%2FHPCkJnsV%2BLeuP%2BU6kGMjkUOlGka%2Baslk%2B825jMV1DXhAvLwsFFV6L49h6Jjc9nnD6f6n9L%2ByR3eZRdOPgyryEXbbVFN81WTneCVf%2BFB9ECfHvofFs8GqW%2BVca9bKdOoCwMwUMVUzwv%2BJmU7TWGNSFwMeYFGBInwSe6OlHnjSKoTIwla8474jKNx7zwni9xCve5rRda1bV2jmUSDQaMlxWfT6ELChr70DTxQ%2BBN3NQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A38%3A06&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;42811371145759&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:38:06.355 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:42811371145759 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=PAPn8GPv7NOsz8xfbunb7aJlg0Qo4qmmLJoF5zry2rmcuQa7fnpQi0b0BRAj9oOiZ%2Fty%2FF1aj2k3ikcdeYzkuMEmwFPm0tJ7EG45gfkaNajt%2FHPCkJnsV%2BLeuP%2BU6kGMjkUOlGka%2Baslk%2B825jMV1DXhAvLwsFFV6L49h6Jjc9nnD6f6n9L%2ByR3eZRdOPgyryEXbbVFN81WTneCVf%2BFB9ECfHvofFs8GqW%2BVca9bKdOoCwMwUMVUzwv%2BJmU7TWGNSFwMeYFGBInwSe6OlHnjSKoTIwla8474jKNx7zwni9xCve5rRda1bV2jmUSDQaMlxWfT6ELChr70DTxQ%2BBN3NQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A38%3A06&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;42811371145759&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:38:06.375 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.15:38:06.379 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"42811371145759","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=PAPn8GPv7NOsz8xfbunb7aJlg0Qo4qmmLJoF5zry2rmcuQa7fnpQi0b0BRAj9oOiZ%2Fty%2FF1aj2k3ikcdeYzkuMEmwFPm0tJ7EG45gfkaNajt%2FHPCkJnsV%2BLeuP%2BU6kGMjkUOlGka%2Baslk%2B825jMV1DXhAvLwsFFV6L49h6Jjc9nnD6f6n9L%2ByR3eZRdOPgyryEXbbVFN81WTneCVf%2BFB9ECfHvofFs8GqW%2BVca9bKdOoCwMwUMVUzwv%2BJmU7TWGNSFwMeYFGBInwSe6OlHnjSKoTIwla8474jKNx7zwni9xCve5rRda1bV2jmUSDQaMlxWfT6ELChr70DTxQ%2BBN3NQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A38%3A06&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;42811371145759&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.15:38:06.392 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.15:38:06.399 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.15:49:25.251 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 31424 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.15:49:25.252 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.15:49:28.367 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.588 seconds (JVM running for 4.37)
+26-04-21.15:49:29.007 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.15:49:29.287 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.15:49:29.934 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=QCeewXBS1%2BFvyK1xNHK9fachEArCVYn8zaL94DUUdSfLTHpHDY2hKYYk5HdndLEKYeLU9feD1saN%2B2b%2BL3J%2Fvs6G0Deroiwo6HdsvjVSc0a%2FWKLcePl%2Fo%2FHqKFvE9tgpIHl77WncfYj1pmeB0qRXG5dV4yojRu%2FqqbMgTqVoEwNpDMlhYbbtPyJzhDaDw%2FbBkDGg4k4l6My2hVjTpiZNKMVE%2BhJMQQ9FQwnY08YPdT0opC9FzLoFYyDNGGFrO0hpKfL8CapSZUWVXiWWMXaGXcZGTDJKCWb%2FhrZ2x4%2FqpsD5yaH23NJzME9AGWG1aL%2F%2B%2FcZlmsFDHaZ7loi4ZZVdxQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A49%3A29&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;43263165623316&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:49:29.956 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:43263165623316 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=QCeewXBS1%2BFvyK1xNHK9fachEArCVYn8zaL94DUUdSfLTHpHDY2hKYYk5HdndLEKYeLU9feD1saN%2B2b%2BL3J%2Fvs6G0Deroiwo6HdsvjVSc0a%2FWKLcePl%2Fo%2FHqKFvE9tgpIHl77WncfYj1pmeB0qRXG5dV4yojRu%2FqqbMgTqVoEwNpDMlhYbbtPyJzhDaDw%2FbBkDGg4k4l6My2hVjTpiZNKMVE%2BhJMQQ9FQwnY08YPdT0opC9FzLoFYyDNGGFrO0hpKfL8CapSZUWVXiWWMXaGXcZGTDJKCWb%2FhrZ2x4%2FqpsD5yaH23NJzME9AGWG1aL%2F%2B%2FcZlmsFDHaZ7loi4ZZVdxQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A49%3A29&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;43263165623316&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.15:49:29.971 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.15:49:29.973 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"43263165623316","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=QCeewXBS1%2BFvyK1xNHK9fachEArCVYn8zaL94DUUdSfLTHpHDY2hKYYk5HdndLEKYeLU9feD1saN%2B2b%2BL3J%2Fvs6G0Deroiwo6HdsvjVSc0a%2FWKLcePl%2Fo%2FHqKFvE9tgpIHl77WncfYj1pmeB0qRXG5dV4yojRu%2FqqbMgTqVoEwNpDMlhYbbtPyJzhDaDw%2FbBkDGg4k4l6My2hVjTpiZNKMVE%2BhJMQQ9FQwnY08YPdT0opC9FzLoFYyDNGGFrO0hpKfL8CapSZUWVXiWWMXaGXcZGTDJKCWb%2FhrZ2x4%2FqpsD5yaH23NJzME9AGWG1aL%2F%2B%2FcZlmsFDHaZ7loi4ZZVdxQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+15%3A49%3A29&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;43263165623316&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.15:49:29.983 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.15:49:29.989 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:06:03.618 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 34300 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:06:03.619 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:06:06.421 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.307 seconds (JVM running for 4.169)
+26-04-21.16:06:07.135 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:06:07.538 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:06:08.134 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=bWBU9XPLg%2FKFWrfBl6TgQQrVo8vQyYZwPJchqMeSRtrOMSq%2FG%2BegcJW9tRzetzE5iqTjl5F57DJlZxYpUH9ZiJsTboTQ1lmO0mcNpxHZpdSFLoXXW43xWHbFOQdk0gJKwVyH58uGnxaPM0x0QFKKbsGbJAvJDedE4bggNAro%2FyYDJ32dSbvmi94QoyFHDftm%2Fp2P%2BcMx2K5dcbvrnZ5DBikpWCkPvw%2Bs%2FekK0m0mrqsRlwpjNkSThizZ064DeAJy8paNSrDUeB608AVIS0lO89lmFG8eg%2BMNQfyPDAaYOh9onkBdtDyxXGuNOTV0aOS1WnqRvvF%2BLF7f2ZETAHaoRQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A06%3A08&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;318971303253&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:06:08.154 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:318971303253 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=bWBU9XPLg%2FKFWrfBl6TgQQrVo8vQyYZwPJchqMeSRtrOMSq%2FG%2BegcJW9tRzetzE5iqTjl5F57DJlZxYpUH9ZiJsTboTQ1lmO0mcNpxHZpdSFLoXXW43xWHbFOQdk0gJKwVyH58uGnxaPM0x0QFKKbsGbJAvJDedE4bggNAro%2FyYDJ32dSbvmi94QoyFHDftm%2Fp2P%2BcMx2K5dcbvrnZ5DBikpWCkPvw%2Bs%2FekK0m0mrqsRlwpjNkSThizZ064DeAJy8paNSrDUeB608AVIS0lO89lmFG8eg%2BMNQfyPDAaYOh9onkBdtDyxXGuNOTV0aOS1WnqRvvF%2BLF7f2ZETAHaoRQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A06%3A08&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;318971303253&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:06:08.168 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.16:06:08.173 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"318971303253","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=bWBU9XPLg%2FKFWrfBl6TgQQrVo8vQyYZwPJchqMeSRtrOMSq%2FG%2BegcJW9tRzetzE5iqTjl5F57DJlZxYpUH9ZiJsTboTQ1lmO0mcNpxHZpdSFLoXXW43xWHbFOQdk0gJKwVyH58uGnxaPM0x0QFKKbsGbJAvJDedE4bggNAro%2FyYDJ32dSbvmi94QoyFHDftm%2Fp2P%2BcMx2K5dcbvrnZ5DBikpWCkPvw%2Bs%2FekK0m0mrqsRlwpjNkSThizZ064DeAJy8paNSrDUeB608AVIS0lO89lmFG8eg%2BMNQfyPDAaYOh9onkBdtDyxXGuNOTV0aOS1WnqRvvF%2BLF7f2ZETAHaoRQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A06%3A08&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;318971303253&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.16:06:08.182 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:06:08.188 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:12:29.402 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 14548 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:12:29.404 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:12:32.748 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.86 seconds (JVM running for 4.728)
+26-04-21.16:12:33.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:12:33.056 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:12:33.510 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:12:34.081 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=PC%2F6nzgO9O38QotI5P1j5am3irN6iFhXpBGp81%2BzTehVkIhBEvxbjGSuoqqyo0Bo1%2FIvM8xAeSUWLPQpQrhls327nHxIISfr%2FGtHA%2BrU7TvEAJfyRFwKpf29ibboThjxLI5xTyI9dVDBjv0MUjjk5M7NV3jOuHUBlD8PAOepsDHcN2GruAqnZJPTZFFykl0a6x50qIeMqR7QhKpnqAlr4Btsb7Cm5vSGRUpZf%2Bcn%2Fi8AIU%2FqPOS8psfrwB20rG2bZerwqIRVE%2BUFhd8%2F56StKDVV8w0aJs15FDKoK9rSXBI%2But1p3MlF8nBIqh6smDusYnOCXc2Wm4PaYDrsiiB4Dg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A12%3A34&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;132542217919&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:12:34.099 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:132542217919 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=PC%2F6nzgO9O38QotI5P1j5am3irN6iFhXpBGp81%2BzTehVkIhBEvxbjGSuoqqyo0Bo1%2FIvM8xAeSUWLPQpQrhls327nHxIISfr%2FGtHA%2BrU7TvEAJfyRFwKpf29ibboThjxLI5xTyI9dVDBjv0MUjjk5M7NV3jOuHUBlD8PAOepsDHcN2GruAqnZJPTZFFykl0a6x50qIeMqR7QhKpnqAlr4Btsb7Cm5vSGRUpZf%2Bcn%2Fi8AIU%2FqPOS8psfrwB20rG2bZerwqIRVE%2BUFhd8%2F56StKDVV8w0aJs15FDKoK9rSXBI%2But1p3MlF8nBIqh6smDusYnOCXc2Wm4PaYDrsiiB4Dg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A12%3A34&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;132542217919&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:12:34.115 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.16:12:34.119 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"132542217919","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=PC%2F6nzgO9O38QotI5P1j5am3irN6iFhXpBGp81%2BzTehVkIhBEvxbjGSuoqqyo0Bo1%2FIvM8xAeSUWLPQpQrhls327nHxIISfr%2FGtHA%2BrU7TvEAJfyRFwKpf29ibboThjxLI5xTyI9dVDBjv0MUjjk5M7NV3jOuHUBlD8PAOepsDHcN2GruAqnZJPTZFFykl0a6x50qIeMqR7QhKpnqAlr4Btsb7Cm5vSGRUpZf%2Bcn%2Fi8AIU%2FqPOS8psfrwB20rG2bZerwqIRVE%2BUFhd8%2F56StKDVV8w0aJs15FDKoK9rSXBI%2But1p3MlF8nBIqh6smDusYnOCXc2Wm4PaYDrsiiB4Dg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A12%3A34&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;132542217919&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.16:12:34.132 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:12:34.140 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:17:28.955 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 31536 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:17:28.956 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:17:31.995 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.479 seconds (JVM running for 4.243)
+26-04-21.16:17:32.581 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:17:33.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:17:37.947 [main            ] ERROR HikariPool             - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy81.queryUnPayOrder(Unknown Source)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository.queryUnPayOrder(OrderRepository.java:71)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository$$FastClassBySpringCGLIB$$809443e2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository$$EnhancerBySpringCGLIB$$c8907c5.queryUnPayOrder(<generated>)
+	at top.daoha.domain.order.service.AbstractOrderService.createOrder(AbstractOrderService.java:39)
+	at top.daoha.test.domain.OrderServiceTest.test_createOrder(OrderServiceTest.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: com.mysql.cj.exceptions.CJException: Unknown database 's-pay-mall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:792)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:717)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:685)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:134)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:469)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:174)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 83 common frames omitted
+26-04-21.16:17:37.948 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:18:35.212 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 17840 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:18:35.214 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:18:38.204 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.46 seconds (JVM running for 4.261)
+26-04-21.16:18:38.761 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:18:39.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:18:39.039 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:18:39.179 [scheduling-1    ] ERROR NoPayNotifyOrderJob    - 定时任务，超时15分钟订单关闭失败
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-pay-mall-ddd-market.pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >= or' at line 1
+### The error may exist in file [D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes\mybatis\mapper\pay_order_mapper.xml]
+### The error may involve top.daoha.infrastructure.dao.IOrderDao.queryNoPayNotifyOrder-Inline
+### The error occurred while setting parameters
+### SQL: SELECT order_id as orderId FROM s-pay-mall-ddd-market.pay_order         WHERE status = 'PAY_WAIT' AND NOW() >= order_time + INTERVAL 1 MINUTE         ORDER BY id ASC         LIMIT 10
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-pay-mall-ddd-market.pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >= or' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-pay-mall-ddd-market.pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >= or' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy81.queryNoPayNotifyOrder(Unknown Source)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository.queryNoPayNotifyOrder(OrderRepository.java:119)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository$$FastClassBySpringCGLIB$$809443e2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository$$EnhancerBySpringCGLIB$$c8907c5.queryNoPayNotifyOrder(<generated>)
+	at top.daoha.domain.order.service.OrderService.queryNoPayNotifyOrder(OrderService.java:104)
+	at top.daoha.trigger.job.NoPayNotifyOrderJob.exec(NoPayNotifyOrderJob.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-pay-mall-ddd-market.pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >= or' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 34 common frames omitted
+26-04-21.16:18:39.207 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:18:39.222 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:20:35.664 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 30064 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:20:35.665 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:20:38.658 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.449 seconds (JVM running for 4.299)
+26-04-21.16:20:39.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:20:39.046 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:20:39.505 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:20:39.630 [scheduling-1    ] ERROR NoPayNotifyOrderJob    - 定时任务，超时15分钟订单关闭失败
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s-pay-mall-ddd-market'.pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >=' at line 1
+### The error may exist in file [D:\自学\java学习\小型支付商城\myddd\myddd-app\target\classes\mybatis\mapper\pay_order_mapper.xml]
+### The error may involve top.daoha.infrastructure.dao.IOrderDao.queryNoPayNotifyOrder-Inline
+### The error occurred while setting parameters
+### SQL: SELECT order_id as orderId FROM 's-pay-mall-ddd-market'.pay_order         WHERE status = 'PAY_WAIT' AND NOW() >= order_time + INTERVAL 1 MINUTE         ORDER BY id ASC         LIMIT 10
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s-pay-mall-ddd-market'.pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >=' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s-pay-mall-ddd-market'.pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >=' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy81.queryNoPayNotifyOrder(Unknown Source)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository.queryNoPayNotifyOrder(OrderRepository.java:119)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository$$FastClassBySpringCGLIB$$809443e2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at top.daoha.infrastructure.adapter.repository.OrderRepository$$EnhancerBySpringCGLIB$$c8907c5.queryNoPayNotifyOrder(<generated>)
+	at top.daoha.domain.order.service.OrderService.queryNoPayNotifyOrder(OrderService.java:104)
+	at top.daoha.trigger.job.NoPayNotifyOrderJob.exec(NoPayNotifyOrderJob.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s-pay-mall-ddd-market'.pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >=' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 34 common frames omitted
+26-04-21.16:20:39.656 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:20:39.679 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:22:06.736 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 5180 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:22:06.737 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:22:09.678 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.432 seconds (JVM running for 4.302)
+26-04-21.16:22:10.212 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:22:10.468 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:22:10.564 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:22:10.570 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:22:40.613 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 3452 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:22:40.615 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:22:43.582 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.43 seconds (JVM running for 4.223)
+26-04-21.16:22:44.164 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:22:44.457 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:22:44.554 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:22:44.559 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:23:50.755 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 29720 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:23:50.756 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:23:53.547 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.244 seconds (JVM running for 4.023)
+26-04-21.16:23:54.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:23:54.036 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:23:54.338 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:23:54.831 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Q7lHVs4juAX4SxLifeUOZQPcmf2dVXJ1WX0RZZBV4rwziC3yrx8bVcC0%2FZAx3LY0UI1KPUGx%2FO6cunJyMuHkbfVW8QzEfbsuUzQ5FOwze%2BDWT1Ma0iREicnmI6HelR8cQukm%2B5qskFM1ju89mLfKiPO9Zo9UlHlcxU9ufWFu6f%2F8IZPxwtgFa5CEV0xWm%2B4AWfEmxOji%2F1FGHx8vu89Qit%2BBvvLsgQSgMWaunQ2wPfREUVFBHN3SIlIrI9wSj9YnUK6DAPX2Fh5bZzcOkt6CMQOOlYoow%2BHmC2aVrN1RgWIWDvm7DZojLPT%2BrxZ3MDbCtbQ7edWNz8eQRzJvsXVcTw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A23%3A54&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;627532827838&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:23:54.841 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:627532827838 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Q7lHVs4juAX4SxLifeUOZQPcmf2dVXJ1WX0RZZBV4rwziC3yrx8bVcC0%2FZAx3LY0UI1KPUGx%2FO6cunJyMuHkbfVW8QzEfbsuUzQ5FOwze%2BDWT1Ma0iREicnmI6HelR8cQukm%2B5qskFM1ju89mLfKiPO9Zo9UlHlcxU9ufWFu6f%2F8IZPxwtgFa5CEV0xWm%2B4AWfEmxOji%2F1FGHx8vu89Qit%2BBvvLsgQSgMWaunQ2wPfREUVFBHN3SIlIrI9wSj9YnUK6DAPX2Fh5bZzcOkt6CMQOOlYoow%2BHmC2aVrN1RgWIWDvm7DZojLPT%2BrxZ3MDbCtbQ7edWNz8eQRzJvsXVcTw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A23%3A54&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;627532827838&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:23:54.854 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.16:23:54.859 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"627532827838","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Q7lHVs4juAX4SxLifeUOZQPcmf2dVXJ1WX0RZZBV4rwziC3yrx8bVcC0%2FZAx3LY0UI1KPUGx%2FO6cunJyMuHkbfVW8QzEfbsuUzQ5FOwze%2BDWT1Ma0iREicnmI6HelR8cQukm%2B5qskFM1ju89mLfKiPO9Zo9UlHlcxU9ufWFu6f%2F8IZPxwtgFa5CEV0xWm%2B4AWfEmxOji%2F1FGHx8vu89Qit%2BBvvLsgQSgMWaunQ2wPfREUVFBHN3SIlIrI9wSj9YnUK6DAPX2Fh5bZzcOkt6CMQOOlYoow%2BHmC2aVrN1RgWIWDvm7DZojLPT%2BrxZ3MDbCtbQ7edWNz8eQRzJvsXVcTw%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A23%3A54&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;627532827838&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.16:23:54.868 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:23:54.874 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:26:32.350 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 3632 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:26:32.350 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:26:35.121 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.241 seconds (JVM running for 4.057)
+26-04-21.16:26:35.810 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:26:36.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:26:36.099 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:26:36.678 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Ooq4htzbuuLjJLLDQaJg%2FCNKQPlK5KgUoikD4bz7oD3KCryd44PcY9hk4GH1idGJvjoXnDXzS8irjLel1Ci0yeGsYx5cTWzC2NHo1BBaIfF%2FronVowf1b0AUU4%2BekY4z1lQHUMVkE5avwcOZqcOdZTiloysTOpcc3QwEPiZDq5He2pVvwf2nWt2LG1huzWJ%2FXMc8%2FtO4PrqdyiD%2BkOVGq%2FUo0sTUupSKEgVKXr8quHjvcGKuIpYkVJU1pyeQhSIDI7q4mhdT4OWZ3jgQHM0hY7YeFhNvfwu31cXmIUlRbChgPQeMVmv41K6vp5s5B8Vv%2Bj3AIsnVzbJjYfe9x7FJjQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A26%3A36&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;620500794089&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:26:36.702 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:620500794089 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Ooq4htzbuuLjJLLDQaJg%2FCNKQPlK5KgUoikD4bz7oD3KCryd44PcY9hk4GH1idGJvjoXnDXzS8irjLel1Ci0yeGsYx5cTWzC2NHo1BBaIfF%2FronVowf1b0AUU4%2BekY4z1lQHUMVkE5avwcOZqcOdZTiloysTOpcc3QwEPiZDq5He2pVvwf2nWt2LG1huzWJ%2FXMc8%2FtO4PrqdyiD%2BkOVGq%2FUo0sTUupSKEgVKXr8quHjvcGKuIpYkVJU1pyeQhSIDI7q4mhdT4OWZ3jgQHM0hY7YeFhNvfwu31cXmIUlRbChgPQeMVmv41K6vp5s5B8Vv%2Bj3AIsnVzbJjYfe9x7FJjQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A26%3A36&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;620500794089&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:26:36.721 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.16:26:36.726 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"620500794089","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Ooq4htzbuuLjJLLDQaJg%2FCNKQPlK5KgUoikD4bz7oD3KCryd44PcY9hk4GH1idGJvjoXnDXzS8irjLel1Ci0yeGsYx5cTWzC2NHo1BBaIfF%2FronVowf1b0AUU4%2BekY4z1lQHUMVkE5avwcOZqcOdZTiloysTOpcc3QwEPiZDq5He2pVvwf2nWt2LG1huzWJ%2FXMc8%2FtO4PrqdyiD%2BkOVGq%2FUo0sTUupSKEgVKXr8quHjvcGKuIpYkVJU1pyeQhSIDI7q4mhdT4OWZ3jgQHM0hY7YeFhNvfwu31cXmIUlRbChgPQeMVmv41K6vp5s5B8Vv%2Bj3AIsnVzbJjYfe9x7FJjQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A26%3A36&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;620500794089&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.16:26:36.738 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:26:36.746 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:29:09.859 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 19464 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:29:09.861 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:29:13.936 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.619 seconds (JVM running for 5.943)
+26-04-21.16:29:14.711 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:29:15.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:29:15.042 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:29:31.060 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s17ms662µs400ns).
+26-04-21.16:29:31.059 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:29:44.679 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:29:45.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:29:45.016 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=ZkpbYGSvdCPRnFFur7zl8InkEZd1ImXedpJJ%2F4MoH7L3zAy95T4qknGRBpAij66LKNW%2BUMvDf4PNLC%2BAsQ9dmdL9fJTKUp8nN8LtWsPfX7LXlQGtEhhtrDCEpQA009NiLnDmlsg6ydQg1syrw2oRehBjvCLIgT16DF46DXEfIkrnu5LDvqu8xDhIGt4CkcslRIPgWXf8h8O62lHklH38jNE0DhCaOanRTJXNVyURJ4sEXKvDgf6GdafvpAWTc57CMk5PGedXIqB8NRBgtEboaC96D0xw33%2FBjfjl3iKnMmbt9SuKk09%2F3%2BrQW%2BQn6LyFhblGspk%2Ba9G1KC%2BogOISpg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A29%3A44&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;765380522719&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:29:45.048 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:765380522719 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=ZkpbYGSvdCPRnFFur7zl8InkEZd1ImXedpJJ%2F4MoH7L3zAy95T4qknGRBpAij66LKNW%2BUMvDf4PNLC%2BAsQ9dmdL9fJTKUp8nN8LtWsPfX7LXlQGtEhhtrDCEpQA009NiLnDmlsg6ydQg1syrw2oRehBjvCLIgT16DF46DXEfIkrnu5LDvqu8xDhIGt4CkcslRIPgWXf8h8O62lHklH38jNE0DhCaOanRTJXNVyURJ4sEXKvDgf6GdafvpAWTc57CMk5PGedXIqB8NRBgtEboaC96D0xw33%2FBjfjl3iKnMmbt9SuKk09%2F3%2BrQW%2BQn6LyFhblGspk%2Ba9G1KC%2BogOISpg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A29%3A44&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;765380522719&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:29:45.070 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.16:29:45.075 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"765380522719","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=ZkpbYGSvdCPRnFFur7zl8InkEZd1ImXedpJJ%2F4MoH7L3zAy95T4qknGRBpAij66LKNW%2BUMvDf4PNLC%2BAsQ9dmdL9fJTKUp8nN8LtWsPfX7LXlQGtEhhtrDCEpQA009NiLnDmlsg6ydQg1syrw2oRehBjvCLIgT16DF46DXEfIkrnu5LDvqu8xDhIGt4CkcslRIPgWXf8h8O62lHklH38jNE0DhCaOanRTJXNVyURJ4sEXKvDgf6GdafvpAWTc57CMk5PGedXIqB8NRBgtEboaC96D0xw33%2FBjfjl3iKnMmbt9SuKk09%2F3%2BrQW%2BQn6LyFhblGspk%2Ba9G1KC%2BogOISpg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A29%3A44&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;765380522719&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.16:29:45.090 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:29:45.099 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:31:05.650 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 27960 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:31:05.651 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:31:09.324 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.235 seconds (JVM running for 5.166)
+26-04-21.16:31:10.195 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:31:10.507 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:31:29.237 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s729ms294µs300ns).
+26-04-21.16:31:29.237 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:31:49.065 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:32:01.137 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:32:09.432 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:32:11.043 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Iiu4IypSw%2FimvMwVf09EyjZMgmCa4VYLcu%2FUtLdLAyMmnEHnbwZRbbjnAG2frLRg2hWFwfUZfEjQBYiJGUekJ2WO2cNWc4mLAMp80f4mzfYpkM7w71d988wxN58h%2BH1lOmhElerh9VUJ64R1nuw6XrvHi9VU3%2FdII3DbQM1oxaoedtI2XBJm7aAPj21emPXqYbj5uB%2FehFYhgX0ktc9T6ZIBV3LPEFBkzZVkgRP%2FgvYgy2PBGOoNGU4THUF%2FHpb7mIHFH2%2BHOLawsdF8gNCpgC8xGLCUMkum8keX%2FPHQ6P4CU6wzts1QCTLUgBlVdLIBheQTHeDqSUiOSXBjz3zpMA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A32%3A10&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;811842882731&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:32:13.201 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:32:13.202 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:811842882731 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Iiu4IypSw%2FimvMwVf09EyjZMgmCa4VYLcu%2FUtLdLAyMmnEHnbwZRbbjnAG2frLRg2hWFwfUZfEjQBYiJGUekJ2WO2cNWc4mLAMp80f4mzfYpkM7w71d988wxN58h%2BH1lOmhElerh9VUJ64R1nuw6XrvHi9VU3%2FdII3DbQM1oxaoedtI2XBJm7aAPj21emPXqYbj5uB%2FehFYhgX0ktc9T6ZIBV3LPEFBkzZVkgRP%2FgvYgy2PBGOoNGU4THUF%2FHpb7mIHFH2%2BHOLawsdF8gNCpgC8xGLCUMkum8keX%2FPHQ6P4CU6wzts1QCTLUgBlVdLIBheQTHeDqSUiOSXBjz3zpMA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A32%3A10&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;811842882731&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:32:20.782 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.16:32:20.786 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"811842882731","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Iiu4IypSw%2FimvMwVf09EyjZMgmCa4VYLcu%2FUtLdLAyMmnEHnbwZRbbjnAG2frLRg2hWFwfUZfEjQBYiJGUekJ2WO2cNWc4mLAMp80f4mzfYpkM7w71d988wxN58h%2BH1lOmhElerh9VUJ64R1nuw6XrvHi9VU3%2FdII3DbQM1oxaoedtI2XBJm7aAPj21emPXqYbj5uB%2FehFYhgX0ktc9T6ZIBV3LPEFBkzZVkgRP%2FgvYgy2PBGOoNGU4THUF%2FHpb7mIHFH2%2BHOLawsdF8gNCpgC8xGLCUMkum8keX%2FPHQ6P4CU6wzts1QCTLUgBlVdLIBheQTHeDqSUiOSXBjz3zpMA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A32%3A10&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;811842882731&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.16:32:20.803 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:32:20.812 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:40:38.130 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 2544 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:40:38.131 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:40:41.515 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.995 seconds (JVM running for 5.236)
+26-04-21.16:40:42.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:40:42.035 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:40:42.441 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:40:42.899 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=E68cE8C4aJtCXrqADmsKiICkagifdngKvOqpdjXWliJth2KmaBuagC%2F2NBqki8%2BCh5s7sO1%2B5VLXyG7mhdD9PtD6qumDO1cSZBosDvqxWrZs3KdB0fLdhV7Kou9%2BqxT0HA%2Bp9URyG5%2F3WZxN%2Bv0oE70t3ytgwhXO%2BShTUfluoSWdTtdUuM12QOe83X5uAw%2Fu66mHOou66Rm7MkuXxNPJ8XiaZaD9aqjfG4YvX9XSu9fUfwgdNr3BTr6%2BnZLw5UrCbd0F58bqNfFNOVoTsD4Vv7G0xcbsqUI2W4VBDxYQ9gS%2FsqV%2FrqGrklUJcCqEtu1lyOUn8%2BrtxiYFRCrltpAQXA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A40%3A42&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;351521131329&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:40:42.914 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:351521131329 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=E68cE8C4aJtCXrqADmsKiICkagifdngKvOqpdjXWliJth2KmaBuagC%2F2NBqki8%2BCh5s7sO1%2B5VLXyG7mhdD9PtD6qumDO1cSZBosDvqxWrZs3KdB0fLdhV7Kou9%2BqxT0HA%2Bp9URyG5%2F3WZxN%2Bv0oE70t3ytgwhXO%2BShTUfluoSWdTtdUuM12QOe83X5uAw%2Fu66mHOou66Rm7MkuXxNPJ8XiaZaD9aqjfG4YvX9XSu9fUfwgdNr3BTr6%2BnZLw5UrCbd0F58bqNfFNOVoTsD4Vv7G0xcbsqUI2W4VBDxYQ9gS%2FsqV%2FrqGrklUJcCqEtu1lyOUn8%2BrtxiYFRCrltpAQXA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A40%3A42&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;351521131329&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:40:42.931 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.16:40:42.934 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"351521131329","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=E68cE8C4aJtCXrqADmsKiICkagifdngKvOqpdjXWliJth2KmaBuagC%2F2NBqki8%2BCh5s7sO1%2B5VLXyG7mhdD9PtD6qumDO1cSZBosDvqxWrZs3KdB0fLdhV7Kou9%2BqxT0HA%2Bp9URyG5%2F3WZxN%2Bv0oE70t3ytgwhXO%2BShTUfluoSWdTtdUuM12QOe83X5uAw%2Fu66mHOou66Rm7MkuXxNPJ8XiaZaD9aqjfG4YvX9XSu9fUfwgdNr3BTr6%2BnZLw5UrCbd0F58bqNfFNOVoTsD4Vv7G0xcbsqUI2W4VBDxYQ9gS%2FsqV%2FrqGrklUJcCqEtu1lyOUn8%2BrtxiYFRCrltpAQXA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A40%3A42&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;351521131329&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.16:40:42.945 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:40:42.951 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:42:41.289 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 3364 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:42:41.290 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:42:44.200 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.357 seconds (JVM running for 4.142)
+26-04-21.16:42:44.753 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:42:45.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:42:45.042 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:42:45.523 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=IVeappY5OU18bnxw7mvxTWWZBXoy13hgqggS9FOtGP0964a83fGrazlNnGyG5YCqbHK7P57LAWvCqtMUGQk4bCJZqCgAITN85UJ3lRnucwK3DMqrYHG%2BmeQk4D0d2QBF4zIekoxBK11DzKmhqFC6NkKl6oVOacpy5XsNI4f6TG30iYveUcjNUd%2BLxUM7O1mKy91LAW1mZv4OHaTZQ048qQrYnKLFntLK8ZiDnJPWG65ErcMAFcX1M2Sw3ntzZZWPDbgbC1QO6SQvB3qeMfTu4o0i4iIy2um00T%2F0mGhrHGBXmYiBPXqnEuePBuClx4hLfHeeuRhHPoTb%2BKRpadVw3g%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A42%3A45&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;624246438154&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:42:45.541 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:624246438154 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=IVeappY5OU18bnxw7mvxTWWZBXoy13hgqggS9FOtGP0964a83fGrazlNnGyG5YCqbHK7P57LAWvCqtMUGQk4bCJZqCgAITN85UJ3lRnucwK3DMqrYHG%2BmeQk4D0d2QBF4zIekoxBK11DzKmhqFC6NkKl6oVOacpy5XsNI4f6TG30iYveUcjNUd%2BLxUM7O1mKy91LAW1mZv4OHaTZQ048qQrYnKLFntLK8ZiDnJPWG65ErcMAFcX1M2Sw3ntzZZWPDbgbC1QO6SQvB3qeMfTu4o0i4iIy2um00T%2F0mGhrHGBXmYiBPXqnEuePBuClx4hLfHeeuRhHPoTb%2BKRpadVw3g%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A42%3A45&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;624246438154&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.16:42:45.555 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.16:42:45.560 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"624246438154","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=IVeappY5OU18bnxw7mvxTWWZBXoy13hgqggS9FOtGP0964a83fGrazlNnGyG5YCqbHK7P57LAWvCqtMUGQk4bCJZqCgAITN85UJ3lRnucwK3DMqrYHG%2BmeQk4D0d2QBF4zIekoxBK11DzKmhqFC6NkKl6oVOacpy5XsNI4f6TG30iYveUcjNUd%2BLxUM7O1mKy91LAW1mZv4OHaTZQ048qQrYnKLFntLK8ZiDnJPWG65ErcMAFcX1M2Sw3ntzZZWPDbgbC1QO6SQvB3qeMfTu4o0i4iIy2um00T%2F0mGhrHGBXmYiBPXqnEuePBuClx4hLfHeeuRhHPoTb%2BKRpadVw3g%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+16%3A42%3A45&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;624246438154&quot;,&quot;total_amount&quot;:&quot;99.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.16:42:45.573 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:42:45.579 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:53:58.671 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 17700 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:53:58.672 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:54:02.892 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.824 seconds (JVM running for 5.971)
+26-04-21.16:54:03.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:54:03.058 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:54:03.805 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:55:22.558 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s638ms286µs700ns).
+26-04-21.16:55:22.558 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:55:22.588 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:55:22.594 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:55:47.466 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 35464 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:55:47.468 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:55:49.602 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 35684 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:55:49.604 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:55:52.476 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.625 seconds (JVM running for 6.544)
+26-04-21.16:55:54.430 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.465 seconds (JVM running for 6.712)
+26-04-21.16:56:16.832 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 35140 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:56:16.834 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:56:20.486 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.172 seconds (JVM running for 5.075)
+26-04-21.16:56:21.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:56:21.066 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:56:21.611 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:56:26.571 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:56:39.583 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:56:42.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:56:45.596 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:56:45.624 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:56:45.631 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:56:55.972 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 33768 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:56:55.972 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:56:59.785 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.307 seconds (JVM running for 5.275)
+26-04-21.16:57:15.293 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 29312 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:57:15.294 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:57:18.948 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.263 seconds (JVM running for 5.184)
+26-04-21.16:57:19.653 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:57:20.029 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:57:39.194 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:57:39.194 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s165ms22µs200ns).
+26-04-21.16:57:39.227 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:57:39.259 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.16:58:43.639 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 31976 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.16:58:43.641 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.16:58:47.392 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.294 seconds (JVM running for 5.208)
+26-04-21.16:58:48.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:58:48.053 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.16:58:48.508 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.16:59:00.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:59:13.752 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.16:59:13.780 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.16:59:13.786 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.17:02:26.485 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 33156 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.17:02:26.486 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.17:02:30.706 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.764 seconds (JVM running for 5.677)
+26-04-21.17:02:31.555 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.17:02:31.937 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.17:02:32.709 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=WquUdsVQfFwpaB%2BAMnh0WzTcM8gzwy6wjUvkB7BYBtMtJDY1Ai8yMQmduxhy8XCu9SmQzZJdM32jFBrEdRfCpQ2BV6Q7F9DcvltTo97lIUHBvWMJeXvNiKJyRmYIAGH6zuUbP3xcZZRTvVM54ChJtBEyYAzY%2BLJGD5ztCFP3OrkrUrfrfk%2BQcKy9atTjhjK5ouKK1SKKYBsaXxgFRe53qAbYBHuOYNBNaiXQfMSOVus7jsYtbwA4nPLQhnXR%2B76p4IPVuc5rNkbAA%2Bz5n6oZXZJVAPnnaXXyJ%2BemEHGqgtfVVkqg9d55oyC7LLeO7xoap8S3zk%2BWHtqC9BppjeqeaA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A02%3A32&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;998234922890&quot;,&quot;total_amount&quot;:99.68,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:02:32.718 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:998234922890 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=WquUdsVQfFwpaB%2BAMnh0WzTcM8gzwy6wjUvkB7BYBtMtJDY1Ai8yMQmduxhy8XCu9SmQzZJdM32jFBrEdRfCpQ2BV6Q7F9DcvltTo97lIUHBvWMJeXvNiKJyRmYIAGH6zuUbP3xcZZRTvVM54ChJtBEyYAzY%2BLJGD5ztCFP3OrkrUrfrfk%2BQcKy9atTjhjK5ouKK1SKKYBsaXxgFRe53qAbYBHuOYNBNaiXQfMSOVus7jsYtbwA4nPLQhnXR%2B76p4IPVuc5rNkbAA%2Bz5n6oZXZJVAPnnaXXyJ%2BemEHGqgtfVVkqg9d55oyC7LLeO7xoap8S3zk%2BWHtqC9BppjeqeaA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A02%3A32&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;998234922890&quot;,&quot;total_amount&quot;:99.68,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:02:32.736 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.17:02:32.740 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"998234922890","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=WquUdsVQfFwpaB%2BAMnh0WzTcM8gzwy6wjUvkB7BYBtMtJDY1Ai8yMQmduxhy8XCu9SmQzZJdM32jFBrEdRfCpQ2BV6Q7F9DcvltTo97lIUHBvWMJeXvNiKJyRmYIAGH6zuUbP3xcZZRTvVM54ChJtBEyYAzY%2BLJGD5ztCFP3OrkrUrfrfk%2BQcKy9atTjhjK5ouKK1SKKYBsaXxgFRe53qAbYBHuOYNBNaiXQfMSOVus7jsYtbwA4nPLQhnXR%2B76p4IPVuc5rNkbAA%2Bz5n6oZXZJVAPnnaXXyJ%2BemEHGqgtfVVkqg9d55oyC7LLeO7xoap8S3zk%2BWHtqC9BppjeqeaA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A02%3A32&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;998234922890&quot;,&quot;total_amount&quot;:99.68,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.17:02:32.752 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.17:02:32.759 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.17:03:17.406 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 34868 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.17:03:17.407 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.17:03:19.529 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 30276 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.17:03:19.531 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.17:03:22.297 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.471 seconds (JVM running for 6.369)
+26-04-21.17:03:23.079 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.17:03:23.464 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.17:03:25.011 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.148 seconds (JVM running for 7.357)
+26-04-21.17:03:25.710 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.17:03:26.071 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.17:03:26.111 [main            ] INFO  AbstractOrderService   - 创建订单-存在，存在未创建支付订单，创建支付单开始。userId:xiaofuge productId:9890001 orderId:872961391385
+26-04-21.17:03:26.289 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=ZBna3NKWZf9ZZHVXAcW3x%2FV5NCLA7Wa%2B58%2FgcEGv01RN7CxWYZKrOZVQlS%2BsAh%2F0L4yA8jh7QL8ZfOv%2Fiyefo0AwjvNxHLXKD9rQ06NiVUyvke3kpu7yMfgJfr19QOli1yKe%2FX%2F5tMhLHewXbP3di0JBC3TkctXxrxtWmy%2FiCTJKjCzSJg7j4dBXtccWGnfnH3pNAV%2BoWtw878SRcjMMt7Jp%2BkUuufbQTbn2OlfAWoMMeOheYFTix413LlnP9y%2ByRVpH8JXQCdAcIyOKm6o4QPXsBD09a8hKMZivHFDYLlJkJgoxXSviUe4vexiwXhAC0alYpTiMQ0jeoYDi4JwC%2Bg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A03%3A26&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;872961391385&quot;,&quot;total_amount&quot;:99.68,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:03:26.331 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.17:03:26.337 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"872961391385","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=ZBna3NKWZf9ZZHVXAcW3x%2FV5NCLA7Wa%2B58%2FgcEGv01RN7CxWYZKrOZVQlS%2BsAh%2F0L4yA8jh7QL8ZfOv%2Fiyefo0AwjvNxHLXKD9rQ06NiVUyvke3kpu7yMfgJfr19QOli1yKe%2FX%2F5tMhLHewXbP3di0JBC3TkctXxrxtWmy%2FiCTJKjCzSJg7j4dBXtccWGnfnH3pNAV%2BoWtw878SRcjMMt7Jp%2BkUuufbQTbn2OlfAWoMMeOheYFTix413LlnP9y%2ByRVpH8JXQCdAcIyOKm6o4QPXsBD09a8hKMZivHFDYLlJkJgoxXSviUe4vexiwXhAC0alYpTiMQ0jeoYDi4JwC%2Bg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A03%3A26&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;872961391385&quot;,&quot;total_amount&quot;:99.68,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.17:03:26.359 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.17:03:26.367 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.17:03:47.705 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.17:03:48.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.17:06:05.694 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.17:06:05.694 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m42s122ms708µs701ns).
+26-04-21.17:06:05.726 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.17:06:05.734 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.17:06:23.495 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 26500 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.17:06:23.497 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.17:06:25.813 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 15320 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.17:06:25.815 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.17:06:28.657 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.744 seconds (JVM running for 6.676)
+26-04-21.17:06:29.631 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.17:06:30.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.17:06:30.212 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.17:06:31.742 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.571 seconds (JVM running for 7.912)
+26-04-21.17:06:32.641 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.17:06:33.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.17:06:33.157 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.17:06:33.224 [main            ] INFO  AbstractOrderService   - 创建订单-存在，存在未创建支付订单，创建支付单开始。userId:xiaofuge productId:9890001 orderId:386611969850
+26-04-21.17:06:33.493 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=KPGCKyt9noND6oIfUTT0O2tJMkpT722Hjb3Bh1CJ6bWZPrJO9JEKqqnVm0A3nZGBP2CxPtUkxZxZRO3TFxZJppZS7uuuK1Fyiz20BijJb2AGT1zFacEC%2BNsYaEaYGenN3qr1VabrV2%2BLcu5L5vnJpPgwzwYJk5%2FbJtpuHfoJlsca5qOGOz7UzGgXUQ1IE9f2l%2F0J%2FA6oB%2Fpn3rr7QOud7h7M%2BN8jbLOx91D6ywgbqdA4dmG5sVsxdBQC6RHOYdWVfGp9PGI1JC%2B722zGWLAMU33%2FgbG9eLqKsPH9GlKKZnQa5n1MzHPFclZiuQe34m8CJ%2FJuwm6ByfUA5lqr%2F%2BlwmQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A06%3A33&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;386611969850&quot;,&quot;total_amount&quot;:99.68,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:06:33.527 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.17:06:33.533 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"386611969850","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=KPGCKyt9noND6oIfUTT0O2tJMkpT722Hjb3Bh1CJ6bWZPrJO9JEKqqnVm0A3nZGBP2CxPtUkxZxZRO3TFxZJppZS7uuuK1Fyiz20BijJb2AGT1zFacEC%2BNsYaEaYGenN3qr1VabrV2%2BLcu5L5vnJpPgwzwYJk5%2FbJtpuHfoJlsca5qOGOz7UzGgXUQ1IE9f2l%2F0J%2FA6oB%2Fpn3rr7QOud7h7M%2BN8jbLOx91D6ywgbqdA4dmG5sVsxdBQC6RHOYdWVfGp9PGI1JC%2B722zGWLAMU33%2FgbG9eLqKsPH9GlKKZnQa5n1MzHPFclZiuQe34m8CJ%2FJuwm6ByfUA5lqr%2F%2BlwmQ%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A06%3A33&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;386611969850&quot;,&quot;total_amount&quot;:99.68,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.17:06:33.549 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.17:06:33.560 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.17:06:43.587 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.17:06:43.720 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=KcAI%2BoRHSCJoMxDhyDo5Zs2oEoevyjEaR8re4AFe0LNe%2BTdrYvrlFMXeespTNKu%2BY2ss4Mhmen8MESet3VqKh5FMEkAWN2W8Q0NnTl12OC2P%2FCa8HRzHk8pWeBwjKtl1cuBBqyCXuDuIpOg5LG9FvPVQE7Q2tjLt5rO4JhiN%2BzMY%2BuAQjG4bUuxTfbCUZYpHob5r3sDIMZRsOknpYtM5tOJUIBgxiAJ4I5o6t3COIhdiOD9RewCdrONKANJlVEmyDnEAR4dKG1kNY2MMnGvwjRmUImNX%2BaU9n2QsxZNtCP7FVq2%2BnHfA5CKGKg2XE53F5Punma%2BjP1sigWuQSmHSBg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A06%3A43&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;386611969850&quot;,&quot;total_amount&quot;:90.00,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:06:43.761 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:386611969850 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=KcAI%2BoRHSCJoMxDhyDo5Zs2oEoevyjEaR8re4AFe0LNe%2BTdrYvrlFMXeespTNKu%2BY2ss4Mhmen8MESet3VqKh5FMEkAWN2W8Q0NnTl12OC2P%2FCa8HRzHk8pWeBwjKtl1cuBBqyCXuDuIpOg5LG9FvPVQE7Q2tjLt5rO4JhiN%2BzMY%2BuAQjG4bUuxTfbCUZYpHob5r3sDIMZRsOknpYtM5tOJUIBgxiAJ4I5o6t3COIhdiOD9RewCdrONKANJlVEmyDnEAR4dKG1kNY2MMnGvwjRmUImNX%2BaU9n2QsxZNtCP7FVq2%2BnHfA5CKGKg2XE53F5Punma%2BjP1sigWuQSmHSBg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A06%3A43&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;386611969850&quot;,&quot;total_amount&quot;:90.00,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:06:43.777 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.17:06:43.780 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"386611969850","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=KcAI%2BoRHSCJoMxDhyDo5Zs2oEoevyjEaR8re4AFe0LNe%2BTdrYvrlFMXeespTNKu%2BY2ss4Mhmen8MESet3VqKh5FMEkAWN2W8Q0NnTl12OC2P%2FCa8HRzHk8pWeBwjKtl1cuBBqyCXuDuIpOg5LG9FvPVQE7Q2tjLt5rO4JhiN%2BzMY%2BuAQjG4bUuxTfbCUZYpHob5r3sDIMZRsOknpYtM5tOJUIBgxiAJ4I5o6t3COIhdiOD9RewCdrONKANJlVEmyDnEAR4dKG1kNY2MMnGvwjRmUImNX%2BaU9n2QsxZNtCP7FVq2%2BnHfA5CKGKg2XE53F5Punma%2BjP1sigWuQSmHSBg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2F127.0.0.1%3A7860%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A06%3A43&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;386611969850&quot;,&quot;total_amount&quot;:90.00,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.17:06:43.789 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.17:06:43.797 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.17:12:50.264 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 35392 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.17:12:50.266 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.17:12:53.231 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.451 seconds (JVM running for 4.254)
+26-04-21.17:12:53.837 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.17:12:54.020 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.17:12:54.117 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.17:12:54.595 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=UVc8Z%2FYHx450fkDANL5wKXbkLud2GIxgGvjDo5MIMrjpnFhMOSZVT0QDBPYnk38H5OKsxK%2FHJM5wTKFl3lMEs%2FMHsGIyOsr%2BzWiCT%2Fisy9LBNeqrClxxXCqE0vilH5E%2B0Afq%2BZoaXjF%2Bz5JS6zuDG3MZDNxPRUkraH0JKG6QwksLdJLJZg%2Fq3KnBB6vJUy8T84xE1%2FZGY0RmS4xhgGV5MGr9Q53bGNh%2F%2FDvftw2dGl%2FOYTKBJGIsdBBid7u9lEded7ZSnK20kRNk%2FUZyvpH5JuGUKsaKtfNglvO5TygMVlNe4aJ4G8UqitMPi9vpopfp9d8mQ93ORaUnLOmzOAsEFg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A12%3A54&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;384640309316&quot;,&quot;total_amount&quot;:90.00,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:12:54.609 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:384640309316 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=UVc8Z%2FYHx450fkDANL5wKXbkLud2GIxgGvjDo5MIMrjpnFhMOSZVT0QDBPYnk38H5OKsxK%2FHJM5wTKFl3lMEs%2FMHsGIyOsr%2BzWiCT%2Fisy9LBNeqrClxxXCqE0vilH5E%2B0Afq%2BZoaXjF%2Bz5JS6zuDG3MZDNxPRUkraH0JKG6QwksLdJLJZg%2Fq3KnBB6vJUy8T84xE1%2FZGY0RmS4xhgGV5MGr9Q53bGNh%2F%2FDvftw2dGl%2FOYTKBJGIsdBBid7u9lEded7ZSnK20kRNk%2FUZyvpH5JuGUKsaKtfNglvO5TygMVlNe4aJ4G8UqitMPi9vpopfp9d8mQ93ORaUnLOmzOAsEFg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A12%3A54&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;384640309316&quot;,&quot;total_amount&quot;:90.00,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:12:54.624 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.17:12:54.628 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"384640309316","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=UVc8Z%2FYHx450fkDANL5wKXbkLud2GIxgGvjDo5MIMrjpnFhMOSZVT0QDBPYnk38H5OKsxK%2FHJM5wTKFl3lMEs%2FMHsGIyOsr%2BzWiCT%2Fisy9LBNeqrClxxXCqE0vilH5E%2B0Afq%2BZoaXjF%2Bz5JS6zuDG3MZDNxPRUkraH0JKG6QwksLdJLJZg%2Fq3KnBB6vJUy8T84xE1%2FZGY0RmS4xhgGV5MGr9Q53bGNh%2F%2FDvftw2dGl%2FOYTKBJGIsdBBid7u9lEded7ZSnK20kRNk%2FUZyvpH5JuGUKsaKtfNglvO5TygMVlNe4aJ4G8UqitMPi9vpopfp9d8mQ93ORaUnLOmzOAsEFg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A12%3A54&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;384640309316&quot;,&quot;total_amount&quot;:90.00,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.17:12:54.638 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.17:12:54.644 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.17:36:27.689 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 29192 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.17:36:27.689 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.17:36:30.729 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.513 seconds (JVM running for 4.354)
+26-04-21.17:36:31.390 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.17:36:31.725 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.17:36:32.210 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Q4vVgQIaRzRYODLa8Gg5Lqlw95Ua2jsdxDUNlAWiZ%2BMaORKmmMB35BxXY4dK%2FixeDFaSH9CM8hwVg%2FF6VPgQMWR%2B%2BgHaLYVBdV%2Fkt0pSbXM4ma7K%2Fb%2FllZ4PkOuHXxXWOWh%2FYMu48mYAUYY6Hw8IWBBmPjvJrry7A4yomEK4HHJjCqLOcXDOGy82BEI37gfEUYSdc1yMX63RPLnlCGuH4GfoT4qe2whVEcQLkUh72zMxmqJBnh3aTr51nzvnUyEWJ7UF7tLl8rNA9LqeH30%2Fs0TXYD1e8meBNDkkwluwh83Z3hhBS1cYecYb6K7sd0fkx4nMCfMGLkF97OSjTYWMsA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A36%3A32&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;245308000193&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:36:32.229 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:245308000193 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Q4vVgQIaRzRYODLa8Gg5Lqlw95Ua2jsdxDUNlAWiZ%2BMaORKmmMB35BxXY4dK%2FixeDFaSH9CM8hwVg%2FF6VPgQMWR%2B%2BgHaLYVBdV%2Fkt0pSbXM4ma7K%2Fb%2FllZ4PkOuHXxXWOWh%2FYMu48mYAUYY6Hw8IWBBmPjvJrry7A4yomEK4HHJjCqLOcXDOGy82BEI37gfEUYSdc1yMX63RPLnlCGuH4GfoT4qe2whVEcQLkUh72zMxmqJBnh3aTr51nzvnUyEWJ7UF7tLl8rNA9LqeH30%2Fs0TXYD1e8meBNDkkwluwh83Z3hhBS1cYecYb6K7sd0fkx4nMCfMGLkF97OSjTYWMsA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A36%3A32&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;245308000193&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:36:32.244 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.17:36:32.247 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"245308000193","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Q4vVgQIaRzRYODLa8Gg5Lqlw95Ua2jsdxDUNlAWiZ%2BMaORKmmMB35BxXY4dK%2FixeDFaSH9CM8hwVg%2FF6VPgQMWR%2B%2BgHaLYVBdV%2Fkt0pSbXM4ma7K%2Fb%2FllZ4PkOuHXxXWOWh%2FYMu48mYAUYY6Hw8IWBBmPjvJrry7A4yomEK4HHJjCqLOcXDOGy82BEI37gfEUYSdc1yMX63RPLnlCGuH4GfoT4qe2whVEcQLkUh72zMxmqJBnh3aTr51nzvnUyEWJ7UF7tLl8rNA9LqeH30%2Fs0TXYD1e8meBNDkkwluwh83Z3hhBS1cYecYb6K7sd0fkx4nMCfMGLkF97OSjTYWMsA%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A36%3A32&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;245308000193&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.17:36:32.258 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.17:36:32.265 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-04-21.17:49:52.987 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 17 on jjnice with PID 276 (started by 24209 in D:\自学\java学习\小型支付商城\myddd\myddd-app)
+26-04-21.17:49:52.987 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-04-21.17:49:55.883 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.352 seconds (JVM running for 4.12)
+26-04-21.17:49:56.490 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-04-21.17:49:56.776 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-04-21.17:49:57.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务：检测未接受到或未正确处理支付回调通知
+26-04-21.17:49:57.425 [main            ] INFO  OrderService           - 测试结果
+
+把我复制到 index.html ->：<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=cvEhNQ%2B3ObHfQ%2F9%2BVW6cCQUW2rBvEwt%2FTKIEWF61lKdApM1%2B%2F7I289R72fkMDl8wyr%2BRTUXIkb6wgtc2XZ4j2Ra1Pun9ed9rZwo5bTJ5fdPh%2BrJ9NhNS2Nm0IZMNMCdD22K1GSqZM3D%2FXXYz1RfirBvJQ9WDckOGGEG6CflzsRargyahCLy%2FXshjjQnCS6S2HvZ9rwsDrM%2FeWyKnkr%2F4jRH4wkzFfxdmJPluyHb1KGgufzB2rkZAm1EmNfC0FwSjild8hzumbh6wxaprN7TPEMJUEy%2BCHyJ%2F7a8vQD6ppOcdeNIIQmfh1iO4W1L4ZN%2FhSIFaCaQlMy0EBM68m3QVwg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A49%3A57&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;804431119492&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:49:57.440 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userid:xiaofuge orderid:804431119492 payurl:<form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=cvEhNQ%2B3ObHfQ%2F9%2BVW6cCQUW2rBvEwt%2FTKIEWF61lKdApM1%2B%2F7I289R72fkMDl8wyr%2BRTUXIkb6wgtc2XZ4j2Ra1Pun9ed9rZwo5bTJ5fdPh%2BrJ9NhNS2Nm0IZMNMCdD22K1GSqZM3D%2FXXYz1RfirBvJQ9WDckOGGEG6CflzsRargyahCLy%2FXshjjQnCS6S2HvZ9rwsDrM%2FeWyKnkr%2F4jRH4wkzFfxdmJPluyHb1KGgufzB2rkZAm1EmNfC0FwSjild8hzumbh6wxaprN7TPEMJUEy%2BCHyJ%2F7a8vQD6ppOcdeNIIQmfh1iO4W1L4ZN%2FhSIFaCaQlMy0EBM68m3QVwg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A49%3A57&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;804431119492&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-04-21.17:49:57.458 [main            ] INFO  OrderServiceTest       - 请求参数:{"activityId":100123,"marketTypeVO":"GROUP_BUY_MARKET","productId":"9890001","userId":"xiaofuge"}
+26-04-21.17:49:57.461 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"804431119492","payUrl":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=cvEhNQ%2B3ObHfQ%2F9%2BVW6cCQUW2rBvEwt%2FTKIEWF61lKdApM1%2B%2F7I289R72fkMDl8wyr%2BRTUXIkb6wgtc2XZ4j2Ra1Pun9ed9rZwo5bTJ5fdPh%2BrJ9NhNS2Nm0IZMNMCdD22K1GSqZM3D%2FXXYz1RfirBvJQ9WDckOGGEG6CflzsRargyahCLy%2FXshjjQnCS6S2HvZ9rwsDrM%2FeWyKnkr%2F4jRH4wkzFfxdmJPluyHb1KGgufzB2rkZAm1EmNfC0FwSjild8hzumbh6wxaprN7TPEMJUEy%2BCHyJ%2F7a8vQD6ppOcdeNIIQmfh1iO4W1L4ZN%2FhSIFaCaQlMy0EBM68m3QVwg%3D%3D&return_url=https%3A%2F%2Fgroup.daoha.top&notify_url=http%3A%2F%2Fdaoha.top%3A15555%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000159639472&sign_type=RSA2&timestamp=2026-04-21+17%3A49%3A57&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;out_trade_no&quot;:&quot;804431119492&quot;,&quot;total_amount&quot;:&quot;90.00&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>"}
+26-04-21.17:49:57.472 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-04-21.17:49:57.479 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
