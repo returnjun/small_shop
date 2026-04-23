@@ -3,15 +3,50 @@ version: '3.8'
 # docker-compose -f docker-compose-app.yml up -d
 # 你需要修改system为你自身系统的仓库名
 services:
+  nginx:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/nginx:latest
+    container_name: nginx
+    restart: always
+    ports:
+      - '443:443'
+      - '80:80'
+    volumes:
+      # 1. 挂载主配置文件 nginx.conf
+      - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+
+      # 2. 挂载 conf.d 目录 (里面有你的 group.daoha.top.conf)
+      - ./nginx/conf/conf.d:/etc/nginx/conf.d
+
+      # 3. 挂载前端静态页面 (直接映射到标准路径)
+      # 你的 index.html, css, js 都在宿主机的 ./nginx/html 里
+      - ./nginx/html:/usr/share/nginx/html
+
+      # 4. 挂载 SSL 证书
+      - ./nginx/ssl:/etc/nginx/ssl
+
+      # 5. 挂载 Nginx 运行日志 (对应你图里的 ./nginx/logs)
+      - ./nginx/logs:/var/log/nginx
+
+    privileged: true
+    networks:
+      - my-network  # 记得保持网络统一
+
   myddd:
     image: system/myddd:1.0-SNAPSHOT
     container_name: myddd
     restart: on-failure
     ports:
-      - "8091:8091"
+      - "7860:7860" # 修改宿主机端口，避免与 group-buy-me 的 8091 冲突
     environment:
       - TZ=PRC
-      - SERVER_PORT=8091
+      - SERVER_PORT=7860
+      # 补充数据库配置，注意修改对应的数据库名称(例如 myddd_db)
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=123456
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/s-pay-mall-ddd-market?characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.cj.jdbc.Driver
+      - REDIS_SDK_CONFIG_HOST=redis
+      - REDIS_SDK_CONFIG_PORT=6379
     volumes:
       - ./log:/data/log
     logging:
@@ -19,3 +54,8 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+    networks:
+      - my-network
+networks:
+  my-network:
+    external: true
