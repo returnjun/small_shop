@@ -91,7 +91,7 @@
     </dependencies>
 
     <build>
-        <finalName>myddd-app</finalName>
+        <finalName>myddd</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
