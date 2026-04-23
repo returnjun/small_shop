@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // 全局配置与状态变量
     // ==========================================
-    // 🔴 关键修改：将硬编码的本地 IP 改为相对路径，交由 Nginx 路由处理
-    const BASE_URL = '/api/v1/gbm';
-    const ALIPAY_BASE_URL = '/api/v1/alipay';
+    // 将此处改为空字符串，依靠浏览器默认拼接域名和相对路径。
+    // fetch(`${BASE_URL}/api/v1/...`) 就会变成 fetch(`/api/v1/...`)，完美命中 Nginx 的 location 规则。
+    const BASE_URL = '';
+    const ALIPAY_BASE_URL = '';
 
     // 动态变量：根据后端接口回传的数据填充
     let globalGoodsId = "9890001";
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // ==========================================
-    // 1. 无缝无限轮播图逻辑
+    // 1. 无缝无限轮播图逻辑 (保持不变)
     // ==========================================
     const slidesContainer = document.getElementById('slides');
     const slideElements = document.querySelectorAll('.slide');
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
-    // 2. 动态文字头像生成逻辑
+    // 2. 动态文字头像生成逻辑 (保持不变)
     // ==========================================
     function getAvatarDataURI(name) {
         if (!name) name = "U";
@@ -103,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchMarketConfig() {
         try {
-            const response = await fetch(`${BASE_URL}/index/query_group_buy_market_config`, {
+            const response = await fetch(`${BASE_URL}/api/v1/gbm/index/query_group_buy_market_config`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -128,6 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderPageData(data) {
         const { goods, teamList, teamStatistic, activityId } = data;
 
+        // 更新动态全局变量
         if (activityId) globalActivityId = activityId;
         if (goods && goods.goodsId) globalGoodsId = goods.goodsId;
 
@@ -139,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userCount = teamStatistic?.allTeamUserCount || 0;
         document.getElementById('discountBanner').innerHTML = `<span>🔥 BUFF加成</span> 直降 ¥${deductionPrice}, 已有 ${userCount} 玩家加入队伍`;
 
+        // 价格分配：单刷 -> originalPrice, 组队 -> payPrice
         if(goods) {
             const btnAlone = document.getElementById('btnBuyAlone');
             btnAlone.innerText = `单刷 (¥${goods.originalPrice})`;
@@ -160,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const avatarSrc = getAvatarDataURI(team.userId);
                 const totalSeconds = parseTimeToSeconds(team.validTimeCountdown);
 
+                // 加入队伍金额：payPrice
                 const itemHtml = `
                 <div class="group-item">
                     <div class="user-info">
@@ -190,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
+            // 判断点击来源并记录到交易上下文
             tradeContext.amount = amount;
             if (e.target.id === 'btnBuyAlone') {
                 tradeContext.actionType = 'single';
@@ -202,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tradeContext.teamId = e.target.getAttribute('data-team-id') || "";
             }
 
+            // 显示支付弹窗及金额
             document.getElementById('paymentAmountText').innerText = `¥${amount}`;
             paymentModal.style.display = 'flex';
         }
@@ -211,32 +217,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // 5. 取消支付 与 直接调用支付宝接口
     // ==========================================
     document.getElementById('btnCancelPay').addEventListener('click', () => {
-        paymentModal.style.display = 'none';
+        paymentModal.style.display = 'none'; // 点击取消支付直接关闭窗口
     });
 
+    // 这里原封不动地保留了你正确的逻辑：直接调用 create_pay_order
     document.getElementById('btnPayNow').addEventListener('click', async () => {
         const marketType = tradeContext.actionType === 'single' ? 0 : 1;
 
         try {
-            const payRes = await fetch(`${ALIPAY_BASE_URL}/create_pay_order`, {
+            // 访问支付宝创建订单接口
+            const payRes = await fetch(`${ALIPAY_BASE_URL}/api/v1/alipay/create_pay_order`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     "userId": username,
-                    "productId": globalGoodsId,
+                    "productId": globalGoodsId, // 动态读取的 goodsId
                     "teamId": tradeContext.teamId,
-                    "activityId": globalActivityId,
-                    "marketType": marketType
+                    "activityId": globalActivityId, // 动态读取的 activityId
+                    "marketType": marketType // 单刷为0，组队为1
                 })
             });
 
             const payData = await payRes.json();
 
             if (payData.code === "0000") {
+                // 获取返回的 HTML 表单并注入自动提交
                 const formHtml = payData.data;
                 document.body.insertAdjacentHTML('beforeend', formHtml);
                 document.forms[document.forms.length - 1].submit();
             } else {
+                // 非成功状态
                 alert("支付失败请稍后再试");
             }
         } catch (error) {
