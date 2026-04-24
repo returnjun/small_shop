@@ -1,6 +1,7 @@
 package top.daoha.domain.auth.service;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import com.google.common.cache.Cache;
 import top.daoha.domain.auth.adapter.port.ILoginPort;
@@ -27,10 +28,16 @@ public class WeixinLoginService implements ILoginService{
     @Resource
     private Cache<String,String> openidToken;
 
-
     @Override
     public String createQrCodeTicket() throws Exception {
         return loginPort.createQrCodeTicket();
+    }
+
+    @Override
+    public String createQrCodeTicket(String sceneStr) throws Exception {
+        String ticket = loginPort.createQrCodeTicket(sceneStr);
+        openidToken.put(sceneStr,ticket);
+        return ticket;
     }
 
     @Override
@@ -39,11 +46,17 @@ public class WeixinLoginService implements ILoginService{
     }
 
     @Override
+    public String checkLogin(String ticket, String sceneStr) {
+        String cacheTicket = openidToken.getIfPresent(sceneStr);
+        if (StringUtils.isBlank(cacheTicket) || !cacheTicket.equals(ticket)) return null;
+        return checkLogin(ticket);
+    }
+
+    @Override
     public void saveLoginState(String ticket, String openid) throws IOException {
         //保存登录信息
         openidToken.put(ticket, openid);
         //发送模板消息
         loginPort.sendLoginTemplate(openid);
-
     }
 }
