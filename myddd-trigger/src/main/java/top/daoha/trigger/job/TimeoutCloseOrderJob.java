@@ -21,7 +21,7 @@ import java.util.List;
 public class TimeoutCloseOrderJob {
     @Resource
     private IOrderService orderService;
-    @Scheduled(cron = "0 0/10 * * * ?")
+    @Scheduled(cron = "0 0/15 * * * ?")
     public void exec(){
         try {
             log.info("任务超时三十分钟直接关闭");

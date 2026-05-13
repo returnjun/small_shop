@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S Pay Mall - 安全登录</title>
+    <title>潮玩拼团系统 - 安全登录</title>
     <style>
         :root {
             --primary-color: #00c250; /* 柔和的微信绿 */
@@ -15,7 +15,6 @@
         body {
             font-family: 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
             background: var(--bg-gradient);
-            /* 添加一点可爱的背景波浪或圆点暗示（可选） */
             background-image: radial-gradient(#ffceec 1px, transparent 1px);
             background-size: 30px 30px;
             height: 100vh;
@@ -26,17 +25,16 @@
             overflow: hidden;
         }
 
-        /* 登录卡片：增加悬浮呼吸动画 */
         .login-container {
             background: #ffffff;
             padding: 45px 30px;
-            border-radius: 35px; /* 更大的圆角显得更可爱 */
+            border-radius: 35px;
             box-shadow: var(--card-shadow);
             text-align: center;
             width: 100%;
             max-width: 360px;
             position: relative;
-            animation: float 6s ease-in-out infinite; /* 灵动的上下浮动 */
+            animation: float 6s ease-in-out infinite;
         }
 
         @keyframes float {
@@ -63,20 +61,19 @@
             border-radius: 20px;
         }
 
-        /* 二维码区域：增加果冻回弹效果 */
         .qr-wrapper {
             position: relative;
             display: inline-block;
             padding: 12px;
             background: #fff;
-            border: 2px dashed #ffe5ec; /* 可爱的虚线边框 */
+            border: 2px dashed #ffe5ec;
             border-radius: 24px;
-            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* 果冻回弹曲线 */
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
             cursor: pointer;
         }
 
         .qr-wrapper:hover {
-            transform: scale(1.06) rotate(-3deg); /* 鼠标移入时微微放大并倾斜 */
+            transform: scale(1.06) rotate(-3deg);
             border-color: var(--accent-color);
         }
 
@@ -87,7 +84,6 @@
             border-radius: 12px;
         }
 
-        /* 扫描线：改成柔和的光晕线 */
         .scan-line {
             position: absolute;
             top: 0;
@@ -119,14 +115,31 @@
             font-weight: 500;
         }
 
-        /* 底部装饰 */
+        /* 新增：无痕登录按钮样式（参考老师的截图） */
+        .incognito-btn {
+            background-color: #1677ff;
+            color: #ffffff;
+            border: none;
+            padding: 12px 0;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .incognito-btn:hover {
+            background-color: #0958d9;
+        }
+
         .footer-info {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 13px;
             color: #ccc;
         }
 
-        /* 登录成功后的加载覆盖层 */
         #success-overlay {
             position: absolute;
             top: 0;
@@ -143,14 +156,13 @@
             z-index: 100;
         }
 
-        /* 可爱版加载动画 */
         .spinner {
             width: 45px;
             height: 45px;
             border: 5px solid #ffe5ec;
             border-top: 5px solid var(--accent-color);
             border-radius: 50%;
-            animation: spin 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; /* 带有弹性的旋转 */
+            animation: spin 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
         }
 
         @keyframes spin {
@@ -167,7 +179,7 @@
         <p style="color: var(--accent-color); font-weight: 700; margin-top: 15px; font-size: 16px;">登录成功，跳转中 ฅ^•ﻌ•^ฅ</p>
     </div>
 
-    <h1>拼团交易登录</h1>
+    <h1>欢迎登录 - 潮玩拼团</h1>
     <p class="subtitle">✨ 安全交易 · 扫码即入 ✨</p>
 
     <div class="qr-wrapper">
@@ -177,8 +189,10 @@
 
     <p class="instructions">
         <img src="https://img.icons8.com/color/48/000000/weixing.png" width="22" alt="wechat">
-        请使用微信扫一扫
+        请使用微信扫描二维码登录<br>扫码后自动登录商城
     </p>
+
+    <button class="incognito-btn" id="incognito-btn">无痕登录 (浏览器指纹)</button>
 
     <div class="footer-info">
         &copy; 2025 daoha 版权所有
@@ -187,40 +201,53 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // 请求你本地的 API 地址
-        fetch('https://group.daoha.top/api/v1/login/weixin_qrcode_ticket')
-            .then(response => response.json())
-            .then(data => {
-                if (data.code === "0000") {
-                    const ticket = data.data;
-                    const qrCodeImg = document.getElementById('qr-code-img');
-                    qrCodeImg.src = `https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=${ticket}`;
 
-                    const intervalId = setInterval(() => {
-                        checkLoginStatus(ticket, intervalId);
-                    }, 3000);
-                } else {
-                    console.error('获取二维码失败:', data.info);
-                }
-            })
-            .catch(error => {
-                console.error('请求失败:', error);
+        // 1. 引入指纹生成库
+        const fpPromise = import('https://openfpcdn.io/fingerprintjs/v4')
+            .then(FingerprintJS => FingerprintJS.load());
+
+        // 2. 获取指纹并请求接口
+        fpPromise
+            .then(fp => fp.get())
+            .then(result => {
+                const visitorId = result.visitorId;
+                let sceneStr = visitorId.toUpperCase();
+                console.log("当前浏览器指纹 sceneStr:", sceneStr);
+
+                // 请求二维码
+                fetch(`http://127.0.0.1:7860/api/v1/login/weixin_qrcode_ticket_scene?sceneStr=${sceneStr}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.code === "0000") {
+                            const ticket = data.data;
+                            const qrCodeImg = document.getElementById('qr-code-img');
+                            qrCodeImg.src = `https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=${ticket}`;
+
+                            // 开始轮询
+                            const intervalId = setInterval(() => {
+                                checkLoginStatus(ticket, sceneStr, intervalId);
+                            }, 3000);
+                        } else {
+                            console.error('获取二维码失败:', data.info);
+                        }
+                    })
+                    .catch(error => console.error('请求失败:', error));
             });
 
-        function checkLoginStatus(ticket, intervalId) {
-            fetch(`http://127.0.0.1:7860/api/v1/login/check_login?ticket=${ticket}`)
+        // 3. 轮询检查扫码状态
+        function checkLoginStatus(ticket, sceneStr, intervalId) {
+            fetch(`http://127.0.0.1:7860/api/v1/login/check_login_scene?ticket=${ticket}&sceneStr=${sceneStr}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.code === "0000") {
-                        // 增加视觉反馈：显示成功遮罩
-                        document.getElementById('success-overlay').style.display = 'flex';
+                        clearInterval(intervalId); // 停止轮询
 
-                        clearInterval(intervalId);
-
-                        // 按照你之前的要求：将键名改为 username，有效期设为 2 天
+                        // 【关键修改1】：扫码成功后，除了存 Cookie，再往 localStorage 里存一份兜底！
                         setCookie('username', data.data, 2);
+                        localStorage.setItem('fingerprint_token', data.data);
 
-                        // 延迟 1.5 秒跳转，让用户看到可爱的加载动画
+                        // 显示成功动画并跳转
+                        document.getElementById('success-overlay').style.display = 'flex';
                         setTimeout(() => {
                             window.location.href = 'index.html';
                         }, 1500);
@@ -228,9 +255,7 @@
                         console.info("等待扫码...");
                     }
                 })
-                .catch(error => {
-                    console.error('请求失败:', error);
-                });
+                .catch(error => console.error('请求失败:', error));
         }
 
         function setCookie(name, value, days) {
@@ -239,6 +264,30 @@
             const expires = "expires=" + date.toUTCString();
             document.cookie = name + "=" + value + ";" + expires + ";path=/";
         }
+
+        // ==========================================
+        // 【关键修改2】：为“无痕登录”按钮绑定点击事件
+        // ==========================================
+        document.getElementById('incognito-btn').addEventListener('click', function() {
+            // 去本地存储（哪怕禁用了 Cookie 这里通常也存在）里找之前存的 token
+            const savedToken = localStorage.getItem('fingerprint_token');
+
+            if (savedToken) {
+                console.log("检测到本地无痕授权记录，直接放行！");
+                // 为了让你看到效果，稍微改一下加载文字
+                const overlay = document.getElementById('success-overlay');
+                overlay.querySelector('p').innerText = "无痕授权成功，跳转中 ฅ^•ﻌ•^ฅ";
+                overlay.style.display = 'flex';
+
+                // 延迟跳转
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            } else {
+                // 如果本地没有，说明他从没扫过码，或者彻底清空了浏览器缓存
+                alert("没有找到您的无痕登录记录，请先使用微信扫码登录一次哦！");
+            }
+        });
     });
 </script>
 </body>

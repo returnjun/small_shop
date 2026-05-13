@@ -1,6 +1,7 @@
 package top.daoha.infrastructure.adapter.port;
 
 
+import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -120,14 +121,13 @@ public class ProductPort implements IProductPort {
     }
 
     @Override
-    public void refundMarketPayOrder(String userId, String orderId) {
+    public void refundMarketPayOrder(String userId, String orderId) throws IOException {
         RefundMarketPayOrderRequestDTO requestDTO = RefundMarketPayOrderRequestDTO.builder()
                 .userId(userId)
                 .outTradeNo(orderId)
                 .source(source)
                 .channel(channel)
                 .build();
-
         try {
             Call<Response<RefundMarketPayOrderResponseDTO>> responseCall = groupBuyMarketService.refundMarketPayOrder(requestDTO);
 
@@ -137,12 +137,12 @@ public class ProductPort implements IProductPort {
                 return ;
             }
             if(!"0000".equals(response.getCode())){
-                throw new AppException(response.getCode(),response.getInfo());
+                throw new AppException(response.getCode(), response.getInfo());
             }
-
         }catch (Exception e){
-            log.info("营销退单行为失败，错误异常信息:{}",e);
+            log.error("营销退单行为失败，错误异常信息:{}", JSON.toJSONString(e));
+            // 关键：把异常继续往上传递，这样上层逻辑才会中断
+            throw e;
         }
-
     }
 }

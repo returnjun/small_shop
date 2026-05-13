@@ -190,50 +190,40 @@
         <div class="tab" data-status="4">已发货<span class="badge" id="badge-4">0</span></div>
     </nav>
 
-    <main class="order-list" id="orderList">
-    </main>
+    <main class="order-list" id="orderList"></main>
 
     <div class="empty-state" id="emptyState">📭 暂无相关订单</div>
     <div class="load-more" id="btnLoadMore">点击加载更多 ⬇️</div>
 </div>
 
+<!-- 引入提取出的通用工具模块 (必须保证此文件存在) -->
+<script src="./js/common.js"></script>
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         // ==========================================
-        // 全局配置与状态
+        // 全局配置与状态 (从 common.js 获取)
         // ==========================================
-        const ALIPAY_BASE_URL = 'http://127.0.0.1:7860';
+        const { ALIPAY_BASE_URL } = window.APP_CONFIG;
+        const userId = window.APP_USER || "unknown";
+
+        // 🌟 核心修改点：订单数据内存缓存池，避免 DOM 污染 🌟
+        const orderDataCache = {};
 
         // 分页与状态变量
-        let currentStatus = 0; // 当前选中的Tab (0,1,2,4)
-        let lastId = null;     // 分页最后一条记录的ID
+        let currentStatus = 0;
+        let lastId = null;
         let hasMoreData = false;
         let isFetching = false;
+
+        // 初始化用户头像信息
+        if (window.IS_LOGGED_IN) {
+            document.getElementById('topAvatarImg').src = window.getAvatarDataURI(userId);
+        }
 
         // ==========================================
         // 基础工具函数
         // ==========================================
-        function getCookie(name) {
-            const nameEQ = name + "=";
-            const ca = document.cookie.split(';');
-            for(let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
-            }
-            return null;
-        }
-
-        // 生成动态头像 (与index保持一致)
-        function getAvatarDataURI(name) {
-            if (!name) name = "U";
-            const char = name.charAt(0).toUpperCase();
-            const colors = ['#2b80ff', '#ff9f43', '#00cec9', '#6c5ce7', '#00b894', '#e84393'];
-            const color = colors[char.charCodeAt(0) % colors.length] || colors[0];
-            const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="${color}" rx="25"/><text x="50%" y="50%" font-size="45" fill="#fff" font-weight="900" font-family="sans-serif" text-anchor="middle" dy=".35em">${char}</text></svg>`;
-            return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
-        }
-
         function formatDate(dateString) {
             if (!dateString) return '';
             const date = new Date(dateString);
@@ -244,10 +234,6 @@
             const min = String(date.getMinutes()).padStart(2, '0');
             return `${y}-${m}-${d} ${h}:${min}`;
         }
-
-        // 初始化用户信息
-        const userId = getCookie('username') || "unknown";
-        document.getElementById('topAvatarImg').src = getAvatarDataURI(userId);
 
         // ==========================================
         // DOM 元素缓存
@@ -293,22 +279,17 @@
 
                 if (res.code === "0000" && res.data) {
                     const data = res.data;
-
-                    // 更新角标数据
                     updateBadges(data.countInfo);
 
-                    // 更新分页状态
                     hasMoreData = data.hasMore;
                     lastId = data.lastId;
 
-                    // 渲染列表
                     if (data.orderList && data.orderList.length > 0) {
                         renderOrders(data.orderList);
                     } else if (reset) {
                         emptyStateEl.style.display = 'block';
                     }
 
-                    // 处理加载更多按钮显示
                     btnLoadMore.style.display = hasMoreData ? 'block' : 'none';
                 } else {
                     console.error("查询失败:", res.info);
@@ -346,7 +327,10 @@
 
         function renderOrders(orders) {
             orders.forEach(order => {
-                // 解析状态对应的文本和样式
+
+                // 🌟 将当前完整的订单数据存入内存缓存池中 🌟
+                orderDataCache[order.orderId] = order;
+
                 let statusText = "";
                 let statusClass = "";
                 let btnHtml = "";
@@ -354,12 +338,11 @@
                 if (order.status === "CREATE" || order.status === "PAY_WAIT") {
                     statusText = "等待支付";
                     statusClass = "status-wait";
-                    // 待支付状态下，把 payUrl 存在隐藏域中，方便点击按钮时提取
+                    // 🌟 彻底删除了 textarea，将 orderId 绑定在按钮的 data-id 上 🌟
                     btnHtml = `
                     <button class="btn btn-refund action-refund" data-id="${order.orderId}">申请退单</button>
-                    <button class="btn btn-pay action-pay">立即支付</button>
-                    <textarea class="pay-form-data" style="display:none;">${order.payUrl || ''}</textarea>
-                `;
+                    <button class="btn btn-pay action-pay" data-id="${order.orderId}">立即支付</button>
+                    `;
                 } else if (order.status === "PAY_SUCCESS") {
                     statusText = "拼团中";
                     statusClass = "status-group";
@@ -373,7 +356,7 @@
                     statusClass = "status-close";
                     btnHtml = `<button class="btn btn-disabled" disabled>已关闭</button>`;
                 } else {
-                    statusText = order.status; // 未知状态兜底
+                    statusText = order.status;
                     statusClass = "status-close";
                 }
 
@@ -400,10 +383,8 @@
         }
 
         // ==========================================
-        // 事件监听 (Tab切换 / 按钮委托 / 加载更多)
+        // 事件监听
         // ==========================================
-
-        // Tab 切换
         document.querySelectorAll('.tab').forEach(tab => {
             tab.addEventListener('click', (e) => {
                 document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -415,36 +396,35 @@
             });
         });
 
-        // 加载更多按钮
         btnLoadMore.addEventListener('click', () => {
             if (hasMoreData) {
                 fetchOrderList(false);
             }
         });
 
-        // 事件委托：处理 "立即支付" 和 "申请退单" 的点击
         orderListEl.addEventListener('click', async (e) => {
             // 1. 处理立即支付
             if (e.target.classList.contains('action-pay')) {
-                const card = e.target.closest('.order-card');
-                const payUrlStr = card.querySelector('.pay-form-data').value;
+                // 🌟 从缓存池里拿原汁原味的 HTML 字符串 🌟
+                const orderId = e.target.getAttribute('data-id');
+                const orderInfo = orderDataCache[orderId];
+                let payUrlStr = orderInfo ? orderInfo.payUrl : null;
 
                 if (!payUrlStr) {
                     alert("获取支付链接失败");
                     return;
                 }
 
-                // 将包含form表单的字符串注入页面，并触发表单提交
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = payUrlStr;
-                document.body.appendChild(tempDiv);
-
-                const form = tempDiv.querySelector('form');
-                if (form) {
-                    form.submit();
-                } else {
-                    alert("支付表单解析失败");
+                // 兜底清洗：如果因为某些反序列化原因导致字符串带了转义符 `\"`，强行清洗还原
+                if (payUrlStr.includes('\\"')) {
+                    payUrlStr = payUrlStr.replace(/\\"/g, '"').replace(/\\n/g, '');
                 }
+
+                // 🌟 使用与 index.js 相同的终极注入方案 🌟
+                document.body.insertAdjacentHTML('beforeend', payUrlStr);
+                document.forms[document.forms.length - 1].submit();
+
+                return;
             }
 
             // 2. 处理申请退单
@@ -466,7 +446,7 @@
                         const result = await res.json();
                         if (result.code === "0000") {
                             alert("退单成功！");
-                            fetchOrderList(true); // 刷新当前列表
+                            fetchOrderList(true);
                         } else {
                             alert("退单失败: " + (result.info || "系统异常"));
                         }
@@ -478,7 +458,7 @@
             }
         });
 
-        // 初次加载触发
+        // 页面初始化拉取列表
         fetchOrderList(true);
     });
 </script>

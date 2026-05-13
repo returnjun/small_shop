@@ -38,11 +38,11 @@ public class RefundSuccessTopicListener {
     )
     public void listener(String message) {
         try {
-            log.info("退款回调，发起退款{}", message);
+            log.info("rabbit监听任务：：退款回调，发起退款{}", message);
             TeamRefundSuccessRequestDTO teamRefundSuccessRequestDTO = JSON.parseObject(message, TeamRefundSuccessRequestDTO.class);
             String type = teamRefundSuccessRequestDTO.getType();
             if("paid_unformed".equals(type)||"paid_formed".equals(type)){
-               orderService.refundOrder(teamRefundSuccessRequestDTO.getUserId(), teamRefundSuccessRequestDTO.getOrderId());
+               orderService.refundOrder(teamRefundSuccessRequestDTO.getUserId(), teamRefundSuccessRequestDTO.getOutTradeNo());
             }
         } catch (Exception e) {
             log.error("拼团回调，退款完成，处理消息失败{}", message, e);

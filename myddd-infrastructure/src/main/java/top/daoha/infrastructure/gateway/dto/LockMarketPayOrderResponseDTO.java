@@ -23,5 +23,8 @@ public class LockMarketPayOrderResponseDTO {
     private BigDecimal payPrice;
     /** 交易订单状态枚举 状态；0初始锁定、1消费完成 */
     private Integer status;
+    /** 组队Id */
+    private String teamId;
+
 
 }

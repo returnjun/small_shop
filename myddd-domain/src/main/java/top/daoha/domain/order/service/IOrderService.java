@@ -6,6 +6,7 @@ import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
 import top.daoha.domain.order.model.valobj.UserStatisticVO;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -35,7 +36,7 @@ public interface IOrderService {
 
     UserStatisticVO queryUserOrderStatistics(String userId);
 
-    boolean refundMarketOrder(String userId, String orderId);
+    boolean refundMarketOrder(String userId, String orderId) throws IOException;
 
     boolean refundOrder(String userId, String orderId) throws AlipayApiException;
 }

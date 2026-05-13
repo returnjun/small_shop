@@ -3,6 +3,7 @@ package top.daoha.domain.order.adapter.port;
 import top.daoha.domain.order.model.entity.MarketPayDiscountEntity;
 import top.daoha.domain.order.model.entity.ProductEntity;
 
+import java.io.IOException;
 import java.util.Date;
 
 /**
@@ -20,5 +21,5 @@ public interface IProductPort {
 
     void settlementMarketPayOrder(String userId, String orderId, Date orderTime);
 
-    void refundMarketPayOrder(String userId, String orderId);
+    void refundMarketPayOrder(String userId, String orderId) throws IOException;
 }

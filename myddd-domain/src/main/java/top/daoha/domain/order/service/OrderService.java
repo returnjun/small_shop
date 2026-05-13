@@ -23,6 +23,7 @@ import top.daoha.domain.order.model.valobj.UserStatisticVO;
 import top.daoha.types.common.Constants;
 
 import javax.annotation.Resource;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -162,11 +163,11 @@ public class OrderService extends AbstractOrderService {
     }
 
     @Override
-    public boolean refundMarketOrder(String userId, String orderId) {
+    public boolean refundMarketOrder(String userId, String orderId) throws IOException {
         // 1. 查询订单信息，验证订单是否存在且属于该用户
         OrderEntity orderEntity = iOrderRepository.queryOrderByUserIdAndOrderId(userId, orderId);
         if (null == orderEntity) {
-            log.warn("退单失败，订单不存在或不属于该用户 userId:{} orderId:{}", userId, orderId);
+            log.warn("refundMarketOrder退单失败，订单不存在或不属于该用户 userId:{} orderId:{}", userId, orderId);
             return false;
         }
 
@@ -199,7 +200,7 @@ public class OrderService extends AbstractOrderService {
         // 1. 查询订单信息，验证订单是否存在且属于该用户
         OrderEntity orderEntity = iOrderRepository.queryOrderByUserIdAndOrderId(userId, orderId);
         if (null == orderEntity) {
-            log.warn("退款失败，订单不存在或不属于该用户 userId:{} orderId:{}", userId, orderId);
+            log.warn("refundOrder退款失败，订单不存在或不属于该用户 userId:{} orderId:{}", userId, orderId);
             return false;
         }
 
