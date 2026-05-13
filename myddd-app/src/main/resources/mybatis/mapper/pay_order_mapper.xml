@@ -129,4 +129,10 @@
         set status = 'CLOSE', update_time = now()
         where user_id = #{userId} and order_id = #{orderId}
     </update>
+    <update id="refundMarketOrder">
+        update `s-pay-mall-ddd-market`.pay_order
+        set status = 'WAIT_REFUND', update_time = now()
+        where user_id = #{userId} and order_id = #{orderId}
+    </update>
+
 </mapper>

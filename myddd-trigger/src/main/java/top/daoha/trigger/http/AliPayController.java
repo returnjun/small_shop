@@ -173,7 +173,7 @@ public class AliPayController implements IPayService {
             String orderId = requestDTO.getOrderId();
 
             // 执行退单操作
-            boolean success = orderService.refundOrder(userId, orderId);
+            boolean success = orderService.refundMarketOrder(userId, orderId);
 
             RefundOrderResponseDTO responseDTO = new RefundOrderResponseDTO();
             responseDTO.setSuccess(success);

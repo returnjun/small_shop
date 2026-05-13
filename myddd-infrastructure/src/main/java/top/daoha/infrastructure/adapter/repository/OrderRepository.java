@@ -267,4 +267,9 @@ public class OrderRepository implements IOrderRepository {
         return iOrderDao.refundOrder(userId, orderId);
     }
 
+    @Override
+    public boolean refundMarketOrder(String userId, String orderId) {
+        return iOrderDao.refundMarketOrder(userId, orderId);
+    }
+
 }

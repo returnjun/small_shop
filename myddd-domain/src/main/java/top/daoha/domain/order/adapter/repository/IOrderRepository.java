@@ -39,4 +39,6 @@ public interface IOrderRepository {
     OrderEntity queryOrderByUserIdAndOrderId(String userId, String orderId);
 
     boolean refundOrder(String userId, String orderId);
+
+    boolean refundMarketOrder(String userId, String orderId);
 }

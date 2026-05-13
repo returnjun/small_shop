@@ -118,4 +118,31 @@ public class ProductPort implements IProductPort {
         }
 
     }
+
+    @Override
+    public void refundMarketPayOrder(String userId, String orderId) {
+        RefundMarketPayOrderRequestDTO requestDTO = RefundMarketPayOrderRequestDTO.builder()
+                .userId(userId)
+                .outTradeNo(orderId)
+                .source(source)
+                .channel(channel)
+                .build();
+
+        try {
+            Call<Response<RefundMarketPayOrderResponseDTO>> responseCall = groupBuyMarketService.refundMarketPayOrder(requestDTO);
+
+            Response<RefundMarketPayOrderResponseDTO> response = responseCall.execute().body();
+            log.info("营销退单行为成功，请检查访问相关接口的结果 response:{}",response);
+            if(null==response){
+                return ;
+            }
+            if(!"0000".equals(response.getCode())){
+                throw new AppException(response.getCode(),response.getInfo());
+            }
+
+        }catch (Exception e){
+            log.info("营销退单行为失败，错误异常信息:{}",e);
+        }
+
+    }
 }

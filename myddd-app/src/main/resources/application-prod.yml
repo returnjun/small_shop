@@ -53,7 +53,18 @@ spring:
     template:
       delivery-mode: persistent # 确保全局默认设置为持久化（可选）
     # 消息配置
+    # 消息配置
     config:
+      #生产者
+      producer:
+        #主题配置
+        topic_order_pay_success:
+          # 交换机
+          exchange: s_pay_mall_exchange
+          # 路由key
+          routing_key: topic.order_pay_success
+          # 消费队列
+          queue: s_pay_mall_queue_2_order_pay_success
       # 消费者
       consumer:
         # 消息主题配置；路由key、队列
@@ -64,6 +75,21 @@ spring:
           routing_key: topic.team_success
           # 消费队列
           queue: s_pay_mall_queue_2_topic_team_success
+        topic_team_refund:
+          # 绑定交换机，统一一套交换机
+          exchange: group_buy_market_exchange
+          # 消息主题
+          routing_key: topic.team_refund
+          # 消费队列
+          queue: s_pay_mall_queue_2_topic_team_refund
+        # 消息主题配置；路由key、队列
+        topic_order_pay_success:
+          # 绑定交换机，统一一套交换机
+          exchange: s_pay_mall_exchange
+          # 消息主题
+          routing_key: topic.order_pay_success
+          # 消费队列
+          queue: s_pay_mall_queue_2_order_pay_success
 
 weixin:
   config:

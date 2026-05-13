@@ -3,7 +3,10 @@ package top.daoha.domain.order.service;
 import com.alibaba.fastjson.JSONObject;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
+import com.alipay.api.domain.AlipayTradeRefundModel;
 import com.alipay.api.request.AlipayTradePagePayRequest;
+import com.alipay.api.request.AlipayTradeRefundRequest;
+import com.alipay.api.response.AlipayTradeRefundResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -41,6 +44,9 @@ public class OrderService extends AbstractOrderService {
     private String notify_url;
     @Value("${alipay.return_url}")
     private String return_url;
+
+    @Resource
+    private IProductPort iProductPort;
 
     @Resource
     private AlipayClient alipayClient;   //核心的执行器,把请求发往支付宝服务器
@@ -156,7 +162,7 @@ public class OrderService extends AbstractOrderService {
     }
 
     @Override
-    public boolean refundOrder(String userId, String orderId) {
+    public boolean refundMarketOrder(String userId, String orderId) {
         // 1. 查询订单信息，验证订单是否存在且属于该用户
         OrderEntity orderEntity = iOrderRepository.queryOrderByUserIdAndOrderId(userId, orderId);
         if (null == orderEntity) {
@@ -172,16 +178,46 @@ public class OrderService extends AbstractOrderService {
         }
 
         // 3. 对于营销类型的单子，调用拼团执行组队退单
+        iProductPort.refundMarketPayOrder(userId, orderId);
 
-        // 4. 执行退单操作
-        boolean result = iOrderRepository.refundOrder(userId, orderId);
-        if (result) {
-            log.info("退单成功 userId:{} orderId:{}", userId, orderId);
-        } else {
-            log.warn("退单失败 userId:{} orderId:{}", userId, orderId);
+        // 4. 执行退单操作;如果订单是刚刚创建就不需要退款
+        if(OrderStatusVO.CREATE.getCode().equals(status)||OrderStatusVO.PAY_WAIT.getCode().equals(status)){
+            return iOrderRepository.refundOrder(userId, orderId);
+        }else {
+            boolean result = iOrderRepository.refundMarketOrder(userId, orderId);
+            if (result) {
+                log.info("退单成功 userId:{} orderId:{}", userId, orderId);
+            } else {
+                log.warn("退单失败 userId:{} orderId:{}", userId, orderId);
+            }
+            return result;
+        }
+    }
+
+    @Override
+    public boolean refundOrder(String userId, String orderId) throws AlipayApiException {
+        // 1. 查询订单信息，验证订单是否存在且属于该用户
+        OrderEntity orderEntity = iOrderRepository.queryOrderByUserIdAndOrderId(userId, orderId);
+        if (null == orderEntity) {
+            log.warn("退款失败，订单不存在或不属于该用户 userId:{} orderId:{}", userId, orderId);
+            return false;
         }
 
-        return result;
+        AlipayTradeRefundRequest request = new AlipayTradeRefundRequest();
+        AlipayTradeRefundModel refundModel = new AlipayTradeRefundModel();
+        refundModel.setOutTradeNo(orderEntity.getOrderId());
+        refundModel.setRefundAmount(orderEntity.getPayAmount().toString());
+        refundModel.setRefundReason("交易退单");
+        request.setBizModel(refundModel);
+
+        // 交易退款
+        AlipayTradeRefundResponse execute = alipayClient.execute(request);
+        if (!execute.isSuccess()) return false;
+
+        // 状态变更
+        iOrderRepository.refundOrder(userId, orderId);
+
+        return true;
     }
 
 

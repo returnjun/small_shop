@@ -35,7 +35,10 @@ public interface IOrderDao {
 
     List<OrderCount> queryUserOrderStatistics(String userId);
 
-    PayOrder queryOrderByUserIdAndOrderId(String userId, String orderId);
+    PayOrder queryOrderByUserIdAndOrderId(@Param("userId") String userId, @Param("orderId") String orderId);
 
-    boolean refundOrder(String userId, String orderId);
+    boolean refundOrder(@Param("userId") String userId, @Param("orderId") String orderId);
+
+    boolean refundMarketOrder(@Param("userId") String userId, @Param("orderId") String orderId);
+
 }

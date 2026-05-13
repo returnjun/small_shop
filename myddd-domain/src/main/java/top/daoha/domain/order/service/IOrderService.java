@@ -1,5 +1,6 @@
 package top.daoha.domain.order.service;
 
+import com.alipay.api.AlipayApiException;
 import top.daoha.domain.order.model.entity.OrderEntity;
 import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
@@ -34,5 +35,7 @@ public interface IOrderService {
 
     UserStatisticVO queryUserOrderStatistics(String userId);
 
-    boolean refundOrder(String userId, String orderId);
+    boolean refundMarketOrder(String userId, String orderId);
+
+    boolean refundOrder(String userId, String orderId) throws AlipayApiException;
 }
