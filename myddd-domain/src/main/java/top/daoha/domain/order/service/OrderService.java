@@ -16,10 +16,13 @@ import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
 import top.daoha.domain.order.model.valobj.MarketTypeVO;
 import top.daoha.domain.order.model.valobj.OrderStatusVO;
+import top.daoha.domain.order.model.valobj.UserStatisticVO;
 import top.daoha.types.common.Constants;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -136,5 +139,78 @@ public class OrderService extends AbstractOrderService {
     @Override
     public void changeOrderMarketSettlement(List<String> outTradeNoList) {
         iOrderRepository.changeOrderMarketSettlement(outTradeNoList);
+    }
+
+    @Override
+    public List<OrderEntity> queryUserOrderList(String userId, Long lastId, Integer pageSize,Integer orderStatus) {
+
+        // 1. 将前端的业务状态分类(Tab)，映射为底层的真实状态列表
+        List<String> dbStatusList = mapToDbStatus(orderStatus);
+
+        return iOrderRepository.queryUserOrderList(userId, lastId, pageSize,dbStatusList);
+    }
+
+    @Override
+    public UserStatisticVO queryUserOrderStatistics(String userId) {
+        return iOrderRepository.queryUserOrderStatistics(userId);
+    }
+
+    @Override
+    public boolean refundOrder(String userId, String orderId) {
+        // 1. 查询订单信息，验证订单是否存在且属于该用户
+        OrderEntity orderEntity = iOrderRepository.queryOrderByUserIdAndOrderId(userId, orderId);
+        if (null == orderEntity) {
+            log.warn("退单失败，订单不存在或不属于该用户 userId:{} orderId:{}", userId, orderId);
+            return false;
+        }
+
+        // 2. 检查订单状态，只有create、pay_wait、pay_success、deal_done状态的订单可以退单
+        String status = orderEntity.getOrderStatusVO().getCode();
+        if (OrderStatusVO.CLOSE.getCode().equals(status)) {
+            log.warn("退单失败，订单已关闭 userId:{} orderId:{} status:{}", userId, orderId, status);
+            return false;
+        }
+
+        // 3. 对于营销类型的单子，调用拼团执行组队退单
+
+        // 4. 执行退单操作
+        boolean result = iOrderRepository.refundOrder(userId, orderId);
+        if (result) {
+            log.info("退单成功 userId:{} orderId:{}", userId, orderId);
+        } else {
+            log.warn("退单失败 userId:{} orderId:{}", userId, orderId);
+        }
+
+        return result;
+    }
+
+
+    private List<String> mapToDbStatus(Integer orderStatus) {
+        // 0 或者 空，代表查询全部，返回 null 给 SQL 做动态判断
+        if (orderStatus == null || orderStatus == 0) {
+            return null;
+        }
+
+        // 根据你的 TradeOrderStatusEnumVO 进行分组
+        switch (orderStatus) {
+            case 1: // 待支付：包含“创建完成”和“等待支付”
+                // 外面套一层 new ArrayList<>()，转换为标准集合
+                return new ArrayList<>(Arrays.asList(
+                        OrderStatusVO.CREATE.getCode(),
+                        OrderStatusVO.PAY_WAIT.getCode()
+                ));
+            case 2: // 待发货：支付成功，等待发货
+                return new ArrayList<>(Arrays.asList(
+                        OrderStatusVO.PAY_SUCCESS.getCode()
+                ));
+            case 3: // 已发货/交易完成
+                return new ArrayList<>(Arrays.asList(
+                        OrderStatusVO.DEAL_DONE.getCode(),
+                        OrderStatusVO.CLOSE.getCode()
+                ));
+            // 如果有其他状态（如 4:售后关闭），继续在这里加 case
+            default:
+                return null;
+        }
     }
 }

@@ -111,21 +111,58 @@ body {
 .join-btn:hover { background: var(--primary-hover); transform: translateY(-2px); }
 .join-btn:active { transform: translateY(2px) scale(0.95); box-shadow: 0 2px 5px rgba(43, 128, 255, 0.3); }
 
-/* 底部操作栏 */
+/* ==========================================
+   底部操作栏 (包含我的订单、单独购买、发起组队)
+   ========================================== */
 .bottom-bar {
     position: fixed; bottom: 0; left: 0; right: 0; max-width: 480px; margin: 0 auto;
-    background: #fff; display: flex; padding: 12px 20px 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
-    gap: 15px; z-index: 50; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    background: #fff; display: flex; padding: 12px 15px 25px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
+    gap: 10px; z-index: 50; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    align-items: flex-end; /* 底部对齐，防止缩放时抖动 */
 }
-.btn-buy-alone, .btn-buy-group {
-    flex: 1; padding: 14px 0; border: none; border-radius: 14px; font-size: 15px;
-    font-weight: 800; cursor: pointer; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-buy-alone { background: #f1f2f6; color: #576574; border-bottom: 4px solid #ced6e0; }
-.btn-buy-group { background: var(--accent-color); color: white; border-bottom: 4px solid #e17e10; }
-.btn-buy-alone:active, .btn-buy-group:active { transform: translateY(4px); border-bottom-width: 0px; margin-bottom: 4px; }
 
-/* 通用弹窗样式 */
+/* 三个按钮通用的基础样式 */
+.btn-orders, .btn-buy-alone, .btn-buy-group {
+    flex: 1; /* 默认平分空间 */
+    padding: 14px 0; border: none; border-radius: 14px; font-size: 14px;
+    font-weight: 800; cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); /* 弹性过渡动画 */
+    white-space: nowrap;
+    position: relative;
+}
+
+/* 我的订单 - 样式 */
+.btn-orders { background: #eef2f7; color: var(--primary-color); border-bottom: 4px solid #d1d9e6; }
+/* 单独购买 - 样式 */
+.btn-buy-alone { background: #f1f2f6; color: #576574; border-bottom: 4px solid #ced6e0; }
+/* 发起组队 - 样式 */
+.btn-buy-group { background: var(--accent-color); color: white; border-bottom: 4px solid #e17e10; }
+
+/* 核心：鼠标悬停效果 (Hover) */
+/* 1. 悬停的按钮变大，并增加 flex 权重占用更多空间 */
+.bottom-bar button:hover {
+    flex: 1.8;              /* 让其他按钮让位置的关键：增加权重 */
+    transform: scale(1.1) translateY(-5px); /* 放大并上浮 */
+    z-index: 10;            /* 确保放大时遮挡关系正确 */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* 2. 点击时的反馈 */
+.bottom-bar button:active {
+    transform: translateY(2px) scale(0.95);
+    border-bottom-width: 0px;
+    margin-bottom: 4px; /* 补偿底边框消失的高度 */
+}
+
+/* 兼容小屏幕文字大小 */
+@media (max-width: 360px) {
+    .btn-orders, .btn-buy-alone, .btn-buy-group { font-size: 12px; }
+}
+
+/* ==========================================
+   通用弹窗样式
+   ========================================== */
 .modal-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(45, 52, 54, 0.7); backdrop-filter: blur(4px);

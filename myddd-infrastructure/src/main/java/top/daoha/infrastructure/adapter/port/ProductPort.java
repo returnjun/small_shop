@@ -66,8 +66,9 @@ public class ProductPort implements IProductPort {
                 .outTradeNo(orderId)
                 .source(source)
                 .channel(channel)
-                .notifyUrl(notifyUrl)
+//                .notifyUrl(notifyUrl)
                 .build();
+        req.setNotifyMQ();
 
         try {
             Call<Response<LockMarketPayOrderResponseDTO>> responseCall = groupBuyMarketService.lockMarketPayOrder(req);

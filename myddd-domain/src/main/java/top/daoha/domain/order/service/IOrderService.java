@@ -1,7 +1,9 @@
 package top.daoha.domain.order.service;
 
+import top.daoha.domain.order.model.entity.OrderEntity;
 import top.daoha.domain.order.model.entity.PayOrderEntity;
 import top.daoha.domain.order.model.entity.ShopCartEntity;
+import top.daoha.domain.order.model.valobj.UserStatisticVO;
 
 import java.util.Date;
 import java.util.List;
@@ -28,4 +30,9 @@ public interface IOrderService {
 
     void changeOrderMarketSettlement(List<String> outTradeNoList);
 
+    List<OrderEntity> queryUserOrderList(String userId, Long lastId, Integer pageSize,Integer orderStatus);
+
+    UserStatisticVO queryUserOrderStatistics(String userId);
+
+    boolean refundOrder(String userId, String orderId);
 }

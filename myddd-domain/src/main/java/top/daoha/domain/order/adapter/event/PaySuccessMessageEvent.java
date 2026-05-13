@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import top.daoha.types.event.BaseEvent;
 
@@ -20,6 +21,8 @@ import java.util.Date;
 @Component
 public class PaySuccessMessageEvent extends BaseEvent<PaySuccessMessageEvent.PaySuccessMessage> {
 
+    @Value("${spring.rabbitmq.config.producer.topic_order_pay_success.routing_key}")
+    private String TOPIC_ORDER_PAY_SUCCESS;
 
     @Override
     public EventMessage<PaySuccessMessageEvent.PaySuccessMessage> buildEventMessage(PaySuccessMessageEvent.PaySuccessMessage data) {
@@ -32,7 +35,7 @@ public class PaySuccessMessageEvent extends BaseEvent<PaySuccessMessageEvent.Pay
 
     @Override
     public String topic() {
-        return "pay_success";
+        return TOPIC_ORDER_PAY_SUCCESS;
     }
 
     @Data

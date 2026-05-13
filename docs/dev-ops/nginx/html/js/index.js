@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // 将此处改为空字符串，依靠浏览器默认拼接域名和相对路径。
     // fetch(`${BASE_URL}/api/v1/...`) 就会变成 fetch(`/api/v1/...`)，完美命中 Nginx 的 location 规则。
-    const BASE_URL = '';
-    const ALIPAY_BASE_URL = '';
+    const BASE_URL = 'http://127.0.0.1:8091';
+    const ALIPAY_BASE_URL = 'http://127.0.0.1:7860';
 
     // 动态变量：根据后端接口回传的数据填充
     let globalGoodsId = "9890001";
@@ -254,6 +254,21 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("支付失败请稍后再试");
         }
     });
+
+    // ==========================================
+    // 6. 我的订单跳转逻辑
+    // ==========================================
+    const btnOrders = document.getElementById('btnOrders');
+    if (btnOrders) {
+        btnOrders.addEventListener('click', () => {
+            // 如果需要登录才能看订单，可以在这里加个判断
+            if (!isLoggedIn) {
+                window.location.href = 'login.html';
+                return;
+            }
+            window.location.href = 'order-list.html';
+        });
+    }
 
     // 倒计时工具
     setInterval(() => {

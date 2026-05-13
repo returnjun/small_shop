@@ -11,7 +11,6 @@ app:
       source: s01
       channel: c01
 
-
 # 线程池配置
 thread:
   pool:
@@ -41,6 +40,49 @@ spring:
     connection-test-query: SELECT 1
   type: com.zaxxer.hikari.HikariDataSource
 
+  # RabbitMQ
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: admin
+    password: admin
+    listener:
+      simple:
+        prefetch: 1 # 每次投递n个消息，消费完在投递n个
+    template:
+      delivery-mode: persistent # 确保全局默认设置为持久化（可选）
+    # 消息配置
+    config:
+      #生产者
+      producer:
+        #主题配置
+        topic_order_pay_success:
+          # 交换机
+          exchange: s_pay_mall_exchange
+          # 路由key
+          routing_key: topic.order_pay_success
+          # 消费队列
+          queue: s_pay_mall_queue_2_order_pay_success
+      # 消费者
+      consumer:
+        # 消息主题配置；路由key、队列
+        topic_team_success:
+          # 绑定交换机，统一一套交换机
+          exchange: group_buy_market_exchange
+          # 消息主题
+          routing_key: topic.team_success
+          # 消费队列
+          queue: s_pay_mall_queue_2_topic_team_success
+        # 消息主题配置；路由key、队列
+        topic_order_pay_success:
+          # 绑定交换机，统一一套交换机
+          exchange: s_pay_mall_exchange
+          # 消息主题
+          routing_key: topic.order_pay_success
+          # 消费队列
+          queue: s_pay_mall_queue_2_order_pay_success
+
+
 weixin:
   config:
     originalid: gh_9a5f9b51f4e0
@@ -58,6 +100,9 @@ alipay:
   notify_url: http://daoha.top:15555/api/v1/alipay/alipay_notify_url
   return_url: https://group.daoha.top
   gatewayUrl: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+
+
+
 
 # MyBatis 配置【如需使用记得打开】
 mybatis:

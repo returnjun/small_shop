@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的订单 - carazy</title>
+    <style>
+        /* ==========================================
+           1. 活力少年风 - 全局变量与基础样式
+           ========================================== */
+        :root {
+            --primary-color: #2b80ff;
+            --primary-hover: #1a6ff0;
+            --accent-color: #ff9f43;
+            --accent-light: #f0f7ff;
+            --bg-color: #f5f8fc;
+            --text-main: #2d3436;
+            --text-light: #8395a7;
+            --card-shadow: 0 12px 28px rgba(43, 128, 255, 0.08);
+            --jelly-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            font-family: 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f8fc 0%, #eef2f7 100%);
+            background-image: radial-gradient(#c8d6e5 2px, transparent 2px);
+            background-size: 24px 24px;
+            color: var(--text-main);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 480px; margin: 0 auto; background: #ffffff;
+            min-height: 100vh; position: relative; box-shadow: var(--card-shadow);
+            display: flex; flex-direction: column;
+        }
+
+        @media (min-width: 481px) {
+            .container {
+                margin-top: 20px; margin-bottom: 20px;
+                min-height: calc(100vh - 40px); border-radius: 24px;
+                overflow: hidden; border: 4px solid #fff;
+            }
+        }
+
+        /* ==========================================
+           顶部导航栏
+           ========================================== */
+        .top-nav {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 15px 20px; background: #fff; position: sticky; top: 0;
+            z-index: 100; box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .btn-back {
+            background: #f1f2f6; border: none; padding: 8px 14px;
+            border-radius: 12px; font-weight: 800; color: #576574;
+            font-size: 14px; cursor: pointer; transition: all 0.2s;
+        }
+        .btn-back:active { transform: scale(0.95); }
+
+        .page-title { font-size: 18px; font-weight: 900; color: #2d3436; }
+
+        .user-avatar-container img {
+            width: 40px; height: 40px; border-radius: 12px;
+            object-fit: cover; border: 2px solid var(--accent-light);
+        }
+
+        /* ==========================================
+           Tabs 标签页
+           ========================================== */
+        .tabs {
+            display: flex; background: #fff; padding: 10px 10px 0;
+            border-bottom: 1px solid #f1f2f6;
+        }
+        .tab {
+            flex: 1; text-align: center; padding: 10px 0;
+            font-size: 14px; font-weight: bold; color: var(--text-light);
+            cursor: pointer; position: relative; transition: all 0.3s;
+        }
+        .tab.active { color: var(--primary-color); font-weight: 900; }
+        .tab.active::after {
+            content: ''; position: absolute; bottom: 0; left: 50%;
+            transform: translateX(-50%); width: 24px; height: 4px;
+            background: var(--primary-color); border-radius: 4px 4px 0 0;
+            animation: popIn 0.3s var(--jelly-ease);
+        }
+        @keyframes popIn { 0% { width: 0; opacity: 0;} 100% { width: 24px; opacity: 1;} }
+
+        /* 角标 */
+        .badge {
+            position: absolute; top: 2px; right: 10%; background: #ff4757;
+            color: white; font-size: 10px; font-weight: 900; padding: 2px 6px;
+            border-radius: 10px; border: 2px solid #fff; display: none;
+            transform: translate(50%, -50%);
+        }
+
+        /* ==========================================
+           订单列表与卡片
+           ========================================== */
+        .order-list {
+            flex: 1; padding: 15px; background: #f5f8fc;
+            overflow-y: auto; display: flex; flex-direction: column; gap: 15px;
+        }
+
+        .order-card {
+            background: #fff; border-radius: 16px; padding: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            animation: jellyPop 0.4s var(--jelly-ease) forwards;
+        }
+        @keyframes jellyPop { 0% { transform: scale(0.95) translateY(10px); opacity: 0; } 100% { transform: scale(1) translateY(0); opacity: 1; } }
+
+        /* 订单头部 */
+        .order-header {
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px dashed #dfe4ea; padding-bottom: 12px; margin-bottom: 12px;
+        }
+        .order-id { font-size: 13px; color: var(--text-light); font-weight: bold; font-family: monospace;}
+        .order-status { font-size: 13px; font-weight: 900; }
+
+        /* 状态颜色 */
+        .status-wait { color: #ff9f43; }
+        .status-group { color: var(--primary-color); }
+        .status-done { color: #2ed573; }
+        .status-close { color: #a4b0be; }
+
+        /* 订单主体内容 */
+        .order-body { display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px; }
+        .product-name { font-size: 16px; font-weight: 800; color: #2f3640; display: flex; align-items: center; gap: 8px;}
+        .product-name::before { content: '📦'; font-size: 18px; }
+
+        .order-info-box {
+            background: var(--accent-light); padding: 10px 12px; border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+        .order-time { font-size: 12px; color: var(--text-light); margin-bottom: 6px; display: flex; align-items: center; gap: 4px; }
+        .order-amount { font-size: 16px; font-weight: 900; color: #ff4757; }
+
+        /* 订单底部按钮区 */
+        .order-footer { display: flex; justify-content: flex-end; gap: 10px; }
+        .btn {
+            padding: 8px 16px; border-radius: 10px; font-size: 13px;
+            font-weight: 800; cursor: pointer; border: none;
+            transition: all 0.2s var(--jelly-ease);
+        }
+        .btn:active { transform: scale(0.95); }
+
+        .btn-refund { background: #f1f2f6; color: #576574; }
+        .btn-refund:hover { background: #dfe4ea; }
+
+        .btn-pay {
+            background: linear-gradient(135deg, var(--primary-color), #6c5ce7);
+            color: white; box-shadow: 0 4px 10px rgba(43, 128, 255, 0.3);
+        }
+
+        .btn-disabled { background: #f1f2f6; color: #a4b0be; cursor: not-allowed; }
+        .btn-disabled:active { transform: none; }
+
+        /* 加载与空状态 */
+        .load-more {
+            text-align: center; padding: 15px 0; font-size: 13px; color: var(--primary-color);
+            font-weight: bold; cursor: pointer; display: none;
+        }
+        .empty-state {
+            text-align: center; padding: 50px 20px; color: var(--text-light);
+            font-size: 14px; font-weight: bold; display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="top-nav">
+        <button class="btn-back" id="btnBack">返回首页</button>
+        <div class="page-title">我的订单</div>
+        <div class="user-avatar-container" id="userAvatar">
+            <img src="" id="topAvatarImg" alt="用户头像">
+        </div>
+    </header>
+
+    <nav class="tabs" id="tabs">
+        <div class="tab active" data-status="0">全部订单<span class="badge" id="badge-0">0</span></div>
+        <div class="tab" data-status="1">待支付<span class="badge" id="badge-1">0</span></div>
+        <div class="tab" data-status="2">拼团中<span class="badge" id="badge-2">0</span></div>
+        <div class="tab" data-status="4">已发货<span class="badge" id="badge-4">0</span></div>
+    </nav>
+
+    <main class="order-list" id="orderList">
+    </main>
+
+    <div class="empty-state" id="emptyState">📭 暂无相关订单</div>
+    <div class="load-more" id="btnLoadMore">点击加载更多 ⬇️</div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // ==========================================
+        // 全局配置与状态
+        // ==========================================
+        const ALIPAY_BASE_URL = 'http://127.0.0.1:7860';
+
+        // 分页与状态变量
+        let currentStatus = 0; // 当前选中的Tab (0,1,2,4)
+        let lastId = null;     // 分页最后一条记录的ID
+        let hasMoreData = false;
+        let isFetching = false;
+
+        // ==========================================
+        // 基础工具函数
+        // ==========================================
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+            }
+            return null;
+        }
+
+        // 生成动态头像 (与index保持一致)
+        function getAvatarDataURI(name) {
+            if (!name) name = "U";
+            const char = name.charAt(0).toUpperCase();
+            const colors = ['#2b80ff', '#ff9f43', '#00cec9', '#6c5ce7', '#00b894', '#e84393'];
+            const color = colors[char.charCodeAt(0) % colors.length] || colors[0];
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="${color}" rx="25"/><text x="50%" y="50%" font-size="45" fill="#fff" font-weight="900" font-family="sans-serif" text-anchor="middle" dy=".35em">${char}</text></svg>`;
+            return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return '';
+            const date = new Date(dateString);
+            const y = date.getFullYear();
+            const m = String(date.getMonth() + 1).padStart(2, '0');
+            const d = String(date.getDate()).padStart(2, '0');
+            const h = String(date.getHours()).padStart(2, '0');
+            const min = String(date.getMinutes()).padStart(2, '0');
+            return `${y}-${m}-${d} ${h}:${min}`;
+        }
+
+        // 初始化用户信息
+        const userId = getCookie('username') || "unknown";
+        document.getElementById('topAvatarImg').src = getAvatarDataURI(userId);
+
+        // ==========================================
+        // DOM 元素缓存
+        // ==========================================
+        const orderListEl = document.getElementById('orderList');
+        const emptyStateEl = document.getElementById('emptyState');
+        const btnLoadMore = document.getElementById('btnLoadMore');
+
+        // 返回首页
+        document.getElementById('btnBack').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+
+        // ==========================================
+        // 核心网络请求: 拉取订单列表
+        // ==========================================
+        async function fetchOrderList(reset = false) {
+            if (isFetching) return;
+            isFetching = true;
+
+            if (reset) {
+                lastId = null;
+                orderListEl.innerHTML = '';
+                emptyStateEl.style.display = 'none';
+                btnLoadMore.style.display = 'none';
+            }
+
+            const requestBody = {
+                userId: userId,
+                lastId: lastId,
+                pageSize: 10,
+                orderStatus: parseInt(currentStatus)
+            };
+
+            try {
+                const response = await fetch(`${ALIPAY_BASE_URL}/api/v1/alipay/query_user_order_list`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(requestBody)
+                });
+
+                const res = await response.json();
+
+                if (res.code === "0000" && res.data) {
+                    const data = res.data;
+
+                    // 更新角标数据
+                    updateBadges(data.countInfo);
+
+                    // 更新分页状态
+                    hasMoreData = data.hasMore;
+                    lastId = data.lastId;
+
+                    // 渲染列表
+                    if (data.orderList && data.orderList.length > 0) {
+                        renderOrders(data.orderList);
+                    } else if (reset) {
+                        emptyStateEl.style.display = 'block';
+                    }
+
+                    // 处理加载更多按钮显示
+                    btnLoadMore.style.display = hasMoreData ? 'block' : 'none';
+                } else {
+                    console.error("查询失败:", res.info);
+                    if(reset) emptyStateEl.style.display = 'block';
+                }
+            } catch (error) {
+                console.error("请求异常:", error);
+                if(reset) emptyStateEl.style.display = 'block';
+            } finally {
+                isFetching = false;
+            }
+        }
+
+        // ==========================================
+        // 渲染逻辑
+        // ==========================================
+        function updateBadges(counts) {
+            if(!counts) return;
+            const badgeMap = {
+                '0': counts.totalCount,
+                '1': counts.waitingPayCount,
+                '2': counts.waitingDeliveryCount,
+                '4': counts.waitingReceiveCount
+            };
+
+            for (let status in badgeMap) {
+                const badgeEl = document.getElementById(`badge-${status}`);
+                if (badgeEl) {
+                    const count = badgeMap[status] || 0;
+                    badgeEl.innerText = count > 99 ? '99+' : count;
+                    badgeEl.style.display = count > 0 ? 'inline-block' : 'none';
+                }
+            }
+        }
+
+        function renderOrders(orders) {
+            orders.forEach(order => {
+                // 解析状态对应的文本和样式
+                let statusText = "";
+                let statusClass = "";
+                let btnHtml = "";
+
+                if (order.status === "CREATE" || order.status === "PAY_WAIT") {
+                    statusText = "等待支付";
+                    statusClass = "status-wait";
+                    // 待支付状态下，把 payUrl 存在隐藏域中，方便点击按钮时提取
+                    btnHtml = `
+                    <button class="btn btn-refund action-refund" data-id="${order.orderId}">申请退单</button>
+                    <button class="btn btn-pay action-pay">立即支付</button>
+                    <textarea class="pay-form-data" style="display:none;">${order.payUrl || ''}</textarea>
+                `;
+                } else if (order.status === "PAY_SUCCESS") {
+                    statusText = "拼团中";
+                    statusClass = "status-group";
+                    btnHtml = `<button class="btn btn-refund action-refund" data-id="${order.orderId}">申请退单</button>`;
+                } else if (order.status === "DEAL_DONE") {
+                    statusText = "已发货";
+                    statusClass = "status-done";
+                    btnHtml = `<button class="btn btn-refund action-refund" data-id="${order.orderId}">申请退单</button>`;
+                } else if (order.status === "CLOSE") {
+                    statusText = "交易关闭";
+                    statusClass = "status-close";
+                    btnHtml = `<button class="btn btn-disabled" disabled>已关闭</button>`;
+                } else {
+                    statusText = order.status; // 未知状态兜底
+                    statusClass = "status-close";
+                }
+
+                const cardHtml = `
+            <div class="order-card">
+                <div class="order-header">
+                    <div class="order-id">订单号：${order.orderId}</div>
+                    <div class="order-status ${statusClass}">${statusText}</div>
+                </div>
+                <div class="order-body">
+                    <div class="product-name">${order.productName}</div>
+                    <div class="order-info-box">
+                        <div class="order-time">🕒 ${formatDate(order.orderTime)}</div>
+                        <div class="order-amount">💰 ¥${order.payAmount}</div>
+                    </div>
+                </div>
+                <div class="order-footer">
+                    ${btnHtml}
+                </div>
+            </div>`;
+
+                orderListEl.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        }
+
+        // ==========================================
+        // 事件监听 (Tab切换 / 按钮委托 / 加载更多)
+        // ==========================================
+
+        // Tab 切换
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                const target = e.currentTarget;
+                target.classList.add('active');
+
+                currentStatus = target.getAttribute('data-status');
+                fetchOrderList(true);
+            });
+        });
+
+        // 加载更多按钮
+        btnLoadMore.addEventListener('click', () => {
+            if (hasMoreData) {
+                fetchOrderList(false);
+            }
+        });
+
+        // 事件委托：处理 "立即支付" 和 "申请退单" 的点击
+        orderListEl.addEventListener('click', async (e) => {
+            // 1. 处理立即支付
+            if (e.target.classList.contains('action-pay')) {
+                const card = e.target.closest('.order-card');
+                const payUrlStr = card.querySelector('.pay-form-data').value;
+
+                if (!payUrlStr) {
+                    alert("获取支付链接失败");
+                    return;
+                }
+
+                // 将包含form表单的字符串注入页面，并触发表单提交
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = payUrlStr;
+                document.body.appendChild(tempDiv);
+
+                const form = tempDiv.querySelector('form');
+                if (form) {
+                    form.submit();
+                } else {
+                    alert("支付表单解析失败");
+                }
+            }
+
+            // 2. 处理申请退单
+            if (e.target.classList.contains('action-refund')) {
+                const orderId = e.target.getAttribute('data-id');
+                const confirmRefund = confirm("确定要申请退单吗？");
+
+                if (confirmRefund) {
+                    try {
+                        const res = await fetch(`${ALIPAY_BASE_URL}/api/v1/alipay/refund_order`, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                userId: userId,
+                                orderId: orderId
+                            })
+                        });
+
+                        const result = await res.json();
+                        if (result.code === "0000") {
+                            alert("退单成功！");
+                            fetchOrderList(true); // 刷新当前列表
+                        } else {
+                            alert("退单失败: " + (result.info || "系统异常"));
+                        }
+                    } catch (error) {
+                        console.error("退单异常", error);
+                        alert("网络异常，请稍后再试");
+                    }
+                }
+            }
+        });
+
+        // 初次加载触发
+        fetchOrderList(true);
+    });
+</script>
+</body>
+</html>

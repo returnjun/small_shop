@@ -208,7 +208,7 @@
             });
 
         function checkLoginStatus(ticket, intervalId) {
-            fetch(`https://group.daoha.top/api/v1/login/check_login?ticket=${ticket}`)
+            fetch(`http://127.0.0.1:7860/api/v1/login/check_login?ticket=${ticket}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.code === "0000") {

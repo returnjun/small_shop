@@ -3,6 +3,7 @@ package top.daoha.infrastructure.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import top.daoha.domain.order.model.valobj.OrderCount;
 import top.daoha.infrastructure.dao.po.PayOrder;
 
 import java.util.List;
@@ -29,4 +30,12 @@ public interface IOrderDao {
     void changeOrderMarketSettlement(@Param("outTradeNoList") List<String> outTradeNoList);
 
     void changeOrderDealDone(String tradeNo);
+
+    List<PayOrder> queryUserOrderList(@Param("userId") String userId, @Param("lastId") Long lastId, @Param("pageSize") Integer pageSize, @Param("dbStatusList") List<String> dbStatusList);
+
+    List<OrderCount> queryUserOrderStatistics(String userId);
+
+    PayOrder queryOrderByUserIdAndOrderId(String userId, String orderId);
+
+    boolean refundOrder(String userId, String orderId);
 }

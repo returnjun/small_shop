@@ -12,10 +12,9 @@ public class ProductRPC {
     public ProductDTO queryProductByProductId(String productId){
         ProductDTO productVO = new ProductDTO();
         productVO.setProductId(productId);
-        productVO.setProductName("测试商品");
-        productVO.setProductDesc("这是一个测试商品");
-        productVO.setPrice(new BigDecimal("99.68"));
+        productVO.setProductName("天上的星，不是地上的🦅");
+        productVO.setProductDesc("属于你的一刻星星");
+        productVO.setPrice(new BigDecimal("100.00"));
         return productVO;
     }
-
 }
